@@ -1,0 +1,249 @@
+﻿#pragma kernel generate
+#pragma kernel adjustparams
+#pragma kernel clearparams
+
+#include "TEBrushBase.cginc"
+
+#define SpriteMode_Oriented		1
+#define SpriteMode_Billboard	2
+#define SpriteMode_FaceUp		4
+#define SpriteMode_Cross		8
+#define SpriteMode_Cross4		16
+
+struct SpriteTemplate {
+	float4	uvScaleOffset;
+	float3	widthMinMaxMedian;
+	uint	uvArrayIndex;
+	float3	heightMinMaxMedian;
+	uint	growsInWater;
+	float3	groundColorFactorBottomTopMid;
+	uint	spriteMode;
+	float3	groundColorFactorScaleBottomTopMid;
+	float	_pad0;
+	float3	groundWetnessDarkenFactorBottomTopMid;
+	float	_pad1;
+	float3	albedoTint;
+	float	normalScale;
+	float3	specularTint;
+	float	smoothnessScale;
+};
+
+struct DetailLayer {
+	float2	widthHeightScale;
+	float	probability;
+	int		templateIndex;
+};
+
+StructuredBuffer<SpriteTemplate>	spriteTemplates;
+StructuredBuffer<DetailLayer>		detailLayers;
+StructuredBuffer<uint>				materialOffsetCount;
+uint								weakTemplatesOffset;
+
+struct Instance {
+	float3	basePos;
+	float	randomInstance;
+	float4	diagonal;
+	float3	indirectLighting;
+	float	normalMapScale;
+	float3	albedoTint;
+	float	uvArrayIndex;
+	float4	uvScaleOffset;
+};
+
+AppendStructuredBuffer<Instance> meshOutput;
+RWBuffer<uint> argBuffer;
+
+Texture2D materialID;
+SamplerState samplermaterialID;
+
+Texture2D<float2> noiseRG;
+SamplerState samplernoiseRG;
+float4 scaleOffset;
+
+float4 focusPos;
+
+float4 detailCornerPos;
+float4 detailCellSize;
+float4 shardCornerPos;
+float4 shardSize;
+
+Texture2D heightmap;
+Texture2D<float> controlmap;
+//Texture2D colormap;
+
+float vegetationDensityScale;
+
+
+[numthreads(7,7,1)]
+void generate(uint3 dispatchThreadID : SV_DispatchThreadID, uint3 groupID : SV_GroupID, uint3 groupThreadID : SV_GroupThreadID) {
+	const float COUNT = 7.f;
+
+	float2 blockOffset = groupID.xy + groupThreadID.xy / COUNT;
+
+	float3 baseWorldPos;
+	baseWorldPos.xz = detailCornerPos.xz + blockOffset;
+
+	//float distance2D = length(focusPos.xz - baseWorldPos.xz);
+	//float distanceScale = 1.f - clamp((distance2D - 10.f) / 15.f, 0.f, 0.75f);
+	//if(noiseRG.SampleLevel(samplernoiseRG, blockOffset / 103.f, 0).r > distanceScale)
+	//	return;
+
+	float2 localPos = baseWorldPos.xz;
+	localPos = localPos - shardCornerPos.xz;
+	localPos /= shardSize.x;
+
+	float2 matmapWH;
+	materialID.GetDimensions(matmapWH.x, matmapWH.y);
+
+	int3 idLoadPos = int3(localPos.x * matmapWH.x, localPos.y * matmapWH.y, 0);
+	float4 matIndirectData = materialID.Load(idLoadPos);
+	int matIndirectID = round(matIndirectData.a * 16);
+
+	if(matIndirectID == 16)
+		return;
+
+	//int4 matId4 = materialID.GatherAlpha(samplermaterialID, localPos) * 16;
+	//float localStrength = dot(matId4 == matIndirectID, 0.25f);
+	////if(any(localStrength * (COUNT + 1) <= (float2)groupThreadID.xy))
+	////	return;
+
+	float4 matId4_1, matId4_2; 
+	matId4_1.x = materialID.Load(idLoadPos + 1 * int3(-1,  0, 0)).a;
+	matId4_1.y = materialID.Load(idLoadPos + 1 * int3(+1,  0, 0)).a;
+	matId4_1.z = materialID.Load(idLoadPos + 1 * int3( 0, -1, 0)).a;
+	matId4_1.w = materialID.Load(idLoadPos + 1 * int3( 0, +1, 0)).a;
+	matId4_2.x = materialID.Load(idLoadPos + 1 * int3(-2, -2, 0)).a;
+	matId4_2.y = materialID.Load(idLoadPos + 1 * int3(+2, -2, 0)).a;
+	matId4_2.z = materialID.Load(idLoadPos + 1 * int3(-2, +2, 0)).a;
+	matId4_2.w = materialID.Load(idLoadPos + 1 * int3(+2, +2, 0)).a;
+
+	float localStrength = dot(matId4_1 == matIndirectData.a, 0.1f) + dot(matId4_2 == matIndirectData.a, 0.15f);
+
+	float2 controlmapWH;
+	controlmap.GetDimensions(controlmapWH.x, controlmapWH.y);
+	uint controlMask = asuint(controlmap.Load(int3(localPos.x * controlmapWH.x, localPos.y * controlmapWH.y, 0)));
+
+	float puddleStrength = ((controlMask & MASK_PUDDLE_IN) >> MASK_PUDDLE_SHIFT) / (float)MASK_PUDDLE_MAX;
+	float foliageStrength = ((controlMask & MASK_FOLIAGE_IN) >> MASK_FOLIAGE_SHIFT) / (float)MASK_FOLIAGE_MAX;
+
+	localStrength *= foliageStrength * 0.3 + 0.7f;
+
+	uint dlOffsetCount = materialOffsetCount[matIndirectID];
+	uint detailLayerOffset = dlOffsetCount >> 16;
+	uint detailLayerCount = dlOffsetCount & 0xFFFF;
+
+	int bonusLevel = localStrength < 0.33f ? 3 : (localStrength < 0.66f ? 2 : 1);
+	for(int bl = 0; bl < bonusLevel; ++bl) {
+		float2 noise01 = noiseRG.SampleLevel(samplernoiseRG, (blockOffset + bl) / 10.f, 0).rg;
+		float2 noisePMHalf = noise01 - 0.5f;
+
+		float accumProbability = 0.f;
+		for(uint idl = detailLayerOffset, ndl = detailLayerOffset + detailLayerCount; idl < ndl; ++idl) {
+			DetailLayer detailLayer = detailLayers[idl];
+			accumProbability += detailLayer.probability;
+			
+			SpriteTemplate spriteTemplate = spriteTemplates[detailLayer.templateIndex];
+
+			float probabilityScale = vegetationDensityScale;
+			//probabilityScale *= distanceScale;
+			if(!spriteTemplate.growsInWater) {
+
+				if(puddleStrength > 0.3)
+					continue;
+				else
+					probabilityScale = 1.f - saturate(puddleStrength / 0.4);
+			}
+
+			probabilityScale *= foliageStrength;
+
+			//if(probabilityScale * localStrength <= 0.f)
+			if(probabilityScale <= 0.f)
+				continue;
+
+			if(accumProbability * probabilityScale < noise01.x)
+				continue;
+
+			float2 heightmapWH;
+			heightmap.GetDimensions(heightmapWH.x, heightmapWH.y);
+
+			baseWorldPos.y = heightmap.Load(int3(localPos.x * heightmapWH.x, localPos.y * heightmapWH.y, 0)).r * 150.f - 10.f; // TODO: Upload ScaleOffset
+			baseWorldPos.y -= 0.005f;
+			baseWorldPos.xz += noisePMHalf.yx / (COUNT + 1.f);
+
+			float3 dir = normalize(float3(noisePMHalf.x, 0, noisePMHalf.y));
+
+			Instance i = (Instance)0;
+			i.basePos = baseWorldPos;
+			i.randomInstance = noise01.y;
+			i.uvScaleOffset = spriteTemplate.uvScaleOffset;
+			i.uvArrayIndex = spriteTemplate.uvArrayIndex;
+			i.normalMapScale = spriteTemplate.normalScale;
+
+//			float2 colormapWH;
+//			colormap.GetDimensions(colormapWH.x, colormapWH.y);
+
+	//		i.albedoTint = colormap.Load(int3(localPos.x * colormapWH.x, localPos.y * colormapWH.y, 0)).rgb;
+			i.albedoTint = spriteTemplate.albedoTint;
+			i.albedoTint *= noisePMHalf.yxy * 0.2f + 1.0f;
+			//i.albedoTint = float3(groupThreadID.x / 5.f, groupThreadID.y / 5.f, 0.5f);
+			i.indirectLighting = -log2(matIndirectData.rgb);
+
+			if(spriteTemplate.spriteMode == SpriteMode_Oriented || spriteTemplate.spriteMode == SpriteMode_Billboard  || spriteTemplate.spriteMode == SpriteMode_Cross || spriteTemplate.spriteMode == SpriteMode_Cross4) {
+				//		i.diagonal.xyz = float3(dir.x, 0.5f + noisePMHalf.x * 0.15f, dir.z);
+				i.diagonal.xyz = float3(dir.x, 1.f, dir.z);
+				//		i.diagonal.xyz = float3(.7, 1.f, 0.7);
+				i.diagonal.xz *= lerp(spriteTemplate.widthMinMaxMedian.x, spriteTemplate.widthMinMaxMedian.y, noise01.x);
+				i.diagonal.y *= lerp(spriteTemplate.heightMinMaxMedian.x, spriteTemplate.heightMinMaxMedian.y, noise01.y);
+				i.diagonal.w = noisePMHalf.x * min(0.5f, i.diagonal.y * 2.f) * 0.5;
+	i.diagonal.w = 0.0;
+				i.diagonal.xz *= 0.4;
+
+	//i.diagonal.y *= saturate(0.1f + localStrength * probabilityScale * 1.f);
+	//i.diagonal.xz *= saturate(0.15f + localStrength * probabilityScale * 1.5f);
+				i.diagonal.y *= saturate(0.05f + localStrength * 1.f);
+				i.diagonal.xz *= saturate(0.10f + localStrength * 1.25f);
+
+				i.diagonal.xyz *= detailLayer.widthHeightScale.xxy;
+
+				meshOutput.Append(i);
+
+				if(spriteTemplate.spriteMode == SpriteMode_Cross || spriteTemplate.spriteMode == SpriteMode_Cross4) {
+					dir = normalize(float3(noisePMHalf.y, 0, -noisePMHalf.x)) * 0.5f;
+
+					float2 diagXZ = i.diagonal.xz;
+					i.diagonal.xz = float2(diagXZ.y, -diagXZ.x);
+					meshOutput.Append(i);
+
+					if(spriteTemplate.spriteMode == SpriteMode_Cross4) {
+						i.diagonal.xz = float2((diagXZ.x + diagXZ.y) * 0.5f, (diagXZ.y - diagXZ.x) * 0.5f);
+						meshOutput.Append(i);
+
+						i.diagonal.xz = float2((diagXZ.y - diagXZ.x) * 0.5f, -(diagXZ.x + diagXZ.y) * 0.5f);
+						meshOutput.Append(i);
+					}
+				}
+			} else if(spriteTemplate.spriteMode == SpriteMode_FaceUp) {
+				i.diagonal.xyz = float3(dir.x, 1.f, dir.z);
+				meshOutput.Append(i);
+			}
+
+			break;
+		}//probability
+	}//bonusLevel
+}
+
+[numthreads(1,1,1)]
+void adjustparams() {
+	argBuffer[0] *= 6;
+	argBuffer[1] = 1;
+	argBuffer[2] = 0;
+	argBuffer[3] = 0;
+}
+
+[numthreads(1, 1, 1)]
+void clearparams() {
+	argBuffer[0] = 0;
+	argBuffer[1] = 1;
+	argBuffer[2] = 0;
+	argBuffer[3] = 0;
+}
