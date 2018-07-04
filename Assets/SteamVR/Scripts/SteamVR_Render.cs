@@ -335,7 +335,7 @@ public class SteamVR_Render : MonoBehaviour
 #if UNITY_2017_1_OR_NEWER
 	void OnBeforeRender() { UpdatePoses(); }
 #else
-/*	void OnCameraPreCull(Camera cam)
+	void OnCameraPreCull(Camera cam)
 	{
 #if !( UNITY_5_4 )
 		if (cam.cameraType != CameraType.VR)
@@ -347,7 +347,7 @@ public class SteamVR_Render : MonoBehaviour
 			lastFrameCount = Time.frameCount;
 			UpdatePoses();
 		}
-	}*/
+	}
 	static int lastFrameCount = -1;
 #endif
 

@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: 311d160726ff3c74c9a4e5876c200905
+  productGUID: 35cf1744bf42a6243aa3eb2ed8155f8b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -268,7 +268,7 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 1
       m_Height: 1
-      m_Kind: 48345
+      m_Kind: 1668
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -713,17 +713,17 @@ PlayerSettings:
   cloudServicesEnabled:
     Analytics: 0
     Build: 0
-    Collab: 1
+    Collab: 0
     ErrorHub: 0
     Game_Performance: 0
     Hub: 0
     Purchasing: 0
-    UNet: 1
+    UNet: 0
     Unity_Ads: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 6c044333-c01c-4df3-b3ea-5149e18fa05c
-  projectName: Moon VR Experience (2)
+  projectName: 
   organizationId: ozzy212
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
