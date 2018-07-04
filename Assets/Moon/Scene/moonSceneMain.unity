@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 90925014}
   - component: {fileID: 90925021}
   m_Layer: 0
-  m_Name: spanner(1)
+  m_Name: Spanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 137410119}
   - component: {fileID: 137410120}
   m_Layer: 0
-  m_Name: spanner
+  m_Name: Spanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 283368447}
   - component: {fileID: 283368446}
   m_Layer: 0
-  m_Name: TeleportArea (1)
+  m_Name: TeleportArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 412234363}
   - component: {fileID: 412234362}
   m_Layer: 0
-  m_Name: Directional light
+  m_Name: DirectionalLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,7 +1253,8 @@ Prefab:
       propertyPath: far clip plane
       value: 10000
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114000011983135080, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &473219368
@@ -2657,6 +2658,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100118, guid: b9625ab8966063c47ac24c12f53842bd, type: 3}
+      propertyPath: m_Name
+      value: FedUniAstronaut
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9625ab8966063c47ac24c12f53842bd, type: 3}
   m_IsPrefabParent: 0
@@ -2913,7 +2918,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 8d9d2148388f8264fb98aa334c4eecd2, type: 3}
       propertyPath: m_Name
-      value: apollo lunar module (1)
+      value: ApolloLunarModule
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8d9d2148388f8264fb98aa334c4eecd2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4120,7 +4125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_Name
-      value: Command module
+      value: CommandModule
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
