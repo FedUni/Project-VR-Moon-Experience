@@ -1425,59 +1425,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9,
     type: 3}
   m_PrefabInternal: {fileID: 1882769756}
---- !u!1 &704213839
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 704213842}
-  - component: {fileID: 704213841}
-  - component: {fileID: 704213840}
-  m_Layer: 0
-  m_Name: Boundary
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &704213840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704213839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b345b3b8560364d953218b110314d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &704213841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704213839}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &704213842
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704213839}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 312.84952, y: 25.897993, z: 307.0921}
-  m_LocalScale: {x: 14.667866, y: 15.78, z: 15.479363}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &728833466
 Prefab:
   m_ObjectHideFlags: 0
@@ -4253,6 +4200,21 @@ Prefab:
     - target: {fileID: 4193028416871968, guid: 209cb8ea2755c084e984743a95708e97, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54440194076678064, guid: 209cb8ea2755c084e984743a95708e97,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65209569751765398, guid: 209cb8ea2755c084e984743a95708e97,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.3404503
+      objectReference: {fileID: 0}
+    - target: {fileID: 65209569751765398, guid: 209cb8ea2755c084e984743a95708e97,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.7816658
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 209cb8ea2755c084e984743a95708e97, type: 2}
