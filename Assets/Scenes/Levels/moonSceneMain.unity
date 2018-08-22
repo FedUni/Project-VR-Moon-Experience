@@ -4053,6 +4053,23 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
+--- !u!1 &1857361974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 457531670}
+--- !u!114 &1857361977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857361974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7fa10dc1e454f4580e696e5af244cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MAX_SCENE_TIME: 120
 --- !u!1001 &1882769756
 Prefab:
   m_ObjectHideFlags: 0
