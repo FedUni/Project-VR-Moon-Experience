@@ -2595,53 +2595,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 183958303428768184, guid: 45d2cf109caac4f439656327dbcd4cca,
         type: 2}
-      propertyPath: m_StretchingStiffness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 183958303428768184, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_BendingStiffness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 183958303428768184, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_RandomAcceleration.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 183958303428768184, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 137657966381188316, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_AABB.m_Center.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137657966381188316, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_AABB.m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137657966381188316, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_AABB.m_Center.z
-      value: -0.000030517578
-      objectReference: {fileID: 0}
-    - target: {fileID: 137657966381188316, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_AABB.m_Extent.x
-      value: 5.0000186
-      objectReference: {fileID: 0}
-    - target: {fileID: 137657966381188316, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_AABB.m_Extent.y
-      value: 0.09622655
-      objectReference: {fileID: 0}
-    - target: {fileID: 137657966381188316, guid: 45d2cf109caac4f439656327dbcd4cca,
-        type: 2}
-      propertyPath: m_AABB.m_Extent.z
-      value: 5.000004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45d2cf109caac4f439656327dbcd4cca, type: 2}
