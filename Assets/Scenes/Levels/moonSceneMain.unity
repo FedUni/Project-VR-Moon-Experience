@@ -3070,6 +3070,14 @@ Prefab:
       propertyPath: m_Name
       value: FedUniAstronaut
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b9625ab8966063c47ac24c12f53842bd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100118, guid: b9625ab8966063c47ac24c12f53842bd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9625ab8966063c47ac24c12f53842bd, type: 3}
   m_IsPrefabAsset: 0
