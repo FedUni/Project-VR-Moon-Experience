@@ -19,8 +19,8 @@ public class resetScene : MonoBehaviour {
         if(DateTime.Now >= sceneStartTime.AddSeconds(MAX_SCENE_TIME))
         {
             Debug.Log("We have reached the max scene time.");
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            //Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene("moonSceneMenu");
         }
              
 	}

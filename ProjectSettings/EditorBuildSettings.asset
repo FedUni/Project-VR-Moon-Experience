@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/moonSceneMain.unity
     guid: 2a485cbc180340e4f98f2b9e132e0614
+  - enabled: 1
+    path: Assets/Scenes/Levels/moonSceneMenu.unity
+    guid: f607b5d44cb08eb43a8da3dae833caab
   m_configObjects: {}
