@@ -4343,7 +4343,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.06
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -4938,15 +4938,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -832
+      value: -843.58
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 559.9
+      value: 1639.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 247.3
+      value: 239.61
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4970,15 +4970,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.9078975
+      value: 1.7694429
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalScale.y
-      value: -4.2028556
+      value: -1.902996
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.1660235
+      value: 1.4335324
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4995,6 +4995,10 @@ Prefab:
     - target: {fileID: 400000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11100000, guid: d34f97584aa3f7244ace6d0b2feb6bc9, type: 3}
