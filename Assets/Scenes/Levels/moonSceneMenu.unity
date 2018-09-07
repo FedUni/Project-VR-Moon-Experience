@@ -402,7 +402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262345345}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2008,7 +2008,7 @@ GameObject:
   - component: {fileID: 1088597414}
   - component: {fileID: 1088597415}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ambientNoise
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
