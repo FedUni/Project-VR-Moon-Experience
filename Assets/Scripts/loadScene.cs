@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class loadScene : MonoBehaviour {
 
 	public void sceneLoad () {
-		SceneManager.LoadScene("moonSceneMain");
+        Debug.Log("Loading the scene...");
+        SceneManager.LoadScene("moonSceneMain");
 	}
 
 	// Use this for initialization
