@@ -2970,6 +2970,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205472249587617352, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_LocalReferencePoint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205472249587617352, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_LocalReferencePoint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205472249587617352, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_LocalReferencePoint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205472249587617352, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23546633390483694, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.40253648
+      objectReference: {fileID: 0}
+    - target: {fileID: 23038847595023494, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.30164766
+      objectReference: {fileID: 0}
+    - target: {fileID: 23725986444812184, guid: e62a3cde08f734d40990946bfdf80b9c,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.3085218
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e62a3cde08f734d40990946bfdf80b9c, type: 2}
   m_IsPrefabAsset: 0
