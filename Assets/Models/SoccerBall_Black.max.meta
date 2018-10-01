@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 9e2ca631fec348e4a8760495088584e2
-timeCreated: 1529393439
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: back_light
     100002: Ball_broken01
@@ -138,6 +136,8 @@ ModelImporter:
     10800000: back_light
     10800002: fill_light
     10800004: Key_light
+    2186277476908879412: ImportLogs
+    6000828045688606266: Camera01
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -157,6 +157,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -188,6 +189,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
