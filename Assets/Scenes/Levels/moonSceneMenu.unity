@@ -4285,7 +4285,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
       propertyPath: far clip plane
-      value: 10000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
       propertyPath: startingHandType
