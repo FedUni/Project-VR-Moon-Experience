@@ -14,7 +14,16 @@ public class resetScene : MonoBehaviour {
     private DateTime sceneStartTime;
 
 
-
+    void Awake () {
+            if(PlayerPrefs.GetInt("MaxSceneTime") == 0)
+            {
+                Debug.Log("Value is null, Apply defualt value");
+            }
+            else 
+            {
+                MAX_SCENE_TIME = (double) PlayerPrefs.GetInt("MaxSceneTime");
+            }
+    }
     
 	// Use this for initialization
 	void Start () {

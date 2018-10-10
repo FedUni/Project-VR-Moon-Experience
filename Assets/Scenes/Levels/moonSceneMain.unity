@@ -4072,12 +4072,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1857361974}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df7fa10dc1e454f4580e696e5af244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAX_SCENE_TIME: 0
+  MAX_SCENE_TIME: 120
   TIME_REMAINING: 0
   as10SecsRemaining: {fileID: 848209989}
   as30SecsRemaining: {fileID: 832421419}
