@@ -10,21 +10,6 @@ public class loadScene : MonoBehaviour {
         SceneManager.LoadScene("moonSceneMain");
 	}
 
-	// Use this for initialization
-	/*void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	void OnClick () {
-		SceneManager.LoadScene(moonSceneMain);
-		Debug.Log ("Loading Scene");
-	}*/
-
 	public void setSceneTimeTo90 () {
 		PlayerPrefs.SetInt("MaxSceneTime" , 90);
 	}
@@ -33,5 +18,18 @@ public class loadScene : MonoBehaviour {
 	}
 		public void setSceneTimeUnlimited () {
 		PlayerPrefs.SetInt("MaxSceneTime" , 3000);
+	}
+
+	public void setGraphicsLow (){
+		QualitySettings.SetQualityLevel(0, true);
+		Debug.Log("Graphics changed to: " + QualitySettings.GetQualityLevel());
+	}
+	public void setGraphicsMedium (){
+		QualitySettings.SetQualityLevel(1, true);
+		Debug.Log("Graphics changed to: " + QualitySettings.GetQualityLevel());
+	}
+	public void setGraphicsHigh (){
+		QualitySettings.SetQualityLevel(2, true);
+		Debug.Log("Graphics changed to: " + QualitySettings.GetQualityLevel());
 	}
 }
