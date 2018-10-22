@@ -3,27 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
+[RequireComponent( typeof( Interactable ) )]
 public class OnClickAnimate : MonoBehaviour {
 
-    // Animator anim;
+    Animator anim;
 
-    // void Awake()
-    // {
-    //     anim = gameObject.GetComponent<Animator>();
-    //     Debug.Log(anim.name);
-    // }
-    
-
-    // private void OnTriggerEnter(Collider other)
-    // {
-
-    //     Debug.Log("Colider enter");
-    //     if (Input.GetMouseButtonDown(1))
-    //     {
-    //         Debug.Log("button clicked");
-    //         //anim.SetTrigger("Active");
-    //         anim.Play(1);
-    //     }
-    // }
+    void Awake()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
+    //Called every Update() while a Hand is hovering over this object
+    private void HandHoverUpdate( Hand hand )
+    {
+ 			if ( hand.GetStandardInteractionButtonDown() || ( ( hand.controller != null ) && hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_Grip ) ) )
+			{
+                Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
+                //anim.StartPlayback();
+                anim.Play("LaserAnimate");
+            }
+    }
 
 }
