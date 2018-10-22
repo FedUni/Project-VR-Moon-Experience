@@ -1622,6 +1622,28 @@ CapsuleCollider:
   m_Height: 42.861576
   m_Direction: 1
   m_Center: {x: 23.188242, y: 20.932636, z: 1.8293221}
+--- !u!114 &715397306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715397301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ae5885b465a9a478089bd4814bbff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &715397307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715397301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &783041614
 Prefab:
   m_ObjectHideFlags: 0
@@ -3340,6 +3362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f580cc9ed3642c344957b7cb8426882d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!114 &1394350778
 MonoBehaviour:
   m_ObjectHideFlags: 0
