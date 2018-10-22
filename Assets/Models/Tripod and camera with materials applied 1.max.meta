@@ -1,72 +1,73 @@
 fileFormatVersion: 2
-guid: 86110f2ec7cfa054bba470da60760cce
+guid: 5d93e8ea5c58e4d4eaead24c1133d0de
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: back_l
     100002: big_l
     100004: big_l2
-    100006: //RootNode
-    100008: cylinder_l
-    100010: flash_button_l
-    100012: flash_l
-    100014: flashbox_l
-    100016: frog_l
-    100018: front_l1
-    100020: lens_l
-    100022: lensbox_l
-    100024: noflash_l
-    100026: Object_1
-    100028: Object_2
-    100030: Object_3
-    100032: Object_4
-    100034: open_l
-    100036: polySurface38
-    100038: polySurface39
-    100040: polySurface43
-    100042: polySurface44
-    100044: polySurface45
-    100046: polySurface46
-    100048: red_l
-    100050: rubber_l
-    100052: slider_l
-    100054: top_h
+    100006: cylinder_l
+    100008: flash_button_l
+    100010: flash_l
+    100012: flashbox_l
+    100014: frog_l
+    100016: front_l1
+    100018: lens_l
+    100020: lensbox_l
+    100022: noflash_l
+    100024: Object_1
+    100026: Object_2
+    100028: Object_3
+    100030: Object_4
+    100032: open_l
+    100034: polySurface38
+    100036: polySurface39
+    100038: polySurface43
+    100040: polySurface44
+    100042: polySurface45
+    100044: polySurface46
+    100046: red_l
+    100048: rubber_l
+    100050: slider_l
+    100052: top_h
+    100054: //RootNode
     100056: view_1
     100058: viewport_l
     400000: back_l
     400002: big_l
     400004: big_l2
-    400006: //RootNode
-    400008: cylinder_l
-    400010: flash_button_l
-    400012: flash_l
-    400014: flashbox_l
-    400016: frog_l
-    400018: front_l1
-    400020: lens_l
-    400022: lensbox_l
-    400024: noflash_l
-    400026: Object_1
-    400028: Object_2
-    400030: Object_3
-    400032: Object_4
-    400034: open_l
-    400036: polySurface38
-    400038: polySurface39
-    400040: polySurface43
-    400042: polySurface44
-    400044: polySurface45
-    400046: polySurface46
-    400048: red_l
-    400050: rubber_l
-    400052: slider_l
-    400054: top_h
+    400006: cylinder_l
+    400008: flash_button_l
+    400010: flash_l
+    400012: flashbox_l
+    400014: frog_l
+    400016: front_l1
+    400018: lens_l
+    400020: lensbox_l
+    400022: noflash_l
+    400024: Object_1
+    400026: Object_2
+    400028: Object_3
+    400030: Object_4
+    400032: open_l
+    400034: polySurface38
+    400036: polySurface39
+    400038: polySurface43
+    400040: polySurface44
+    400042: polySurface45
+    400044: polySurface46
+    400046: red_l
+    400048: rubber_l
+    400050: slider_l
+    400052: top_h
+    400054: //RootNode
     400056: view_1
     400058: viewport_l
-    2100000: plastic
-    2100002: lambert1
-    2100004: Glass
-    2100006: Black
+    2100000: 'Material #26'
+    2100002: Tripod Material
+    2100004: 'Material #27'
+    2100006: 'Material #29'
+    2100008: 'Material #28'
     2300000: back_l
     2300002: big_l
     2300004: big_l2
@@ -204,7 +205,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.0254
+    previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
