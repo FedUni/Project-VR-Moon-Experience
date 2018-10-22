@@ -1,20 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class OnClickAnimate : MonoBehaviour {
 
     Animator anim;
 
-    void Start()
+    void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
+        Debug.Log(anim.name);
     }
-    void Update()
+    
+    void LateUpdate()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
+            Debug.Log("fuck does it work?0");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
+            Debug.Log("fuck does it work?0");
+
+        Debug.Log("Colider enter");
+        if (Input.GetMouseButtonDown(1))
         {
-            anim.SetTrigger("Active");
+            Debug.Log("button clicked");
+            //anim.SetTrigger("Active");
+            anim.Play(1);
         }
     }
+
 }
