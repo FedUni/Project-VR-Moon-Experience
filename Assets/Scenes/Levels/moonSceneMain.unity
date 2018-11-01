@@ -3464,9 +3464,9 @@ GameObject:
   - component: {fileID: 1394350775}
   - component: {fileID: 1394350778}
   - component: {fileID: 1394350782}
-  - component: {fileID: 1394350777}
   - component: {fileID: 1394350779}
   - component: {fileID: 1394350780}
+  - component: {fileID: 1394350777}
   m_Layer: 0
   m_Name: LaserExperiment 1
   m_TagString: Untagged
@@ -3517,7 +3517,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1394350774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f580cc9ed3642c344957b7cb8426882d, type: 3}
+  m_Script: {fileID: 11500000, guid: c45bd4f2bbd983746b72e362c346eb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1394350778
@@ -4828,8 +4828,8 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1476493095}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PlaneDistance: 1
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0

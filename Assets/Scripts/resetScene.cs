@@ -15,9 +15,11 @@ public class resetScene : MonoBehaviour {
 
 
     void Awake () {
-            if(PlayerPrefs.GetInt("MaxSceneTime") == 0)
+            if(PlayerPrefs.GetInt("MaxSceneTime") == 0 || PlayerPrefs.GetInt("MaxSceneTime") == 3000)
             {
+            
                 Debug.Log("Value is null, Apply defualt value");
+                MAX_SCENE_TIME = 120;
             }
             else 
             {
