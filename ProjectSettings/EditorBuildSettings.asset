@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/moonSceneMenu.unity
     guid: f607b5d44cb08eb43a8da3dae833caab
   - enabled: 1
