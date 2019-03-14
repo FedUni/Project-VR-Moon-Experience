@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vrmoonexperience.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\edekker\\Documents\\UnityProjects\\Project-VR-Moon-Experience\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "VRMoonExperience [Testing]"
+        }
+      }
+    }
+  ]
+}

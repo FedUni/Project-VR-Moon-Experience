@@ -109,7 +109,7 @@ public class TETerrainShardData : ScriptableObject/*, ISerializationCallbackRece
 		colorData.filterMode = FilterMode.Trilinear;
 		colorData.Apply(true, false);
 #if UNITY_EDITOR
-		UnityEditor.EditorUtility.CompressTexture(colorData, TextureFormat.DXT1, TextureCompressionQuality.Fast);
+		UnityEditor.EditorUtility.CompressTexture(colorData, TextureFormat.DXT1, (int)TextureCompressionQuality.Fast);
 #endif
 
 #if UNITY_EDITOR

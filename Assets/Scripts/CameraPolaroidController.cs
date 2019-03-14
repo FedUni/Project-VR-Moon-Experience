@@ -22,20 +22,25 @@ public class CameraPolaroidController : MonoBehaviour {
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate( Hand hand )
     {
- 			if ( hand.GetStandardInteractionButtonDown() || ( ( hand.controller != null ) && hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_Grip ) ) )
-			{
-                Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
-                //anim.StartPlayback();//doesnt work?
-                anim.Play("CameraButtonAnim");
-                cameraFlash();
-                printPolaroid();
-                
-            }
-            if(isPrinting)
-                printPolaroid();
-            if(beginFlash)
-                cameraFlash();
-    }
+        GrabTypes startingGrabType = hand.GetGrabStarting();
+        if (startingGrabType != GrabTypes.None)
+        {
+/*
+        if ( hand.GetStandardInteractionButtonDown() || ( ( hand.controller != null ) && hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_Grip ) ) )
+        {
+*/
+            Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
+            //anim.StartPlayback();//doesnt work?
+            anim.Play("CameraButtonAnim");
+            cameraFlash();
+            printPolaroid();
+
+        }
+        if(isPrinting)
+            printPolaroid();
+        if(beginFlash)
+            cameraFlash();
+}
 
     private void printPolaroid()
     {
