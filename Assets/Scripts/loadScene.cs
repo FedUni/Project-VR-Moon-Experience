@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using Valve.VR;
 
 public class loadScene : MonoBehaviour {
+    public Rocket rocket;
 
 	public void sceneLoad () {
-        Debug.Log("Loading the scene...");
-        SceneManager.LoadScene("moonSceneMain");
-	}
+        //Debug.Log("Loading the scene...");
+        //SceneManager.LoadScene("moonSceneMain");
+        //SteamVR_LoadLevel.Begin("moonSceneMain");
+        
+        GetComponent<AudioSource>().Play();
+        rocket.launch();
+    }
 
 	public void setSceneTimeTo90 () {
 		PlayerPrefs.SetInt("MaxSceneTime" , 90);
