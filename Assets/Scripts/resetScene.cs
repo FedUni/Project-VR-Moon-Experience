@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR;
 
 public class resetScene : MonoBehaviour {
 
@@ -15,7 +16,7 @@ public class resetScene : MonoBehaviour {
 
 
     void Awake () {
-            if(PlayerPrefs.GetInt("MaxSceneTime") == 0 || PlayerPrefs.GetInt("MaxSceneTime") == 3000)
+            if(PlayerPrefs.GetInt("MaxSceneTime") == 0)
             {
             
                 Debug.Log("Value is null, Apply defualt value");
@@ -31,18 +32,22 @@ public class resetScene : MonoBehaviour {
 	void Start () {
         sceneStartTime = DateTime.Now;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         //check if scene time is different to max time allowed. 
-        TIME_REMAINING = (sceneStartTime.AddSeconds(MAX_SCENE_TIME) - DateTime.Now).TotalSeconds;
-        if(DateTime.Now >= sceneStartTime.AddSeconds(MAX_SCENE_TIME))
-        {
-            Debug.Log("We have reached the max scene time.");
-            //Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene("moonSceneMenu");
+        if (MAX_SCENE_TIME != 3000) { 
+            TIME_REMAINING = (sceneStartTime.AddSeconds(MAX_SCENE_TIME) - DateTime.Now).TotalSeconds;
+            if (DateTime.Now >= sceneStartTime.AddSeconds(MAX_SCENE_TIME))
+            {
+                Debug.Log("We have reached the max scene time.");
+                //Scene scene = SceneManager.GetActiveScene();
+                //SceneManager.LoadScene("moonSceneMenu");
+                SteamVR_LoadLevel.Begin("launchSiteMenu");
+            }
+            audioTimeSFXplay();//check to see if time remaining needs to be played
         }
-        audioTimeSFXplay();//check to see if time remaining needs to be played
 
 
     }

@@ -7,18 +7,24 @@ ModelImporter:
     100002: ExperimentPlate
     100004: //RootNode
     100006: Omni001
+    100008: Mirrors
     400000: ExperimentBase
     400002: ExperimentPlate
     400004: //RootNode
     400006: Omni001
+    400008: Mirrors
     2100000: ExperimentBase
     2100002: ExperiomentPlate
+    2100004: 'Material #2'
     2300000: ExperimentBase
     2300002: ExperimentPlate
+    2300004: Mirrors
     3300000: ExperimentBase
     3300002: ExperimentPlate
+    3300004: Mirrors
     4300000: ExperimentBase
     4300002: ExperimentPlate
+    4300004: Mirrors
     7400000: Take 001
     9500000: //RootNode
     10800000: Omni001
@@ -56,6 +62,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -80,6 +87,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -94,7 +104,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

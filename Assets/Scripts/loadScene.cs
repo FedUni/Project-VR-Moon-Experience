@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//using Valve.VR;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class loadScene : MonoBehaviour {
     public Rocket rocket;
 
-	public void sceneLoad () {
+    void Start()
+    {
+
+    }
+
+    public void sceneLoad () {
         //Debug.Log("Loading the scene...");
         //SceneManager.LoadScene("moonSceneMain");
         //SteamVR_LoadLevel.Begin("moonSceneMain");
@@ -38,4 +44,21 @@ public class loadScene : MonoBehaviour {
 		QualitySettings.SetQualityLevel(2, true);
 		Debug.Log("Graphics changed to: " + QualitySettings.GetQualityLevel());
 	}
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            SteamVR_LoadLevel.Begin("moonSceneMain");
+        }
+
+        for (int handIndex = 0; handIndex < Player.instance.hands.Length; handIndex++)
+        {
+            Hand hand = Player.instance.hands[handIndex];
+            if (hand != null)
+            {
+                hand.HideSkeleton();
+            }
+        }
+    }
 }
