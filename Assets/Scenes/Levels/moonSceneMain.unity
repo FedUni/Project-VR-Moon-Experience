@@ -573,6 +573,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1418333221}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &166984942
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166984939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.010300387
+  m_Center: {x: -0.000031222124, y: 0.0000002412125, z: -0.00004258658}
 --- !u!114 &166984943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,19 +748,6 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
---- !u!65 &166984948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166984939}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02058477, y: 0.020528862, z: 0.020600773}
-  m_Center: {x: -0.000031222124, y: 0.0000002412125, z: -0.00004258658}
 --- !u!54 &166984949
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5419,7 +5419,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 806199d143810fb4a8731a636224bb73, type: 3}
       propertyPath: m_Name
-      value: Soccer_Ball
+      value: SoccerBall
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 806199d143810fb4a8731a636224bb73, type: 3}
       propertyPath: m_LocalPosition.x
