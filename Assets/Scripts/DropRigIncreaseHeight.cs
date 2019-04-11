@@ -5,7 +5,7 @@ using Valve.VR.InteractionSystem;
 
 [RequireComponent(typeof(Interactable))]
 // Modified by Wayland Bishop for The Moon VR 3.0 project
-public class DropRigReset : MonoBehaviour
+public class DropRigIncreaseHeight : MonoBehaviour
 {
 
     Animator anim;
@@ -13,7 +13,6 @@ public class DropRigReset : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponentInParent<Animator>();
-
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -22,12 +21,11 @@ public class DropRigReset : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
             anim.StopPlayback();
-            anim.SetFloat("Direction", -1);
-            anim.Play("DropRigDropObjects");
+            anim.SetFloat("Direction", 1);
+            anim.Play("DropRigChangeHeight");
             Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
         }
 
     }
 
 }
-

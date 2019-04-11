@@ -5,14 +5,15 @@ using Valve.VR.InteractionSystem;
 
 [RequireComponent(typeof(Interactable))]
 // Modified by Wayland Bishop for The Moon VR 3.0 project
-public class DropRigAnimate : MonoBehaviour
+public class DropRigDrop : MonoBehaviour
 {
 
     Animator anim;
 
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponentInParent<Animator>();
+
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
