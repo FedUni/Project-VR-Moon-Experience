@@ -12,8 +12,7 @@ public class DropRigReset : MonoBehaviour
 
     void Start()
     {
-        anim = gameObject.GetComponentInParent<Animator>();
-
+        anim = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<Animator>();
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -24,7 +23,19 @@ public class DropRigReset : MonoBehaviour
             anim.StopPlayback();
             anim.SetFloat("Direction", -1);
             anim.Play("DropRigDropObjects");
-            Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
+
+
+            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0);
+            //AnimatorClipInfo[] myAnimatorClip = anim.GetCurrentAnimatorClipInfo(0); // This output the 
+            float myTime = animationState.normalizedTime;
+            Debug.Log(myTime);
+            if (animationState.normalizedTime > 1 && anim.GetBool("dropHasPlayed"))
+            {
+
+                anim.Play("DropRigDropObjects", -1, 1);
+            }
+
+            //Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
         }
 
     }
