@@ -42,6 +42,13 @@ ModelImporter:
     100072: StopCollar
     100074: UpCollar
     100076: ControlPanelPlinth
+    100078: transform4
+    100080: transform5
+    100082: UpCollar 1
+    100084: UpCollar1
+    100086: ControlBoard
+    100088: DownCollar 1
+    100090: transform6
     400000: BackArm
     400002: BackArm 1
     400004: //RootNode
@@ -81,10 +88,21 @@ ModelImporter:
     400072: StopCollar
     400074: UpCollar
     400076: ControlPanelPlinth
+    400078: transform4
+    400080: transform5
+    400082: UpCollar 1
+    400084: UpCollar1
+    400086: ControlBoard
+    400088: DownCollar 1
+    400090: transform6
     2100000: lambert3
     2100002: lambert2
     2100004: lambert4
     2100006: lambert1
+    2100008: lambert5
+    2100010: lambert6
+    2100012: lambert7
+    2100014: lambert8
     2300000: BackArm
     2300002: BackArm 1
     2300004: //RootNode
@@ -112,6 +130,8 @@ ModelImporter:
     2300048: StopCollar
     2300050: UpCollar
     2300052: ControlPanel 1
+    2300054: UpCollar1
+    2300056: ControlBoard
     3300000: BackArm
     3300002: BackArm 1
     3300004: //RootNode
@@ -139,6 +159,8 @@ ModelImporter:
     3300048: StopCollar
     3300050: UpCollar
     3300052: ControlPanel 1
+    3300054: UpCollar1
+    3300056: ControlBoard
     4300000: DropPlate
     4300002: RightVerticalPillar
     4300004: BackArm
@@ -164,6 +186,8 @@ ModelImporter:
     4300044: StopCollar
     4300046: DropCollar
     4300048: ResetCollar
+    4300050: UpCollar1
+    4300052: ControlBoard
     7400000: DropRigHeight
     9500000: //RootNode
   externalObjects: {}

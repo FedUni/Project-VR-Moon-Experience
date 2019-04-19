@@ -22,6 +22,9 @@ ModelImporter:
     400014: StopButton
     400016: Panel
     2100000: lambert1
+    2100002: lambert2
+    2100004: lambert3
+    2100006: lambert4
     2300000: DownButton
     2300002: DropButton
     2300004: polySurface2

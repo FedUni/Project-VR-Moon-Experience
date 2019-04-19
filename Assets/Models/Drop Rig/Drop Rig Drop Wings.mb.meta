@@ -31,6 +31,7 @@ ModelImporter:
     400024: RightRightWing
     2100000: lambert4
     2100002: lambert5
+    2100004: lambert3
     2300000: LeftLeftPivot
     2300002: LeftLeftPlate
     2300004: LeftRightPivot
