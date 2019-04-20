@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 // Created by Wayland Bishop for The Moon VR 3.0 project
 [RequireComponent(typeof(AudioSource))]
@@ -11,6 +13,7 @@ public class Droppable : MonoBehaviour
     float dropTime = 0.0f;
     public float timeFalling = 0.0f;
     GameObject planetSettings;
+    GameObject DropRig;
     public AudioClip collisionSound;
     bool complete = false;
     // Start is called before the first frame update
@@ -19,6 +22,7 @@ public class Droppable : MonoBehaviour
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
         GetComponent<AudioSource>().clip = collisionSound; // Assign the button sound
+        DropRig = GameObject.Find("DropRig");
         if (planetSettings.GetComponent<PlanetSettings>().isMoon == true) { // These set the drag up for eatch planet setting
             GetComponent<Rigidbody>().drag = 0.0f;
         }
@@ -40,8 +44,19 @@ public class Droppable : MonoBehaviour
             dropTime = Time.time; // Set the current time as the time the object began to fall
             isFalling = true; // Set the object flag to be falling the the time isnt reset on next frame
         }
+
         if (isFalling && !complete) { // Output the current falltime to a display of some kind (LCD timer)
-            Debug.Log(gameObject.name + "Falling for " + (Time.time - dropTime) + " Seconds"); // Temp outputting to the console
+            Debug.Log(gameObject.name + "Falling for " + Math.Round(Time.time - dropTime, 2) + " Seconds"); // Temp outputting to the console
+            Text[] text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+            if (transform.name.Contains("left")) { // If this is a left object
+                 // Find the drop rig
+                text[0].text = "Left object fell for " + Math.Round(Time.time - dropTime, 2) + " Seconds"; // Set the drop rig LCD text
+            }
+            if (transform.name.Contains("right")) { // if this is a right object
+                Text RightText = DropRig.transform.Find("DropRigLCD").Find("RightText").GetComponent<Text>(); // Find the drop rig
+                text[1].text = "Right object Fell for " + Math.Round(Time.time - dropTime, 2) + " Seconds"; // Set the drop rig LCD text
+            }
+
         }
     }
 
@@ -50,7 +65,7 @@ public class Droppable : MonoBehaviour
         if (hasDropped && other.name == "DropRig" && !complete) // Only do this if the object has been dropped to prevent this from playing if the played knocks the objects off the drig or they fall off it
         {
             timeFalling = Time.time - dropTime; // Get the time since the object was falgged as falling
-            Debug.Log("The object was falling for " + (Time.time - dropTime) + " Seconds"); // Temp output to console of the total falling time
+            Debug.Log("The object was falling for " + Math.Round(Time.time - dropTime, 2) + " Seconds"); // Temp output to console of the total falling time
             complete = true;
         }
     }
@@ -61,7 +76,7 @@ public class Droppable : MonoBehaviour
 
             GetComponent<AudioSource>().Play(); // Play the sound effect
             GetComponent<AudioSource>().volume = (collision.relativeVelocity.magnitude / 5f + 0.5f); // Change the volume based on how hard it hit
-            GetComponent<AudioSource>().pitch = (Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
+            GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
         }
         if (collision.GetContact(0).otherCollider.name == "Terrain") { // Check to see if the collider was the ground
             Vector3 contactPoint = collision.GetContact(0).point;  // Get the codinates of the contact point
