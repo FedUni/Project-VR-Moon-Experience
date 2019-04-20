@@ -9,10 +9,12 @@ public class DropRigDrop : MonoBehaviour
 {
     Animator anim;
     AudioSource sound;
+    GameObject planetSettings;
     void Start()
     {
         anim = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<Animator>(); // Get the animation controller from the correct place in the object
-        sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object 
+        sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -30,9 +32,14 @@ public class DropRigDrop : MonoBehaviour
             if (animationState.normalizedTime < 0) // If is less than zero is rewound too far
             {
                 anim.Play("DropRigDropObjects", -1, 0); // Play it back from the start postion
-            }            
-            sound.pitch = (Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
-            sound.Play(); // Play the sound effect
+            }
+            if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)
+            { // If this planet has an atmos the sound should be played
+
+                GetComponent<AudioSource>().Play(); // Play the sound
+                GetComponent<AudioSource>().pitch = (Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
+
+            }
             GameObject rightDroppedObject = GameObject.Find("rightDroppedObject(Clone)"); // Find the dropped objects that have been dropped form the rig
             GameObject leftDroppedObject = GameObject.Find("leftDroppedObject(Clone)");
 

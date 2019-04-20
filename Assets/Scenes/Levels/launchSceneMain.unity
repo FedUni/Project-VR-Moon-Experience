@@ -979,6 +979,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2035769955}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &374664437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100018, guid: c0efe72b6dc10a64ab1f123c34ecc313,
+    type: 3}
+  m_PrefabInstance: {fileID: 25433954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389164279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +3739,12 @@ Transform:
   m_Father: {fileID: 457531672}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1273603691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8929310312965267108, guid: b1092d35c86819c4f838d4de40cee037,
+    type: 3}
+  m_PrefabInstance: {fileID: 8597256961489745306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1284871661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3979,6 +3991,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a1b5e95311ca4408d135994ea94ba6, type: 3}
+--- !u!1 &1372724756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 304433672, guid: 8f0f399eea39ea548b301941c57435a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 304433670}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1382774511
 GameObject:
   m_ObjectHideFlags: 0
@@ -4284,6 +4302,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429027d18c58b1f44884d615bb87ed87, type: 3}
+--- !u!1 &1427446928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071211342, guid: 97e8dd53c9e05f742a73ef8d8d47619e,
+    type: 3}
+  m_PrefabInstance: {fileID: 33503754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1440128157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011917822554, guid: 6c9dd5f2d71302142a69c0674808d94d,
@@ -5122,6 +5146,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011917822554, guid: 6c9dd5f2d71302142a69c0674808d94d,
     type: 3}
   m_PrefabInstance: {fileID: 1682105223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1721588687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 166984939, guid: 429027d18c58b1f44884d615bb87ed87,
+    type: 3}
+  m_PrefabInstance: {fileID: 1418333221}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1736435791 stripped
 Transform:
@@ -5984,6 +6014,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed848a8ccad3fd4e875ea869e168265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2021744573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 90925012, guid: 73abd5e490d156e4295edbc3b29d496f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4786991161726017594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2035769955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6324,6 +6360,41 @@ PrefabInstance:
       propertyPath: buttonSound
       value: 
       objectReference: {fileID: 8300000, guid: 4147a1595d380e34bb20fbfb0e4bdf37, type: 3}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.data[0]
+      value: 
+      objectReference: {fileID: 1273603691}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.data[1]
+      value: 
+      objectReference: {fileID: 1372724756}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.data[2]
+      value: 
+      objectReference: {fileID: 1427446928}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.data[3]
+      value: 
+      objectReference: {fileID: 374664437}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.data[4]
+      value: 
+      objectReference: {fileID: 2021744573}
+    - target: {fileID: 1367444193626076327, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: objectsToDrop.Array.data[5]
+      value: 
+      objectReference: {fileID: 1721588687}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 685e4ab8547b02a458cefa0068b317c8, type: 3}
 --- !u!4 &1183722517345833398 stripped

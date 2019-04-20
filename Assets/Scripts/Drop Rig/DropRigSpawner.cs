@@ -11,12 +11,14 @@ public class DropRigSpawner : MonoBehaviour
     public Vector3 rotationOffset; // Rotation offset from the wing pair rotation 
     Transform tFormR;
     Transform tFormL;
-    public GameObject leftObject;
-    public GameObject rightObject;
+    public GameObject[] objectsToDrop;
+    GameObject leftObject;
+    GameObject rightObject;
     public bool crazyMode = false;
     void Start()
     {
-        
+        leftObject = objectsToDrop[0];
+        rightObject = objectsToDrop[1];
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)

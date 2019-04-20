@@ -10,11 +10,12 @@ public class DropRigReset : MonoBehaviour
 
     Animator anim;
     AudioSource sound;
-
+    GameObject planetSettings;
     void Start()
     {
         anim = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<Animator>(); // Get animation controller from the object
-        sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object 
+        sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -25,8 +26,13 @@ public class DropRigReset : MonoBehaviour
             anim.StopPlayback(); // Stop any current playback
             anim.SetFloat("Direction", -1); // Set the direction to reverse the animation
             anim.Play("DropRigDropObjects"); // Play the animation (in the case backwards)
-            sound.pitch = (Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
-            sound.Play(); // Play the sound effect
+            if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)
+            { // If this planet has an atmos the sound should be played
+
+                GetComponent<AudioSource>().Play(); // Play the sound
+                GetComponent<AudioSource>().pitch = (Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
+
+            }
             AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Get the current animation playtime
             float myTime = animationState.normalizedTime; // Get the time in nomalized time
             // This next section is to fix a delay between playing the animation in reverse becase the animation counter keep counting even when the animation is finished
