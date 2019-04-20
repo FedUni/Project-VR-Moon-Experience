@@ -8,7 +8,6 @@ using Valve.VR.InteractionSystem;
 public class DropRigIncreaseHeight : MonoBehaviour
 {
     Animator anim;
-    int wingHeightHash = Animator.StringToHash("wingHeight");
     AudioSource sound;
     AnimatorStateInfo animationState;
     GameObject planetSettings;

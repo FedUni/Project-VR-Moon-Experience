@@ -49,6 +49,10 @@ ModelImporter:
     100086: ControlBoard
     100088: DownCollar 1
     100090: transform6
+    100092: DropPlate_ControlPanel
+    100094: transform7
+    100096: transform8
+    100098: group1
     400000: BackArm
     400002: BackArm 1
     400004: //RootNode
@@ -95,6 +99,10 @@ ModelImporter:
     400086: ControlBoard
     400088: DownCollar 1
     400090: transform6
+    400092: DropPlate_ControlPanel
+    400094: transform7
+    400096: transform8
+    400098: group1
     2100000: lambert3
     2100002: lambert2
     2100004: lambert4
@@ -132,6 +140,8 @@ ModelImporter:
     2300052: ControlPanel 1
     2300054: UpCollar1
     2300056: ControlBoard
+    2300058: DropPlate_ControlPanel
+    2300060: ControlPanel
     3300000: BackArm
     3300002: BackArm 1
     3300004: //RootNode
@@ -161,6 +171,8 @@ ModelImporter:
     3300052: ControlPanel 1
     3300054: UpCollar1
     3300056: ControlBoard
+    3300058: DropPlate_ControlPanel
+    3300060: ControlPanel
     4300000: DropPlate
     4300002: RightVerticalPillar
     4300004: BackArm
@@ -188,6 +200,7 @@ ModelImporter:
     4300048: ResetCollar
     4300050: UpCollar1
     4300052: ControlBoard
+    4300054: DropPlate_ControlPanel
     7400000: DropRigHeight
     9500000: //RootNode
   externalObjects: {}
@@ -198,10 +211,10 @@ ModelImporter:
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: DropPlate
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -222,7 +235,7 @@ ModelImporter:
       name: DropRigHeight
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 3010
+      lastFrame: 1000
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
