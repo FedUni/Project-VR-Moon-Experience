@@ -6,11 +6,11 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: layer_MoonWhite_sandMoonWhite_sand_n(8.000,8.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000
-  m_DiffuseTexture: {fileID: 2800000, guid: 40c8cb684d0aa86418f22acfc52ea32a, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: daa6f8cbc72f0a74a844c120babbb257, type: 3}
-  m_MaskMapTexture: {fileID: 0}
-  m_TileSize: {x: 4, y: 4}
+  m_Name: NewLayer 3
+  m_DiffuseTexture: {fileID: 2800000, guid: 794086877b8f03743afd2cca92429321, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: d9be3a8ef935d624c9641649e72375d5, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: 70f0d84be3ff68e4f95a7232968467c5, type: 3}
+  m_TileSize: {x: 2, y: 2}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0

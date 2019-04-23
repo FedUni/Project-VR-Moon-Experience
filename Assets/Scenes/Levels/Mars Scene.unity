@@ -2880,8 +2880,8 @@ Terrain:
   m_TerrainData: {fileID: 15600000, guid: cf2969d34f796bf42895010b1fb7043e, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 5
-  m_TreeCrossFadeLength: 0
-  m_TreeMaximumFullLODCount: 0
+  m_TreeCrossFadeLength: 131.4
+  m_TreeMaximumFullLODCount: 1369
   m_DetailObjectDistance: 0
   m_DetailObjectDensity: 0
   m_HeightmapPixelError: 1
@@ -2890,7 +2890,7 @@ Terrain:
   m_CastShadows: 0
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 0
+  m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 0
   m_MaterialType: 1
   m_LegacySpecular:
@@ -2926,7 +2926,7 @@ Skybox:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880463078}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 8e32d229f1892234baa61247b0fc2dc9, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 768f4198d6dc194469b7d09c7e498619, type: 2}
 --- !u!1001 &889651706
 PrefabInstance:
   m_ObjectHideFlags: 0

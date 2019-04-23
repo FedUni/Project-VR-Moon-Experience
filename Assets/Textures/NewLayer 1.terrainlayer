@@ -6,16 +6,16 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: layer_MoonSand_stoneMoonSand_stone_n(20.000,20.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000
-  m_DiffuseTexture: {fileID: 2800000, guid: b7c13e4878a98854aa8ded9133962290, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: 255c2da222ab74a459758599531798d3, type: 3}
-  m_MaskMapTexture: {fileID: 0}
-  m_TileSize: {x: 5, y: 5}
+  m_Name: NewLayer 1
+  m_DiffuseTexture: {fileID: 2800000, guid: 42c05c4377a1dcb4eb1b4607dbe5bc03, type: 3}
+  m_NormalMapTexture: {fileID: 2800002, guid: 42c05c4377a1dcb4eb1b4607dbe5bc03, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: 75b2cd85ad3cc74449fe580839a8d1e7, type: 3}
+  m_TileSize: {x: 1, y: 1}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0
   m_Smoothness: 0
-  m_NormalScale: 1
+  m_NormalScale: 2
   m_DiffuseRemapMin: {x: 0, y: 0, z: 0, w: 0}
   m_DiffuseRemapMax: {x: 1, y: 1, z: 1, w: 1}
   m_MaskMapRemapMin: {x: 0, y: 0, z: 0, w: 0}
