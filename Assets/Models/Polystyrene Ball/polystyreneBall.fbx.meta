@@ -1,41 +1,15 @@
 fileFormatVersion: 2
-guid: 48be95f1024323941937dcb16699837c
+guid: f68b79d81c61cb8499d2a30d28e4974c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: ExperimentBase
-    100002: ExperimentPlate
-    100004: //RootNode
-    100006: Omni001
-    100008: Mirrors
-    400000: ExperimentBase
-    400002: ExperimentPlate
-    400004: //RootNode
-    400006: Omni001
-    400008: Mirrors
-    2100000: ExperimentBase
-    2100002: ExperiomentPlate
-    2100004: 'Material #2'
-    2100006: 02 - Default
-    2300000: ExperimentBase
-    2300002: ExperimentPlate
-    2300004: Mirrors
-    3300000: ExperimentBase
-    3300002: ExperimentPlate
-    3300004: Mirrors
-    4300000: ExperimentBase
-    4300002: ExperimentPlate
-    4300004: Mirrors
-    7400000: Take 001
-    9500000: //RootNode
-    10800000: Omni001
-    2186277476908879412: ImportLogs
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ExperimentBase
-    second: {fileID: 2100000, guid: 0aea77fb100c8924f8317a5c8eff055f, type: 2}
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pSphere1
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +62,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -115,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
