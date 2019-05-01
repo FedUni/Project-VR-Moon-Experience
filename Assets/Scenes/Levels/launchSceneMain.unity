@@ -688,8 +688,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMars: 0
-  isMoon: 0
-  isEarth: 1
+  isMoon: 1
+  isEarth: 0
   hasAtmos: 0
   radius: 0
   distanceToEarth: 0
