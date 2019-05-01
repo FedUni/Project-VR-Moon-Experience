@@ -1906,7 +1906,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translationOffset: {x: 0, y: 0.55, z: -0.267}
   rotationOffset: {x: 0, y: 90, z: 0}
-  objectsToDrop: []
+  objectsToDrop:
+  - {fileID: 7512793857652586557, guid: c936b25afd1d93742867314325c348b7, type: 3}
+  - {fileID: 8929310312965267108, guid: b1092d35c86819c4f838d4de40cee037, type: 3}
+  - {fileID: 304433672, guid: 8f0f399eea39ea548b301941c57435a3, type: 3}
+  - {fileID: 1071211342, guid: 97e8dd53c9e05f742a73ef8d8d47619e, type: 3}
+  - {fileID: 236404142, guid: ee828a34852a00b40ad496a181a02d12, type: 3}
+  - {fileID: 166984939, guid: 429027d18c58b1f44884d615bb87ed87, type: 3}
+  - {fileID: 90925012, guid: 73abd5e490d156e4295edbc3b29d496f, type: 3}
+  - {fileID: 8760764270527410007, guid: dc98af06ea090b340934f9197942167a, type: 3}
   crazyMode: 0
 --- !u!82 &3284761945037025135
 AudioSource:
@@ -3147,8 +3155,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8979de94ad943864a8a3c0c5ff620b01, type: 2}
   - {fileID: 2100000, guid: 9e52c53a0d29f2c49adf71e8cc6ca46f, type: 2}
+  - {fileID: 2100000, guid: 8979de94ad943864a8a3c0c5ff620b01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5478,7 +5486,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8979de94ad943864a8a3c0c5ff620b01, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e52c53a0d29f2c49adf71e8cc6ca46f, type: 2}
     - target: {fileID: 2300000, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
