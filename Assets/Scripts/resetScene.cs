@@ -44,7 +44,7 @@ public class resetScene : MonoBehaviour {
                 Debug.Log("We have reached the max scene time.");
                 //Scene scene = SceneManager.GetActiveScene();
                 //SceneManager.LoadScene("moonSceneMenu");
-                SteamVR_LoadLevel.Begin("launchSiteMenu");
+                SteamVR_LoadLevel.Begin("LaunchScene");
             }
             audioTimeSFXplay();//check to see if time remaining needs to be played
         }

@@ -23,13 +23,13 @@ public class loadScene : MonoBehaviour {
     }
 
 	public void setSceneTimeTo90 () {
-		PlayerPrefs.SetInt("MaxSceneTime" , 90);
-	}
-		public void setSceneTimeTo180 () {
 		PlayerPrefs.SetInt("MaxSceneTime" , 180);
 	}
+		public void setSceneTimeTo180 () {
+		PlayerPrefs.SetInt("MaxSceneTime" , 360);
+	}
 		public void setSceneTimeUnlimited () {
-		PlayerPrefs.SetInt("MaxSceneTime" , 3000);
+		PlayerPrefs.SetInt("MaxSceneTime" , 6000);
 	}
 
 	public void setGraphicsLow (){
