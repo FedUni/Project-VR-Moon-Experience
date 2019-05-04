@@ -10,11 +10,15 @@ public class DropRigDrop : MonoBehaviour
     Animator anim;
     AudioSource sound;
     GameObject planetSettings;
+    Light[] panelLights;
+    GameObject DropRig;
     void Start()
     {
         anim = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<Animator>(); // Get the animation controller from the correct place in the object
         sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+        DropRig = GameObject.Find("DropRig"); // Get the drop rig
+        panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the light elements in the drop rig
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -22,6 +26,7 @@ public class DropRigDrop : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
+            panelLights[2].color = Color.red;
             anim.SetBool("dropHasPlayed", true); // Set the animation as played for the first time
             anim.StopPlayback(); // Stop any current playback
             anim.SetFloat("Direction", 1); // Set the direction of the aniamtion playback

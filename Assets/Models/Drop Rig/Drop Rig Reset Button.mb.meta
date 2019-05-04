@@ -12,6 +12,11 @@ ModelImporter:
     100012: SpawnButton
     100014: StopButton
     100016: Panel
+    100018: Button
+    100020: group1
+    100022: transform1
+    100024: transform2
+    100026: transform3
     400000: DownButton
     400002: //RootNode
     400004: DropButton
@@ -21,6 +26,11 @@ ModelImporter:
     400012: SpawnButton
     400014: StopButton
     400016: Panel
+    400018: Button
+    400020: group1
+    400022: transform1
+    400024: transform2
+    400026: transform3
     2100000: lambert1
     2100002: lambert2
     2100004: lambert3
@@ -32,6 +42,7 @@ ModelImporter:
     2300008: Screen
     2300010: SpawnButton
     2300012: StopButton
+    2300014: Button
     3300000: DownButton
     3300002: DropButton
     3300004: polySurface2
@@ -39,6 +50,7 @@ ModelImporter:
     3300008: Screen
     3300010: SpawnButton
     3300012: StopButton
+    3300014: Button
     4300000: Screen
     4300002: SpawnButton
     4300004: polySurface2
@@ -46,6 +58,7 @@ ModelImporter:
     4300008: StopButton
     4300010: DropButton
     4300012: ResetButton
+    4300014: Button
     7400000: ResetButton
     9500000: //RootNode
   externalObjects: {}

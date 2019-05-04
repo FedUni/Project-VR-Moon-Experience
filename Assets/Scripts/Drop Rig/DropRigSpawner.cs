@@ -14,14 +14,17 @@ public class DropRigSpawner : MonoBehaviour
     public GameObject[] objectsToDrop;
     GameObject leftObject;
     GameObject rightObject;
+    GameObject DropRig;
     public bool crazyMode = false;
     int objectComboCount;
     int currentCombo = 0;
     int indexPair = 0;
+    Light[] panelLights;
 
     void Start()
     {
-
+        DropRig = GameObject.Find("DropRig"); // Get the drop rig
+        panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the text elements in the drop rig
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -29,6 +32,7 @@ public class DropRigSpawner : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
+            panelLights[2].color = Color.green;
             GameObject rightDroppedObject = GameObject.Find("/rightDroppedObject(Clone)"); // Find the dropped objects that have been dropped form the rig
             GameObject leftDroppedObject = GameObject.Find("/leftDroppedObject(Clone)");
 

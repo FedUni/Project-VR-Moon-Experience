@@ -9,18 +9,21 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Levels/launchSceneMain.unity
+    path: Assets/Scenes/Levels/MoonScene.unity
     guid: d84a6280a7e18c74ba7f6e473ac9209e
   - enabled: 1
-    path: Assets/Scenes/Levels/Mars Scene.unity
+    path: Assets/Scenes/Levels/MarsScene.unity
     guid: 2c3fc8d57fbce5b49befcd90e6f4ae52
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Levels/EarthScene.unity
-    guid: 00b8cf8a0b92b5a46a329626f3b31403
-  - enabled: 1
-    path: Assets/Scenes/Levels/launchSiteMenu.unity
+    path: Assets/Scenes/Levels/LaunchScene.unity
     guid: 56432ceddcb57e3458e9ab0ba6ca3181
   - enabled: 1
     path: Assets/Scenes/Levels/moonSceneMenu.unity
     guid: f607b5d44cb08eb43a8da3dae833caab
+  - enabled: 1
+    path: Assets/Scenes/Levels/EarthScene.unity
+    guid: 1236afa6b11f3194bb909659f8c0bb3c
   m_configObjects: {}

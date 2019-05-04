@@ -23,10 +23,6 @@ public class DropRigHeightStop : MonoBehaviour
         text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
     }
 
-    private void Update()
-    {
-        text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 2) + " Meters"; // Set the drop rig LCD text
-    }
 
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -34,6 +30,7 @@ public class DropRigHeightStop : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
+            text[3].text = ""; // Clear the instructions
             anim.SetFloat("Direction", 0); // effectilty stops the animaiton for the hight ajustment
             sound.Stop();
             dropHeight = System.Math.Truncate(animationState.normalizedTime * 100); // calaulate the hight of the drop rig based on the animation playthrough time

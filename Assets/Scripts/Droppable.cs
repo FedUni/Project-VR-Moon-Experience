@@ -27,15 +27,15 @@ public class Droppable : MonoBehaviour
         DropRig = GameObject.Find("DropRig"); // Get the Drop rig
         text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
         if (planetSettings.GetComponent<PlanetSettings>().isMoon == true) { // These set the drag up for eatch planet setting
-            GetComponent<Rigidbody>().drag = 0.0f;
+            GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0;
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMars == true)
         {
-            GetComponent<Rigidbody>().drag = 0.01f;
+            GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0.5f;
         }
-        if (planetSettings.GetComponent<PlanetSettings>().isEarth == true)
+        if (planetSettings.GetComponent<PlanetSettings>().isEarth)
         {
-            GetComponent<Rigidbody>().drag = 1.0f;
+            GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 1;
         }
 
     }
@@ -50,7 +50,9 @@ public class Droppable : MonoBehaviour
 
         if (isFalling && !complete) { // Output the current falltime to a display of some kind (LCD timer)
             Debug.Log(gameObject.name + "Falling for " + Math.Round(Time.time - dropTime, 2) + " Seconds"); // Temp outputting to the console
-            
+
+            text[3].text = "";
+
             if (transform.name.Contains("left")) { // If this is a left object
                 text[0].text = "Left object fell for " + Math.Round(Time.time - dropTime, 2) + " Seconds"; // Set the drop rig LCD text
             }
