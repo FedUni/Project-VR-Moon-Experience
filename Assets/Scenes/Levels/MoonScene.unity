@@ -509,8 +509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMars: 0
-  isMoon: 0
-  isEarth: 1
+  isMoon: 1
+  isEarth: 0
   hasAtmos: 0
   radius: 0
   distanceToEarth: 0
@@ -865,7 +865,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 16.102001, y: 358.897, z: 211.85199}
 --- !u!4 &416358145 stripped
 Transform:
@@ -1186,7 +1186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 160, y: 0, z: 0}
 --- !u!1 &468541424
 GameObject:
@@ -1301,7 +1301,7 @@ Transform:
   - {fileID: 1657059741}
   - {fileID: 1382774512}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 77.62701, z: 0}
 --- !u!1001 &562797822
 PrefabInstance:
@@ -3414,7 +3414,7 @@ Transform:
   - {fileID: 997166222}
   - {fileID: 1179800397}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1394350777
 MonoBehaviour:
@@ -4710,7 +4710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!4 &1805298921 stripped
 Transform:
