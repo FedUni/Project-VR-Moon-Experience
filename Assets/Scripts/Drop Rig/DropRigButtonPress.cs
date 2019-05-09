@@ -25,8 +25,8 @@ public class DropRigButtonPress : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            //anim.Play("Button", -1, 0); // Reset the animaiton the the button clicks again
-            //anim.Play("Button"); // play the button aniamtion
+            anim.Play("Button", -1, 0); // Reset the animaiton the the button clicks again
+            anim.Play("Button"); // play the button aniamtion
 
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)
             { // If this planet has an atmos the sound should be played
@@ -36,13 +36,13 @@ public class DropRigButtonPress : MonoBehaviour
             }
             AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
 
-            float playbackTime = currentState.normalizedTime % 1;
-            while (playbackTime < 0.5f)
-            {
-                anim.Play("Button"); // play the button aniamtion
-                StartCoroutine(MyCoroutine());
-            }
-            anim.StopPlayback();
+           // float playbackTime = currentState.normalizedTime % 1;
+            //while (playbackTime < 0.5f && currentState.speed != 0)
+            //{
+            //    anim.Play("Button"); // play the button aniamtion
+            //    StartCoroutine(MyCoroutine());
+           // }
+            //anim.StopPlayback();
 
         }
         GrabTypes endingGrabType = hand.GetGrabEnding();
