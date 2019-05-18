@@ -27,7 +27,8 @@ ModelImporter:
     3300002: Button
     4300000: TwentyButton
     4300002: Button
-    7400000: Button
+    7400000: ButtonDown
+    7400002: ButtonUp
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -58,9 +59,37 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Button
+      name: ButtonDown
       takeName: Take 001
       firstFrame: 0
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ButtonUp
+      takeName: Take 001
+      firstFrame: 7
       lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
