@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: a347edbd3cb1dc840a96025aba10a6c3
+guid: 45303de62c870a54c81f838c6de4046f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
-  externalObjects: {}
+    100000: //RootNode
+    100002: hammer:Mesh
+    400000: //RootNode
+    400002: hammer:Mesh
+    2100000: hammer_MeshMat
+    2300000: hammer:Mesh
+    3300000: hammer:Mesh
+    4300000: hammer:Mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hammer_MeshMat
+    second: {fileID: 2100000, guid: c6c29c31d380b324192a7d7b2d9500fb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
