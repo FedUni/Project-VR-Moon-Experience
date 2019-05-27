@@ -5632,6 +5632,26 @@ PrefabInstance:
       propertyPath: flashEffectAnimator
       value: 
       objectReference: {fileID: 2011332385}
+    - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
+        type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
+        type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.00048828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 4.999917
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 5.000157
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d81d57f518682c4aa67680c5a17bb8f, type: 3}
 --- !u!1001 &5613765484191346493
@@ -5865,5 +5885,10 @@ PrefabInstance:
       propertyPath: transitionAnim
       value: 
       objectReference: {fileID: 390998901}
+    - target: {fileID: 8630013110648234415, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3c52e5c59eff3242a1c615ca4b30336, type: 3}
