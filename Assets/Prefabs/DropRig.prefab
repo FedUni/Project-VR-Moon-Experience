@@ -2579,13 +2579,12 @@ MonoBehaviour:
     m_MaxSize: 120
     m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.9
-  m_Text: "1. Press the button below to spawn       \n2. Set the rig to the desired
-    height    \n3. Press drop button to drop objects\n4. Press reset button to close
-    doors"
+  m_Text: "1. Press the spawn object button    \n2. Set the rig to the desired height
+    \   \n3. Press drop button to drop objects\n4. Press reset button to close doors"
 --- !u!1 &3389686905001936781
 GameObject:
   m_ObjectHideFlags: 0

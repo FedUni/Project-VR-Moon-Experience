@@ -1009,6 +1009,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2814111273180609337, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: m_Text
+      value: "1. Press the spawn object button       \n2. Set the rig to the desired
+        height    \n3. Press drop button to drop objects\n4. Press reset button to
+        close doors"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 685e4ab8547b02a458cefa0068b317c8, type: 3}
 --- !u!1001 &308020186
@@ -1710,7 +1717,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &659131417
 GameObject:
@@ -1779,7 +1786,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 12.468, y: -201.59499, z: -108.702}
 --- !u!1 &669080962
 GameObject:
@@ -3170,7 +3177,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8630013110648234415, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8630013110648234415, guid: b3c52e5c59eff3242a1c615ca4b30336, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b3c52e5c59eff3242a1c615ca4b30336, type: 3}
 --- !u!1001 &1414669701
 PrefabInstance:
@@ -3717,17 +3730,17 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.y
-      value: 0
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 4.999916
+      value: 4.999917
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -3738,6 +3751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AABB.m_Center.x
       value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 5.000157
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d81d57f518682c4aa67680c5a17bb8f, type: 3}
@@ -4575,7 +4593,7 @@ Transform:
   - {fileID: 279639473}
   - {fileID: 60741595}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2030563864
 PrefabInstance:
