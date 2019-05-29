@@ -4,13 +4,13 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Balloon_pink03
+    100002: balloon:Balloon_pink03
     400000: //RootNode
-    400002: Balloon_pink03
-    2100000: Balloon_pink03Mat
-    2300000: Balloon_pink03
-    3300000: Balloon_pink03
-    4300000: Balloon_pink03
+    400002: balloon:Balloon_pink03
+    2100000: balloon_Balloon_pink03Mat
+    2300000: balloon:Balloon_pink03
+    3300000: balloon:Balloon_pink03
+    4300000: balloon:Balloon_pink03
   externalObjects: {}
   materials:
     importMaterials: 1
