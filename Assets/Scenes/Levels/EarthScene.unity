@@ -1933,8 +1933,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 49.832
       objectReference: {fileID: 0}
+    - target: {fileID: 3981018656104638825, guid: 99905d917538bca4389e548c84b8720b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99905d917538bca4389e548c84b8720b, type: 3}
+--- !u!1 &993873801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8665478522130397475, guid: 99905d917538bca4389e548c84b8720b,
+    type: 3}
+  m_PrefabInstance: {fileID: 993873800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &993873802
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993873801}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d60fa32740fd25d4ca42305288bc2dea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &996121229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012973112960, guid: 5bdfe15d7ddb6cb40879d6c788a6d21e,
