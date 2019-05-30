@@ -1092,6 +1092,7 @@ MonoBehaviour:
   - {fileID: 1415087834078460, guid: 5837ca2ea28681543aa71a06b95a9452, type: 3}
   - {fileID: 90925012, guid: 73abd5e490d156e4295edbc3b29d496f, type: 3}
   - {fileID: 8760764270527410007, guid: dc98af06ea090b340934f9197942167a, type: 3}
+  - {fileID: 3802767476171726839, guid: 012e0442ba6261a4792affc4749e11e9, type: 3}
   crazyMode: 0
 --- !u!1 &1057979979734412402
 GameObject:
@@ -6743,10 +6744,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236284720208474757}
     m_Modifications:
-    - target: {fileID: 100008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
-      propertyPath: m_Name
-      value: Drop Rig Plinth
-      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6790,6 +6787,10 @@ PrefabInstance:
     - target: {fileID: 400008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
+      propertyPath: m_Name
+      value: Drop Rig Plinth
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_RootOrder

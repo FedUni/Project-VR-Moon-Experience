@@ -1,23 +1,20 @@
 fileFormatVersion: 2
-guid: 2d20ff5235b81f846bfa1993e0c02149
+guid: 807db93a1b4fa7349873814385322fb0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: balloon:Balloon_pink03
-    100004: Balloon_pink03
     400000: //RootNode
-    400002: balloon:Balloon_pink03
-    400004: Balloon_pink03
-    2100000: balloon_Balloon_pink03Mat
-    2100002: initialShadingGroup
-    2300000: balloon:Balloon_pink03
-    2300002: Balloon_pink03
-    3300000: balloon:Balloon_pink03
-    3300002: Balloon_pink03
-    4300000: balloon:Balloon_pink03
-    4300002: Balloon_pink03
-  externalObjects: {}
+    2100000: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCube1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: dc7cab0c666775a41a2723c64ca2aa09, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -48,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

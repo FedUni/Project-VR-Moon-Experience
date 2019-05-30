@@ -215,7 +215,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -470,8 +470,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0.00012207031, y: 0, z: 0}
-    m_Extent: {x: 4.999916, y: 2.6770267, z: 5.0001574}
+    m_Center: {x: -0.0000019073486, y: 0, z: 0}
+    m_Extent: {x: 4.9999995, y: 2.6770434, z: 5.000004}
   m_DirtyAABB: 0
 --- !u!183 &7727215035186083514
 Cloth:
@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 7366986250955944352}
   - component: {fileID: 7366986250955944382}
   - component: {fileID: 7366986250955944383}
+  - component: {fileID: 207952827874807516}
   m_Layer: 8
   m_Name: FlagPole (1)
   m_TagString: PlayingKitty
@@ -831,3 +832,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &207952827874807516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7366986250955944353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.0000002, z: 1.0000042}
+  m_Center: {x: 0.000000059604645, y: 0.0000014305115, z: -0.00000008940698}
