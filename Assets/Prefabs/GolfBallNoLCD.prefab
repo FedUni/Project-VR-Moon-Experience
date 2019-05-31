@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 417819302}
   m_Layer: 0
-  m_Name: GolfBall
+  m_Name: GolfBallNoLCD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.433477
+  m_Radius: 0.00433477
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &1222124605
 AudioSource:
