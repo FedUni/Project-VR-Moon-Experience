@@ -32,7 +32,7 @@ public class LaserAnimate : MonoBehaviour {
         yield return new WaitForSeconds(3.0f);
         laserBeam.enabled = true;
         if (planetSettings.GetComponent<PlanetSettings>().isMoon)
-        { // These set the drag up for eatch planet setting
+        { // These will display the correct info based on the planet we are on
             Debug.Log("The distacne between the moon and the earth is 384,400 km");
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMars)

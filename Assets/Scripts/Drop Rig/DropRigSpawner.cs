@@ -37,9 +37,9 @@ public class DropRigSpawner : MonoBehaviour
             GameObject leftDroppedObject = GameObject.Find("/leftDroppedObject(Clone)");
 
 
-            if (rightDroppedObject != null && leftDroppedObject != null && !crazyMode) // This code will stop hundreds of objects from being spawned. 
+            if (rightDroppedObject != null && leftDroppedObject != null && !crazyMode) // This code (crazyMode) will stop hundreds of objects from being spawned. 
             {
-                Destroy(rightDroppedObject);
+                Destroy(rightDroppedObject); // Remove the old objects
                 Destroy(leftDroppedObject);
             }
 
