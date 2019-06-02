@@ -36,7 +36,7 @@ public class Rocket : MonoBehaviour
 
     public void launched()
     {
-        SteamVR_LoadLevel.Begin("moonSceneMain", false, 5f);
+        SteamVR_LoadLevel.Begin("MoonScene", false, 5f);
     }
 
     void Update()
