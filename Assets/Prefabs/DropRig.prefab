@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2564,7 +2564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3245,7 +3245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6540,7 +6540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6744,6 +6744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236284720208474757}
     m_Modifications:
+    - target: {fileID: 100008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
+      propertyPath: m_Name
+      value: Drop Rig Plinth
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6787,10 +6791,6 @@ PrefabInstance:
     - target: {fileID: 400008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
-      propertyPath: m_Name
-      value: Drop Rig Plinth
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: 5dd8157c9bb0ddc4397f84482091736a, type: 3}
       propertyPath: m_RootOrder

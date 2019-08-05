@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: f084d048e2acec748aca5f2b0a07ae06, type: 3}
   m_Sun: {fileID: 1233875149}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1121133, g: 0.07374996, b: 0.02638299, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -278,22 +278,22 @@ PrefabInstance:
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1039529185}
     - target: {fileID: 3248224122305988569, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1039529185}
     - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1039529185}
     - target: {fileID: 6838588036907219146, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1039529185}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ed83942ebf3fa428a6196b772140cb, type: 3}
 --- !u!1 &251623146 stripped
@@ -318,13 +318,14 @@ MonoBehaviour:
   isMoon: 0
   isEarth: 1
   hasAtmos: 0
-  radius: 0
+  radius: 6371
   distanceToEarth: 0
-  orbitalPeriod: 0
-  density: 0
-  excapeVelocity: 0
-  mass: 
-  lenthOfDay: 
+  orbitalPeriod: 365.25
+  density: 5.51
+  excapeVelocity: 11.2
+  mass: "5.972 \xD7 10^24 kg"
+  lenthOfDay: 1d 0h 0m
+  gravity: 1
 --- !u!4 &274832143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd,
@@ -1460,6 +1461,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1523daeb4e8e2a247a002e5aabf7f65e, type: 3}
+--- !u!95 &1039529185 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2259704500135190377, guid: 1523daeb4e8e2a247a002e5aabf7f65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1039529184}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1122321239
 PrefabInstance:
   m_ObjectHideFlags: 0

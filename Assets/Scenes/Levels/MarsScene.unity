@@ -1630,6 +1630,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1523daeb4e8e2a247a002e5aabf7f65e, type: 3}
+--- !u!95 &799550604 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2259704500135190377, guid: 1523daeb4e8e2a247a002e5aabf7f65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 799550603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &816632994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2893,6 +2899,46 @@ PrefabInstance:
       propertyPath: isEarth
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: gravity
+      value: 0.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: radius
+      value: 33389.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: distanceToEarth
+      value: 57000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: orbitalPeriod
+      value: 687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: density
+      value: 3.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: excapeVelocity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: mass
+      value: "6.4185\xD710^23kg"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
+        type: 3}
+      propertyPath: lenthOfDay
+      value: 1d 0h 37m
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89806068a062ac74dabf685ac26a1a11, type: 3}
 --- !u!1001 &1675252146
@@ -3643,22 +3689,22 @@ PrefabInstance:
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 799550604}
     - target: {fileID: 3248224122305988569, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 799550604}
     - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 799550604}
     - target: {fileID: 6838588036907219146, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 799550604}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ed83942ebf3fa428a6196b772140cb, type: 3}
 --- !u!1001 &2118808133

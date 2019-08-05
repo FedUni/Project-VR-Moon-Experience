@@ -53,8 +53,8 @@ public class DropRigDecreaseHeight : MonoBehaviour
             anim.SetFloat("Direction", 0); // effectilty stops the animaiton for the hight ajustment
             sound.Stop();
             dropHeight = System.Math.Truncate(animationState.normalizedTime * 100); // calaulate the hight of the drop rig based on the animation playthrough time
-            text[2].text = "The current drop is " + (int)anim.GetFloat("wingHeight") + " Meters"; // Set the drop rig LCD text
-        }
+            text[2].text = "The current drop is " + (int)anim.GetFloat("wingHeight") + " Metres"; // Set the drop rig LCD text
+            text[2].color = Color.green;        }
 
 
 

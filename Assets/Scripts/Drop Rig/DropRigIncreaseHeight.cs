@@ -30,7 +30,8 @@ public class DropRigIncreaseHeight : MonoBehaviour
     {
         if (anim.GetBool("heightHasPlayed"))
         {
-            text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 0) + " Meters"; // Set the drop rig LCD text   
+            text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 0) + " Metres"; // Set the drop rig LCD text
+            text[2].color = Color.green;
         }
 
     }

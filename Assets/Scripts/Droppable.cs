@@ -68,7 +68,7 @@ public class Droppable : MonoBehaviour
         if (hasDropped && other.name == "DropRig" && !complete) // Only do this if the object has been dropped to prevent this from playing if the played knocks the objects off the drig or they fall off it
         {
             timeFalling = Time.time - dropTime; // Get the time since the object was falgged as falling
-            transform.GetComponentInChildren<Text>().text = Math.Round(Time.time - dropTime, 2) + " Seconds";
+            transform.GetComponentInChildren<Text>().text = Math.Round(Time.time - dropTime, 2) + " Seconds at " + (transform.GetComponentInChildren<Rigidbody>().mass * planetSettings.GetComponent<PlanetSettings>().gravity) + "kg" ;
             Debug.Log("The object was falling for " + Math.Round(Time.time - dropTime, 2) + " Seconds"); // Temp output to console of the total falling time
             complete = true;
         }

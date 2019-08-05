@@ -18,6 +18,7 @@ public class PlanetSettings : MonoBehaviour
     public float excapeVelocity; // Planets excape velocity
     public string mass; // Planets mass
     public string lenthOfDay; // Planets lenth of day
+    public float gravity; // Multiplier for gravity based on earths gravity
     // Start is called before the first frame update
     void Start()
     {
