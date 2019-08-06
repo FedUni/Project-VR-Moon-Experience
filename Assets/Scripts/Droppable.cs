@@ -15,9 +15,13 @@ public class Droppable : MonoBehaviour
     public float timeFalling = 0.0f;
     GameObject planetSettings;
     GameObject DropRig;
+    ParticleSystem dust;
+    ParticleSystem.TrailModule trails;
+    ParticleSystem.MainModule main;
     public AudioClip collisionSound;
     bool complete = false;
     Text[] text;
+    Color dustColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,16 +30,23 @@ public class Droppable : MonoBehaviour
         GetComponent<AudioSource>().clip = collisionSound; // Assign the button sound
         DropRig = GameObject.Find("DropRig"); // Get the Drop rig
         text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        //dust = gameObject.GetComponentInChildren<ParticleSystem>();
+        dust = GetComponent<ParticleSystem>();
+        main = dust.main;
+        trails = dust.trails;
         if (planetSettings.GetComponent<PlanetSettings>().isMoon == true) { // These set the drag up for eatch planet setting
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0;
+            dustColor = new Color(84 / 255f, 84 / 255f, 84 / 255f, 255 / 255f);
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMars == true)
         {
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0.5f;
+            dustColor = new Color(132 / 255f, 87 / 255f, 39 / 255f, 255 / 255f);
         }
         if (planetSettings.GetComponent<PlanetSettings>().isEarth)
         {
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 1;
+            dustColor = new Color(140 / 255f, 126 / 255f, 111 / 255f, 255 / 255f);
         }
 
     }
@@ -82,10 +93,13 @@ public class Droppable : MonoBehaviour
             GetComponent<AudioSource>().volume = (collision.relativeVelocity.magnitude / 5f + 0.5f); // Change the volume based on how hard it hit
             GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
         }
-        if (collision.GetContact(0).otherCollider.name == "Terrain") { // Check to see if the collider was the ground
+        if (collision.GetContact(0).otherCollider.name == "Terrain" && dust != null) { // Check to see if the collider was the ground
             Vector3 contactPoint = collision.GetContact(0).point;  // Get the codinates of the contact point
-            Debug.Log("Right now the puff of dust would be happeing if we had one.");
-            Debug.Log("It should be spawned at " + contactPoint);
+            main.startColor = dustColor;
+            trails.colorOverTrail = dustColor;
+            dust.Play();
+            //Debug.Log("Right now the puff of dust would be happeing if we had one.");
+            //Debug.Log("It should be spawned at " + contactPoint);
         }
     }
 

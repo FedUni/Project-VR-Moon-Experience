@@ -2892,12 +2892,12 @@ PrefabInstance:
     - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
         type: 3}
       propertyPath: isMars
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
         type: 3}
       propertyPath: isEarth
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6594910897505511761, guid: 89806068a062ac74dabf685ac26a1a11,
         type: 3}

@@ -20,7 +20,7 @@ public class SceneTransitions : MonoBehaviour
             RecallPlayerPosition(); // read the data for the player postion
         }
         animators = player.GetComponentsInChildren<Animator>(); // Get the animator object
-        transitionAnim = animators[2]; // Its the third item
+        transitionAnim = animators[0]; // Its the third item // changed to 0
     }
 
     void Update()
