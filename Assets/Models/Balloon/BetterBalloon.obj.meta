@@ -1,22 +1,29 @@
 fileFormatVersion: 2
-guid: 0c8a2a904e158ce4c9320e917bc4b5c9
+guid: 922eefa0123897d4bafa631a2b096721
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCube1
-    400000: //RootNode
-    400002: pCube1
-    2100000: pCube1Mat
-    2300000: pCube1
-    3300000: pCube1
-    4300000: pCube1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pCube1Mat
-    second: {fileID: 2100000, guid: d69ed448955c222409bbcdadd5a4bad5, type: 2}
+    100000: _Balloon_Cluster_v1_L3:Balloon_pink02_group
+    100002: //RootNode
+    100004: pCone1
+    100006: pCylinder1
+    400000: _Balloon_Cluster_v1_L3:Balloon_pink02_group
+    400002: //RootNode
+    400004: pCone1
+    400006: pCylinder1
+    2100000: _Balloon_Cluster_v1_L3_Balloon_pink02_groupMat
+    2100002: pCone1Mat
+    2100004: pCylinder1Mat
+    2300000: _Balloon_Cluster_v1_L3:Balloon_pink02_group
+    2300002: pCone1
+    2300004: pCylinder1
+    3300000: _Balloon_Cluster_v1_L3:Balloon_pink02_group
+    3300002: pCone1
+    3300004: pCylinder1
+    4300000: _Balloon_Cluster_v1_L3:Balloon_pink02_group
+    4300002: pCone1
+    4300004: pCylinder1
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +54,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
