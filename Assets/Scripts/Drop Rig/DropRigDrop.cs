@@ -29,7 +29,7 @@ public class DropRigDrop : MonoBehaviour
             panelLights[2].color = Color.red;
             anim.SetBool("dropHasPlayed", true); // Set the animation as played for the first time
             anim.StopPlayback(); // Stop any current playback
-            anim.SetFloat("Direction", 1); // Set the direction of the aniamtion playback
+            anim.SetFloat("Direction", 5); // Set the direction of the aniamtion playback
             anim.Play("DropRigDropObjects"); // Play the animation
             AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Get the current animation playtime
             float myTime = animationState.normalizedTime; // Get the time in nomalized time

@@ -98,13 +98,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateActionSetOnAttach:
     actionSetPath: 
-  hideHandOnAttach: 1
+  hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 1
-  attachEaseIn: 0
+  attachEaseIn: 1
   snapAttachEaseInCurve:
     serializedVersion: 2
     m_Curve:
@@ -129,10 +129,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  snapAttachEaseInTime: 0.15
+  snapAttachEaseInTime: 1
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
-  handFollowTransform: 1
+  handFollowTransform: 0
   highlightOnHover: 1
   hideHighlight: []
 --- !u!114 &1470161264139110344
@@ -528,7 +528,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
-      maxColor: {r: 0.13231826, g: 1, b: 0, a: 1}
+      maxColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
