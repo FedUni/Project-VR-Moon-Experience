@@ -4,7 +4,7 @@ using UnityEngine;
 using Valve.VR.InteractionSystem;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Interactable))]
+//[RequireComponent(typeof(Interactable))]
 // Created by Wayland Bishop for The Moon VR 3.0 project
 public class DropRigHeightStop : MonoBehaviour
 {
@@ -16,10 +16,10 @@ public class DropRigHeightStop : MonoBehaviour
     Text[] text;
     void Start()
     {
-        anim = transform.parent.parent.GetComponentInParent<Animator>(); // Get animation controller from the object
+        DropRig = GameObject.Find("DropRig"); // Get the drop rig
+        anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
         sound = transform.parent.parent.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
         AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used to Get the current animation playtime
-        DropRig = GameObject.Find("DropRig"); // Get the drop rig
         text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
     }
 

@@ -1626,6 +1626,10 @@ MonoBehaviour:
   TIME_REMAINING: 0
   as10SecsRemaining: {fileID: 0}
   as30SecsRemaining: {fileID: 0}
+  as10SecsRemainingClip: {fileID: 8300000, guid: 175a201eb04bbcd47bcec95d7e5f5a7d,
+    type: 3}
+  as30SecsRemainingClip: {fileID: 8300000, guid: 646a5c1f580ac424ba64ddff44f6d521,
+    type: 3}
 --- !u!1 &1884169748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +1898,8 @@ GameObject:
   - component: {fileID: 457531672}
   - component: {fileID: 2077468737}
   - component: {fileID: 2077468736}
+  - component: {fileID: 5571877133679615351}
+  - component: {fileID: 8812658604498670723}
   m_Layer: 26
   m_Name: RightHand
   m_TagString: Untagged
@@ -2012,6 +2018,42 @@ MonoBehaviour:
     m_TypeName: Valve.VR.SteamVR_Behaviour_Pose_DeviceIndexChangedEvent, SteamVR,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   broadcastDeviceChanges: 1
+--- !u!114 &5571877133679615351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077468735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pose: {fileID: 0}
+  interactWithUI:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  active: 1
+  color: {r: 0.067353606, g: 1, b: 0, a: 0.6509804}
+  thickness: 0.0001
+  clickColor: {r: 1, g: 0, b: 0, a: 1}
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}
+--- !u!114 &8812658604498670723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077468735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095bc109edf03b94080b071a75d4d85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1924195831559103282
 GameObject:
   m_ObjectHideFlags: 0

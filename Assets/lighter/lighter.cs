@@ -21,7 +21,7 @@ public class lighter : MonoBehaviour
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
         GetComponent<AudioSource>().clip = collisionSound; // Assign the button sound
         particles = gameObject.GetComponents<ParticleSystem>();
-        dust = particles[1];
+        dust = particles[0];
         //flame = gameObject.GetComponentInChildren<GameObject>();
         main = dust.main;
         trails = dust.trails;

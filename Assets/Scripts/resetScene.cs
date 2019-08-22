@@ -9,8 +9,8 @@ public class resetScene : MonoBehaviour {
 
     public double MAX_SCENE_TIME;
     public double TIME_REMAINING;
-    public AudioSource as10SecsRemaining;
-    public AudioSource as30SecsRemaining;
+    public AudioClip as10SecsRemainingClip;
+    public AudioClip as30SecsRemainingClip;
 
     private DateTime sceneStartTime;
 
@@ -19,7 +19,7 @@ public class resetScene : MonoBehaviour {
             if(PlayerPrefs.GetInt("MaxSceneTime") == 0)
             {
             
-                Debug.Log("Value is null, Apply defualt value");
+                //Debug.Log("Value is null, Apply defualt value");
                 MAX_SCENE_TIME = 120;
             }
             else 
@@ -41,7 +41,7 @@ public class resetScene : MonoBehaviour {
             TIME_REMAINING = (sceneStartTime.AddSeconds(MAX_SCENE_TIME) - DateTime.Now).TotalSeconds;
             if (DateTime.Now >= sceneStartTime.AddSeconds(MAX_SCENE_TIME))
             {
-                Debug.Log("We have reached the max scene time.");
+                //Debug.Log("We have reached the max scene time.");
                 //Scene scene = SceneManager.GetActiveScene();
                 //SceneManager.LoadScene("moonSceneMenu");
                 SteamVR_LoadLevel.Begin("LaunchScene");
@@ -59,13 +59,16 @@ public class resetScene : MonoBehaviour {
         if(tr == 32)
         {
             Debug.Log("30 seconds remaining");
-            as30SecsRemaining.Play();
+            GetComponent<AudioSource>().clip = as30SecsRemainingClip;
+            GetComponent<AudioSource>().Play();
+            
         }
 
         if(tr == 12)
         {
             Debug.Log("10 Seconds Remaining");
-            as10SecsRemaining.Play();
+            GetComponent<AudioSource>().clip = as10SecsRemainingClip;
+            GetComponent<AudioSource>().Play();
         }
     }
 }

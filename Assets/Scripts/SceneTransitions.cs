@@ -11,7 +11,12 @@ public class SceneTransitions : MonoBehaviour
     public string sceneName;
     GameObject player;
     Animator[] animators;
-    
+
+    public void teleportViaWatchUI(String sceneName) {
+        SavePlayerPosition(); // Save the players postion
+        PlayerPrefs.SetInt("FirstLoad", 1); // Save that the player has teleported once since opening the game
+        StartCoroutine(LoadScene(sceneName)); // Load the next scene
+    }
 
     private void Start()
     {
@@ -27,10 +32,10 @@ public class SceneTransitions : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) // The space bar is used by the operator the change scenes
         {
-            StartCoroutine(LoadScene());
+            StartCoroutine(LoadScene(sceneName));
         }
     }
-    IEnumerator LoadScene()
+    public IEnumerator LoadScene(String sceneName)
     {
         
         transitionAnim.SetTrigger("end"); // Set the animation up
@@ -46,7 +51,7 @@ public class SceneTransitions : MonoBehaviour
         {
             SavePlayerPosition(); // Save the players postion
             PlayerPrefs.SetInt("FirstLoad", 1); // Save that the player has teleported once since opening the game
-            StartCoroutine(LoadScene()); // Load the next scene
+            StartCoroutine(LoadScene(sceneName)); // Load the next scene
 
         }
     }

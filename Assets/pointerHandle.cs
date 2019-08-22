@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Valve.VR.InteractionSystem;
 using UnityEngine.UI;
 
-
-//[RequireComponent(typeof(Interactable))]
-// Created by Wayland Bishop for The Moon VR 3.0 project
-public class DropRigIncreaseHeight : MonoBehaviour
+public class pointerHandle : MonoBehaviour
 {
     Animator anim;
     AudioSource sound;
@@ -17,29 +15,33 @@ public class DropRigIncreaseHeight : MonoBehaviour
     Text[] text;
     public double dropHeight;
     bool pointerDown = false;
+    Slider slider;
+
+    // Start is called before the first frame update
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
-        anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
+        anim = DropRig.GetComponent<Animator>(); // Get animation controller from the object
         sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
         AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         sound.loop = true;
-
         text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        slider = gameObject.GetComponent<Slider>();
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (anim.GetBool("heightHasPlayed"))
         {
             text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 0) + " Metres"; // Set the drop rig LCD text
             text[2].color = Color.green;
         }
-
     }
 
-    public void upPressing() {
+    public void upPressing()
+    {
         anim.SetBool("heightHasPlayed", true);
         anim.StopPlayback(); // Stop any current playback
         anim.SetFloat("Direction", 10); // Set the direction and in this case the speed
@@ -57,29 +59,19 @@ public class DropRigIncreaseHeight : MonoBehaviour
             anim.Play("DropRigHeight", -1, 0); // Play it back from the start postion
         }
     }
-    public void upReleasing() {
+    public void upReleasing()
+    {
         anim.SetFloat("Direction", 0); // effectilty stops the animaiton for the hight ajustment
         sound.Stop();
         dropHeight = System.Math.Truncate(animationState.normalizedTime * 100); // calaulate the hight of the drop rig based on the animation playthrough time
         text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 0) + " Meters"; // Set the drop rig LCD text
     }
 
-    //Called every Update() while a Hand is hovering over this object
-    private void HandHoverUpdate(Hand hand)
-    {
-        GrabTypes startingGrabType = hand.GetGrabStarting();
-        if (startingGrabType != GrabTypes.None)
-        {
-            upPressing();
-        }
-        GrabTypes endingGrabType = hand.GetGrabEnding();
-        if (endingGrabType != GrabTypes.None)
-        {
-            upReleasing();
-        }
-
-
+    public void setPostion() {
+        
+        anim.SetBool("heightHasPlayed", true);
+        anim.Play("DropRigHeight", 0, slider.value); // Play the animation
+        text[3].text = ""; // Clear the instructions
     }
-
 
 }

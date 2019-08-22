@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
+using UnityEngine.UI;
 
 [RequireComponent( typeof( Interactable ) )]
 public class LaserAnimate : MonoBehaviour {
@@ -12,8 +13,12 @@ public class LaserAnimate : MonoBehaviour {
 
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+        anim = GameObject.Find("LaserExperiment").GetComponent<Animator>();
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+        if (!planetSettings.GetComponent<PlanetSettings>().isMoon)
+        {
+            //GameObject.Find("UnderExpLaser").SetActive(false);
+        }
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -23,6 +28,7 @@ public class LaserAnimate : MonoBehaviour {
             Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
             anim.Play("LaserAnimate");
             StartCoroutine(TurnOnLaser());
+            GameObject.Find("LaserActive").GetComponent<Text>().text = "True"; // Set the text
         }
 
     }
@@ -33,18 +39,35 @@ public class LaserAnimate : MonoBehaviour {
         laserBeam.enabled = true;
         if (planetSettings.GetComponent<PlanetSettings>().isMoon)
         { // These will display the correct info based on the planet we are on
-            Debug.Log("The distacne between the moon and the earth is 384,400 km");
+            Debug.Log("The distacne between the moon and the earth is 384,400km");
+            GameObject.Find("LaserDist").GetComponent<Text>().text = "384,400km"; // Set the text
+            GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMars)
         {
+            GameObject.Find("UnderExpLaser").SetActive(false);
             Debug.Log("The distacne between the moon and the earth is 54.6 million km");
+            GameObject.Find("LaserDist").GetComponent<Text>().text = "54.6 million km"; // Set the text
+            GameObject.Find("LaserTime").GetComponent<Text>().text = "3.03 minutes"; // Set the text
         }
         if (planetSettings.GetComponent<PlanetSettings>().isEarth)
         {
+            GameObject.Find("UnderExpLaser").SetActive(false);
             Debug.Log("The distacne between the moon and the earth is 384,400 km");
+            GameObject.Find("LaserDist").GetComponent<Text>().text = "384,400km"; // Set the text
+            GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
         }
 
 
+    }
+
+    public void laserAni()
+    {
+        Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
+        anim = GameObject.Find("LaserExperiment").GetComponent<Animator>();
+        anim.Play("LaserAnimate");
+        StartCoroutine(TurnOnLaser());
+        GameObject.Find("LaserActive").GetComponent<Text>().text = "True"; // Set the text
     }
 
 }

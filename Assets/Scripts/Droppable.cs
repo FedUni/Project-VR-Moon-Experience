@@ -60,12 +60,6 @@ public class Droppable : MonoBehaviour
         if (hasDropped && isFalling == false) { // See if the object has been set to drop and ensure its not curently falling
             dropTime = Time.time; // Set the current time as the time the object began to fall
             isFalling = true; // Set the object flag to be falling the the time isnt reset on next frame
-            if (planetSettings.GetComponent<PlanetSettings>().isMoon == true)
-            { // These set the drag up for eatch planet setting
-                GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0;
-                dustColor = new Color(84 / 255f, 84 / 255f, 84 / 255f, 255 / 255f);
-                transform.GetComponentInChildren<Rigidbody>().mass = 1;
-            }
         }
 
         if (isFalling && !complete) { // Output the current falltime to a display of some kind (LCD timer)
@@ -75,9 +69,12 @@ public class Droppable : MonoBehaviour
 
             if (transform.name.Contains("left")) { // If this is a left object
                 text[0].text = "Left object fell for " + Math.Round(Time.time - dropTime, 1) + " Seconds"; // Set the drop rig LCD text
+                GameObject.Find("WatchDropLeft").GetComponent<Text>().text = Math.Round(Time.time - dropTime, 1).ToString() + " Sec"; // Set the text
+
             }
             if (transform.name.Contains("right")) { // if this is a right object
                 text[1].text = "Right object fell for " + Math.Round(Time.time - dropTime, 1) + " Seconds"; // Set the drop rig LCD text
+                GameObject.Find("WatchDropRight").GetComponent<Text>().text = Math.Round(Time.time - dropTime, 1).ToString() + " Sec"; // Set the text
             }
 
         }
@@ -107,8 +104,6 @@ public class Droppable : MonoBehaviour
             main.startColor = dustColor;
             trails.colorOverTrail = dustColor;
             dust.Play();
-            //Debug.Log("Right now the puff of dust would be happeing if we had one.");
-            //Debug.Log("It should be spawned at " + contactPoint);
         }
     }
 
