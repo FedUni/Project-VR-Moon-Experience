@@ -1353,9 +1353,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.1
   far clip plane: 5000
-  field of view: 60
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1622,10 +1622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7fa10dc1e454f4580e696e5af244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAX_SCENE_TIME: 120
+  MAX_SCENE_TIME: 300
   TIME_REMAINING: 0
-  as10SecsRemaining: {fileID: 0}
-  as30SecsRemaining: {fileID: 0}
   as10SecsRemainingClip: {fileID: 8300000, guid: 175a201eb04bbcd47bcec95d7e5f5a7d,
     type: 3}
   as30SecsRemainingClip: {fileID: 8300000, guid: 646a5c1f580ac424ba64ddff44f6d521,
@@ -2054,6 +2052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095bc109edf03b94080b071a75d4d85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newScale: {x: 0.0003974478, y: 0.0003974483, z: 0.0002515115}
+  newPostition: {x: -0.002, y: 0.0629, z: 0}
+  isEnabled: 1
+  speed: 5
 --- !u!1 &1924195831559103282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,6 +2531,11 @@ PrefabInstance:
       propertyPath: RightFootTarget
       value: 
       objectReference: {fileID: 89109781}
+    - target: {fileID: 4795048474387084656, guid: 39e05e1de17021c438619f72a4d60c56,
+        type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 7634355902143717615}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e05e1de17021c438619f72a4d60c56, type: 3}
 --- !u!4 &4548120152054141016 stripped
@@ -2537,3 +2544,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5443977633827476238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7634355902143717615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2485506430708986849, guid: 39e05e1de17021c438619f72a4d60c56,
+    type: 3}
+  m_PrefabInstance: {fileID: 5443977633827476238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

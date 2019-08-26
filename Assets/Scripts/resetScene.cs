@@ -20,12 +20,12 @@ public class resetScene : MonoBehaviour {
             {
             
                 //Debug.Log("Value is null, Apply defualt value");
-                MAX_SCENE_TIME = 120;
+                MAX_SCENE_TIME = 500;
             }
-            else 
-            {
-                MAX_SCENE_TIME = (double) PlayerPrefs.GetInt("MaxSceneTime");
-            }
+            //else 
+            //{
+                //MAX_SCENE_TIME = (double) PlayerPrefs.GetInt("MaxSceneTime");
+            //}
     }
     
 	// Use this for initialization

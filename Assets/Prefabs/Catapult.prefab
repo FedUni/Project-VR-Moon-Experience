@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8759504922289144789}
   - component: {fileID: 8759504922289947643}
   - component: {fileID: 8759504922291044667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Winch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8759504922291044669}
   - component: {fileID: 7906003710571796447}
   - component: {fileID: 2870337529852738405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Support frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 7434960955976844163}
   - component: {fileID: 8819553843265208217}
   - component: {fileID: 1017957758706906455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Catapult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,6 +261,7 @@ Transform:
   - {fileID: 6789735594439114179}
   - {fileID: 2841655056953188047}
   - {fileID: 2598893084599318879}
+  - {fileID: 7028975162070531631}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -394,7 +395,7 @@ GameObject:
   - component: {fileID: 7500398054339988734}
   - component: {fileID: 448208661534775411}
   - component: {fileID: 6711841057347414771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Catapult arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,6 +619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowlingBallNoLCD
       objectReference: {fileID: 0}
+    - target: {fileID: 7512793857652586557, guid: 447851df119630040969d7d96543ee98,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 183691563039986456, guid: 447851df119630040969d7d96543ee98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -703,6 +709,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.345
       objectReference: {fileID: 0}
+    - target: {fileID: 2698040098869020207, guid: 447851df119630040969d7d96543ee98,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 447851df119630040969d7d96543ee98, type: 3}
 --- !u!4 &728060421565359810 stripped
@@ -721,6 +732,10 @@ PrefabInstance:
     - target: {fileID: 304433672, guid: a6e923968e92a6a44bbd02d1b2fee55f, type: 3}
       propertyPath: m_Name
       value: BrickNoLCD
+      objectReference: {fileID: 0}
+    - target: {fileID: 304433672, guid: a6e923968e92a6a44bbd02d1b2fee55f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 304433671, guid: a6e923968e92a6a44bbd02d1b2fee55f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -786,6 +801,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2598893084903715672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5585734628826312306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8759504922289144795}
+    m_Modifications:
+    - target: {fileID: 2726714289239502119, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Catapult Control
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.62502766
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.258
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.477
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.41163078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9113507
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -48.615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08b823ce5a13ad747a533aac66135e6f, type: 3}
+--- !u!4 &7028975162070531631 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3174874631056887901, guid: 08b823ce5a13ad747a533aac66135e6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5585734628826312306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6411711923176044085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -796,6 +901,10 @@ PrefabInstance:
     - target: {fileID: 236404142, guid: 3c1fb30aacf4c45408d5d4aebd320ba0, type: 3}
       propertyPath: m_Name
       value: polystyreneBallNoLCD
+      objectReference: {fileID: 0}
+    - target: {fileID: 236404142, guid: 3c1fb30aacf4c45408d5d4aebd320ba0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 236404145, guid: 3c1fb30aacf4c45408d5d4aebd320ba0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -871,6 +980,10 @@ PrefabInstance:
     - target: {fileID: 166984939, guid: 89878e6bc299a6d489b655dd6da9ff3d, type: 3}
       propertyPath: m_Name
       value: Soccer BallNoLCD
+      objectReference: {fileID: 0}
+    - target: {fileID: 166984939, guid: 89878e6bc299a6d489b655dd6da9ff3d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 166984940, guid: 89878e6bc299a6d489b655dd6da9ff3d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -948,6 +1061,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TennisBallNoLCD
       objectReference: {fileID: 0}
+    - target: {fileID: 8760764270527410007, guid: afc48666c4e19c24da9e0cd2b465235f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8760764270527902583, guid: afc48666c4e19c24da9e0cd2b465235f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1022,6 +1140,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.0983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760764270527410001, guid: afc48666c4e19c24da9e0cd2b465235f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afc48666c4e19c24da9e0cd2b465235f, type: 3}

@@ -13,7 +13,12 @@ ModelImporter:
     2300000: typeMesh1
     3300000: typeMesh1
     4300000: typeMesh1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: typeBlinn
+    second: {fileID: 2100000, guid: 85d6d38491396b3428018d4d35ef2168, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

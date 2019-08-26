@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6714350830832082493}
   - component: {fileID: 9081283508403665739}
   - component: {fileID: 1653607970256993640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Curiosty
   m_TagString: Untagged
   m_Icon: {fileID: 0}

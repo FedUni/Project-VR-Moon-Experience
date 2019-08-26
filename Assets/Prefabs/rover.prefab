@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3306102}
   - component: {fileID: 2365866}
   - component: {fileID: 6381900480186749214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverAntenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467080}
   - component: {fileID: 10840254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spotlight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 414614}
   - component: {fileID: 3335844}
   - component: {fileID: 2383536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheelFront.L.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 3364312}
   - component: {fileID: 2395452}
   - component: {fileID: 8350691155301757675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverArmLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 481310}
   - component: {fileID: 3308250}
   - component: {fileID: 2332330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverHeadCameras.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 3300150}
   - component: {fileID: 2340082}
   - component: {fileID: 8360231973913987280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverArmUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 493602}
   - component: {fileID: 3302342}
   - component: {fileID: 2389372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SolarPanels_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 401202}
   - component: {fileID: 3374470}
   - component: {fileID: 2355514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheelFront.L.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 3349776}
   - component: {fileID: 2366280}
   - component: {fileID: 8856309227415280972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverArmDrill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 3379404}
   - component: {fileID: 2324954}
   - component: {fileID: 4602993985187141429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SolarPanels_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -851,7 +851,7 @@ GameObject:
   - component: {fileID: 3352142}
   - component: {fileID: 2362166}
   - component: {fileID: 5370764546391613836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheels.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 3369196}
   - component: {fileID: 2398904}
   - component: {fileID: 671860128073167816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 490514}
   - component: {fileID: 3327098}
   - component: {fileID: 2332012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheelFront.L.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464716}
   - component: {fileID: 10894204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 454988}
   - component: {fileID: 3361834}
   - component: {fileID: 2328418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverArmConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1268,7 +1268,7 @@ GameObject:
   - component: {fileID: 3360222}
   - component: {fileID: 2326718}
   - component: {fileID: 581913976492764606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverBackWheels.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,7 +1359,7 @@ GameObject:
   - component: {fileID: 453754}
   - component: {fileID: 3383352}
   - component: {fileID: 2358978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverSolarPanelsDetails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1437,7 @@ GameObject:
   - component: {fileID: 3361638}
   - component: {fileID: 2394782}
   - component: {fileID: 6150864782471578996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverHeadCameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1529,7 +1529,7 @@ GameObject:
   - component: {fileID: 444112}
   - component: {fileID: 3320546}
   - component: {fileID: 2389962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheelFront.L.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 478966}
   - component: {fileID: 3393868}
   - component: {fileID: 2334070}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheelFront.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1682,7 +1682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1723,7 +1723,7 @@ GameObject:
   - component: {fileID: 3322926}
   - component: {fileID: 2355174}
   - component: {fileID: 1746368641249803471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 3382590}
   - component: {fileID: 2355900}
   - component: {fileID: 7655545933185184979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 3342878}
   - component: {fileID: 2343686}
   - component: {fileID: 4495865615214522613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheels.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 469856}
   - component: {fileID: 3384652}
   - component: {fileID: 2382188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverWheelFront.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 3304244}
   - component: {fileID: 2362628}
   - component: {fileID: 7425999358234009479}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoverBackWheels.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
