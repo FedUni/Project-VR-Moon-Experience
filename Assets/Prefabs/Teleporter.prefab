@@ -757,6 +757,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 6014333717817352086}
   sceneName: LaunchScene
+  dissolveMat:
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &2800551067767496330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,6 +1325,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 6014333717817352086}
   sceneName: EarthScene
+  dissolveMat:
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &4593982350425856368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1704,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 6014333717817352086}
   sceneName: MoonScene
+  dissolveMat:
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &5685695169240412321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2068,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 6014333717817352086}
   sceneName: MarsScene
+  dissolveMat:
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &6334323254690747198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,9 +2639,89 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
         type: 3}
+      propertyPath: dissolveMat.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
       propertyPath: transitionAnim
       value: 
       objectReference: {fileID: 6014333717817352086}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[11]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: disolveMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
     - target: {fileID: 3448491713250231409, guid: 249178328f586704e9e38ffd517dcfd0,
         type: 3}
       propertyPath: m_Controller

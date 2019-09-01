@@ -529,6 +529,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: MarsScene
+  dissolveMat:
+  - {fileID: 0}
+  disolveMat: {fileID: 0}
 --- !u!1 &716941839460157831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,6 +2569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: MoonScene
+  dissolveMat:
+  - {fileID: 0}
+  disolveMat: {fileID: 0}
 --- !u!1 &2109745758776577992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,6 +3800,7 @@ MonoBehaviour:
   - {fileID: 8760764270527410007, guid: dc98af06ea090b340934f9197942167a, type: 3}
   - {fileID: 3802767476171726839, guid: 012e0442ba6261a4792affc4749e11e9, type: 3}
   crazyMode: 0
+  disolveMat: {fileID: 0}
 --- !u!114 &8101935444250247079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6865,6 +6872,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: EarthScene
+  dissolveMat:
+  - {fileID: 0}
+  disolveMat: {fileID: 0}
 --- !u!1 &5980869719816045302
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,6 +8134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: LaunchScene
+  dissolveMat:
+  - {fileID: 0}
+  disolveMat: {fileID: 0}
 --- !u!1 &6853802258531189828
 GameObject:
   m_ObjectHideFlags: 0
@@ -12306,6 +12319,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[11]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 3448491713250231410, guid: 249178328f586704e9e38ffd517dcfd0,
+        type: 3}
+      propertyPath: disolveMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 249178328f586704e9e38ffd517dcfd0, type: 3}
 --- !u!114 &5532924606643821763 stripped

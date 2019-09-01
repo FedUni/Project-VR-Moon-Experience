@@ -2160,7 +2160,7 @@ PrefabInstance:
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 501318653}
     - target: {fileID: 3248224122305988569, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
@@ -2170,11 +2170,16 @@ PrefabInstance:
         type: 3}
       propertyPath: transitionAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 501318653}
     - target: {fileID: 6838588036907219146, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
+      objectReference: {fileID: 501318653}
+    - target: {fileID: 6014333717817352085, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: sceneName
+      value: launchScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ed83942ebf3fa428a6196b772140cb, type: 3}
@@ -2471,6 +2476,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465634086}
   m_CullTransparentMesh: 0
+--- !u!95 &501318653 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6014333717817352086, guid: 21ed83942ebf3fa428a6196b772140cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 413304961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &568887106
 GameObject:
   m_ObjectHideFlags: 0

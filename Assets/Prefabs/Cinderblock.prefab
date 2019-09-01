@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 151879267258001831}
   m_Layer: 9
   m_Name: Cinderblock
-  m_TagString: Droppable
+  m_TagString: ShouldDissolve
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8929310312965267108}
   m_LocalRotation: {x: 0, y: 0.71325046, z: 0, w: 0.70090926}
-  m_LocalPosition: {x: 310.41, y: 9.202082, z: 312.22498}
+  m_LocalPosition: {x: 310.41, y: 0.89, z: 312.22498}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6379338010001786730}

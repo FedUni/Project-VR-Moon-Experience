@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Valve.VR.InteractionSystem;
+using UnityEngine.Rendering;
 
 public class SceneTransitions : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class SceneTransitions : MonoBehaviour
     public string sceneName;
     GameObject player;
     Animator[] animators;
+    public Material[] dissolveMat;
+    SkinnedMeshRenderer mesh;
+    bool shouldDissolve = false;
+    public Material disolveMat;
+    GameObject DropRig;
+    Light[] panelLights;
 
     public void teleportViaWatchUI(String sceneName) {
         SavePlayerPosition(); // Save the players postion
@@ -21,6 +28,12 @@ public class SceneTransitions : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player"); // Get the player
+        DropRig = GameObject.Find("DropRig"); // Get the drop rig
+        if (DropRig != null)
+        {
+            panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the text elements in the drop rig
+        }
+        
         if (PlayerPrefs.GetInt("FirstLoad") == 1) { // We dont want to load the cords on the first run only after they have teleported once before
             RecallPlayerPosition(); // read the data for the player postion
         }
@@ -34,14 +47,51 @@ public class SceneTransitions : MonoBehaviour
         {
             StartCoroutine(LoadScene(sceneName));
         }
+        if (shouldDissolve)
+        {
+            disolveMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 0.5f * Time.deltaTime));
+
+        }
     }
     public IEnumerator LoadScene(String sceneName)
-    {
-        
+    {    
         transitionAnim.SetTrigger("end"); // Set the animation up
-        yield return new WaitForSeconds(1.5f); // Wait for the animation to play
-        SceneManager.LoadScene(sceneName); // Load the scene
-        
+        disolveMat.SetFloat("_DissolveAmount", 0f);
+
+
+        mesh = GameObject.Find("AstronautShoeL").GetComponent<SkinnedMeshRenderer>();
+
+        MeshRenderer[] everything = GameObject.FindObjectsOfType<MeshRenderer>();
+        SkinnedMeshRenderer[] skinnedMeshes = GameObject.FindObjectsOfType<SkinnedMeshRenderer>();
+        Canvas[] canvasEverything = GameObject.FindObjectsOfType<Canvas>();
+
+        foreach (SkinnedMeshRenderer skinnedStuff in skinnedMeshes)
+        {
+            skinnedStuff.materials = dissolveMat;
+            skinnedStuff.shadowCastingMode = ShadowCastingMode.Off;
+            
+        }
+
+        foreach (MeshRenderer stuff in everything)
+        {
+            stuff.materials = dissolveMat;
+            stuff.shadowCastingMode = ShadowCastingMode.Off;
+        }
+        foreach (Canvas canvasStuff in canvasEverything)
+        {
+            canvasStuff.GetComponentInChildren<Canvas>().enabled = false;
+
+        }
+        if (DropRig != null) {
+            panelLights[0].intensity = 0;
+            panelLights[1].intensity = 0;
+        }
+
+        mesh.materials = dissolveMat;
+        GameObject.Find("Watch").SetActive(false);
+        shouldDissolve = true;
+        yield return new WaitForSeconds(2.0f); // Wait for the animation to play
+        SceneManager.LoadScene(sceneName); // Load the scene   
     }
 
     private void HandHoverUpdate(Hand hand)

@@ -15,6 +15,8 @@ public class DropRigGoTo50m : MonoBehaviour
     GameObject planetSettings;
     GameObject DropRig;
     Text[] text;
+    bool isInterping = false;
+    float aniLocation = 0;
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
@@ -31,7 +33,29 @@ public class DropRigGoTo50m : MonoBehaviour
         if (anim.GetBool("heightHasPlayed"))
         {
             text[2].text = "The current drop is " + Math.Truncate(anim.GetFloat("wingHeight")) + " Meters"; // Set the drop rig LCD text
+            aniLocation = 0.5f;
         }
+        else
+        {
+            animationState = anim.GetCurrentAnimatorStateInfo(0);
+            aniLocation = animationState.normalizedTime % 1;
+        }
+        if (isInterping)
+        {
+            animationState = anim.GetCurrentAnimatorStateInfo(0);
+            aniLocation = animationState.normalizedTime % 1;
+            float playAmount = Mathf.Lerp(aniLocation, 0.5f, 2f * Time.deltaTime);
+
+            anim.Play("DropRigHeight", 0, playAmount);
+            StartCoroutine(Wait());
+        }
+    }
+    IEnumerator Wait()
+    {
+
+        yield return new WaitForSeconds(3);
+        isInterping = false;
+
     }
 
     //Called every Update() while a Hand is hovering over this object
@@ -41,7 +65,8 @@ public class DropRigGoTo50m : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
             anim.SetBool("heightHasPlayed", true);
-            anim.Play("DropRigHeight", 0, 0.5f); // Play the animation
+            isInterping = true;
+            //anim.Play("DropRigHeight", 0, 0.5f); // Play the animation
             text[3].text = ""; // Clear the instructions
 
         }
@@ -50,7 +75,8 @@ public class DropRigGoTo50m : MonoBehaviour
     public void setHeight()
     {
         anim.SetBool("heightHasPlayed", true);
-        anim.Play("DropRigHeight", 0, 0.50f); // Play the animation
+        isInterping = true;
+        //anim.Play("DropRigHeight", 0, 0.50f); // Play the animation
         text[3].text = ""; // Clear the instructions
     }
 

@@ -3589,14 +3589,104 @@ PrefabInstance:
       objectReference: {fileID: 731012604}
     - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
+      propertyPath: dissolveMat.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
       propertyPath: transitionAnim
       value: 
       objectReference: {fileID: 731012604}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: rMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: mesh
+      value: 
+      objectReference: {fileID: 1970344213}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[11]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+    - target: {fileID: 2815979318606140346, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: dissolveMat.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
     - target: {fileID: 6838588036907219146, guid: 21ed83942ebf3fa428a6196b772140cb,
         type: 3}
       propertyPath: transitionAnim
       value: 
       objectReference: {fileID: 731012604}
+    - target: {fileID: 6014333717817352085, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: mesh
+      value: 
+      objectReference: {fileID: 1970344213}
+    - target: {fileID: 6014333717817352085, guid: 21ed83942ebf3fa428a6196b772140cb,
+        type: 3}
+      propertyPath: rMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ed83942ebf3fa428a6196b772140cb, type: 3}
 --- !u!1001 &1652310859
@@ -4184,6 +4274,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
+--- !u!137 &1970344213 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4548120152001847602, guid: 1523daeb4e8e2a247a002e5aabf7f65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1099677899}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1974518043
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1094,6 +1094,7 @@ MonoBehaviour:
   - {fileID: 8760764270527410007, guid: dc98af06ea090b340934f9197942167a, type: 3}
   - {fileID: 3802767476171726839, guid: 012e0442ba6261a4792affc4749e11e9, type: 3}
   crazyMode: 0
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &1057979979734412402
 GameObject:
   m_ObjectHideFlags: 0

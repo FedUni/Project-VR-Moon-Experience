@@ -63,18 +63,24 @@ public class Droppable : MonoBehaviour
         }
 
         if (isFalling && !complete) { // Output the current falltime to a display of some kind (LCD timer)
-            Debug.Log(gameObject.name + "Falling for " + Math.Round(Time.time - dropTime, 1) + " Seconds"); // Temp outputting to the console
+            //Debug.Log(gameObject.name + "Falling for " + Math.Round(Time.time - dropTime, 1) + " Seconds"); // Temp outputting to the console
 
             text[3].text = "";
 
             if (transform.name.Contains("left")) { // If this is a left object
                 text[0].text = "Left object fell for " + Math.Round(Time.time - dropTime, 1) + " Seconds"; // Set the drop rig LCD text
-                GameObject.Find("WatchDropLeft").GetComponent<Text>().text = Math.Round(Time.time - dropTime, 1).ToString() + " Sec"; // Set the text
+                if (GameObject.Find("WatchDropLeft") != null)
+                {
+                    GameObject.Find("WatchDropLeft").GetComponent<Text>().text = Math.Round(Time.time - dropTime, 1).ToString() + " Sec"; // Set the text
+                }
 
             }
             if (transform.name.Contains("right")) { // if this is a right object
                 text[1].text = "Right object fell for " + Math.Round(Time.time - dropTime, 1) + " Seconds"; // Set the drop rig LCD text
-                GameObject.Find("WatchDropRight").GetComponent<Text>().text = Math.Round(Time.time - dropTime, 1).ToString() + " Sec"; // Set the text
+                if (GameObject.Find("WatchDropRight") != null)
+                {
+                    GameObject.Find("WatchDropRight").GetComponent<Text>().text = Math.Round(Time.time - dropTime, 1).ToString() + " Sec"; // Set the text
+                }
             }
 
         }
@@ -86,7 +92,7 @@ public class Droppable : MonoBehaviour
         {
             timeFalling = Time.time - dropTime; // Get the time since the object was falgged as falling
             transform.GetComponentInChildren<Text>().text = Math.Round(Time.time - dropTime, 1) + " Seconds at " + Math.Round(mass * planetSettings.GetComponent<PlanetSettings>().gravity, 2) + "kg" ;
-            Debug.Log("The object was falling for " + Math.Round(Time.time - dropTime, 1) + " Seconds"); // Temp output to console of the total falling time
+            //Debug.Log("The object was falling for " + Math.Round(Time.time - dropTime, 1) + " Seconds"); // Temp output to console of the total falling time
             complete = true;
         }
     }

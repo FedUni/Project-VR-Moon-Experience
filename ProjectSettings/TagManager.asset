@@ -8,6 +8,7 @@ TagManager:
   - Cloth
   - Ground
   - Droppable
+  - ShouldDissolve
   layers:
   - Default
   - TransparentFX
