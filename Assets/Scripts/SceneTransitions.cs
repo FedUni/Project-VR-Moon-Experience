@@ -18,6 +18,7 @@ public class SceneTransitions : MonoBehaviour
     public Material disolveMat;
     GameObject DropRig;
     Light[] panelLights;
+    float shadowAmount = 0.813f;
 
     public void teleportViaWatchUI(String sceneName) {
         SavePlayerPosition(); // Save the players postion
@@ -39,6 +40,9 @@ public class SceneTransitions : MonoBehaviour
         }
         animators = player.GetComponentsInChildren<Animator>(); // Get the animator object
         transitionAnim = animators[0]; // Its the third item // changed to 0
+        disolveMat.SetFloat("_DissolveEmission", 500);
+        Material disMat = dissolveMat[0];
+        disMat.SetFloat("_DissolveAmount", 0.3f);
     }
 
     void Update()
@@ -47,16 +51,34 @@ public class SceneTransitions : MonoBehaviour
         {
             StartCoroutine(LoadScene(sceneName));
         }
+        if (Input.GetKeyDown(KeyCode.P)) // The space bar is used by the operator the change scenes
+        {
+            //Pause();
+        }
         if (shouldDissolve)
         {
-            disolveMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 0.5f * Time.deltaTime));
+
+
+            Light[] lights = GameObject.FindObjectsOfType<Light>();
+            MeshRenderer[] everything = GameObject.FindObjectsOfType<MeshRenderer>();
+            SkinnedMeshRenderer[] skinnedMeshes = GameObject.FindObjectsOfType<SkinnedMeshRenderer>();
+            Material disMat = dissolveMat[0];
+            
+            foreach (Light light in lights)
+            {
+                light.shadowStrength = shadowAmount;
+
+            }
+            disMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 1f * Time.deltaTime));
+            shadowAmount = Mathf.Lerp(shadowAmount, 0, 1f * Time.deltaTime);
 
         }
+
     }
     public IEnumerator LoadScene(String sceneName)
     {    
         transitionAnim.SetTrigger("end"); // Set the animation up
-        disolveMat.SetFloat("_DissolveAmount", 0f);
+        disolveMat.SetFloat("_DissolveAmount", 0.3f);
 
 
         mesh = GameObject.Find("AstronautShoeL").GetComponent<SkinnedMeshRenderer>();
@@ -68,15 +90,14 @@ public class SceneTransitions : MonoBehaviour
         foreach (SkinnedMeshRenderer skinnedStuff in skinnedMeshes)
         {
             skinnedStuff.materials = dissolveMat;
-            skinnedStuff.shadowCastingMode = ShadowCastingMode.Off;
             
         }
 
         foreach (MeshRenderer stuff in everything)
         {
             stuff.materials = dissolveMat;
-            stuff.shadowCastingMode = ShadowCastingMode.Off;
         }
+
         foreach (Canvas canvasStuff in canvasEverything)
         {
             canvasStuff.GetComponentInChildren<Canvas>().enabled = false;
@@ -91,7 +112,7 @@ public class SceneTransitions : MonoBehaviour
         GameObject.Find("Watch").SetActive(false);
         shouldDissolve = true;
         yield return new WaitForSeconds(2.0f); // Wait for the animation to play
-        SceneManager.LoadScene(sceneName); // Load the scene   
+        SceneManager.LoadScene(sceneName); // Load the scene
     }
 
     private void HandHoverUpdate(Hand hand)

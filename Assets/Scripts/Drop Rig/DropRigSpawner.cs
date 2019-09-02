@@ -31,12 +31,13 @@ public class DropRigSpawner : MonoBehaviour
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
         panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the text elements in the drop rig
+        disolveMat.SetFloat("_DissolveAmount", 0f);
     }
 
     private void Update()
     {
         if (shouldDissolve) {
-            disolveMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 1.5f * Time.deltaTime));
+            disolveMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 5f * Time.deltaTime));
             
         }
     }
