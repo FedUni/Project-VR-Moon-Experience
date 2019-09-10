@@ -5,14 +5,14 @@ using Valve.VR.InteractionSystem;
 using System;
 
 [RequireComponent(typeof(Interactable))]
-// Created by Wayland Bishop for The Moon VR 3.0 project
-public class launch90 : MonoBehaviour
+// Created by Hein Reimert for The Moon VR 3.0 project
+public class launch45 : MonoBehaviour
 {
     CatapultFire script;
     void Start()
     {
         GameObject catapultFireButton = GameObject.Find("CatapultFireButton");
-       script = catapultFireButton.GetComponent<CatapultFire>(); // Get animation controller from the object
+        script = catapultFireButton.GetComponent<CatapultFire>(); // Get animation controller from the object
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
