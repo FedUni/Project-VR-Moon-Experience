@@ -882,6 +882,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5529360460720887368, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262799123440437489, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_Name
+      value: CatapultFireButton
+      objectReference: {fileID: 0}
     - target: {fileID: 2931315491138079809, guid: 08b823ce5a13ad747a533aac66135e6f,
         type: 3}
       propertyPath: m_IsActive
@@ -901,16 +911,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5529360460720887368, guid: 08b823ce5a13ad747a533aac66135e6f,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 5262799123440437489, guid: 08b823ce5a13ad747a533aac66135e6f,
-        type: 3}
-      propertyPath: m_Name
-      value: CatapultFireButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b823ce5a13ad747a533aac66135e6f, type: 3}
