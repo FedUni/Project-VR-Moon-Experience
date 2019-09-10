@@ -13,6 +13,10 @@ public class CatapultFire : MonoBehaviour
     public float launchAngle;
     GameObject planetSettings;
     public AudioClip buttonSound;
+    bool isInterping = false;
+    AnimatorStateInfo animationState;
+    float aniLocation = 0;
+    
     void Start()
     {
         GameObject catapult = GameObject.Find("Catapult");
@@ -22,32 +26,47 @@ public class CatapultFire : MonoBehaviour
         GetComponent<AudioSource>().clip = buttonSound; // Assign the button sound
     }
     //Called every Update() while a Hand is hovering over this object
+   
+    private void Update()
+    {
+        if (isInterping)
+        {
+            animationState = anim.GetCurrentAnimatorStateInfo(0);
+            aniLocation = animationState.normalizedTime % 1;
+            float playAmount = Mathf.Lerp(aniLocation, 0.25f, 2f * Time.deltaTime);
+
+            anim.Play("catapultAnimate", 0, playAmount);
+            StartCoroutine(Wait());
+            Debug.Log(launchAngle);
+        }
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(3);
+        isInterping = false;
+        launchAngle = 0;
+    }
+
     private void HandHoverUpdate(Hand hand)
     {
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
+            isInterping = true;
             //anim.Play("CatapultAnimate");
             anim.Play("CatapultAnimate"); // Play The animation so the button goes down.
 
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos) // If this planet has an atmos the sound should be played
             {
-
                 GetComponent<AudioSource>().Play(); // Play the sound
                 GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
             }
-
         }
-
         GrabTypes endingGrabType = hand.GetGrabEnding();
         if (endingGrabType != GrabTypes.None)
         {
             anim.Play("ButtonUp"); // play the button aniamtion so the button goes up
         }
-    }
-    private void Update()
-    {
-        Debug.Log(launchAngle);
     }
 }
 
