@@ -965,6 +965,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bdfe15d7ddb6cb40879d6c788a6d21e, type: 3}
+--- !u!1 &588196834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7289805607559063067, guid: 4aaf4784a3a887a4d89f0a578c12d309,
+    type: 3}
+  m_PrefabInstance: {fileID: 2070801046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &588196841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588196834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9197bafbd1a17c54fb79e9f23c586c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 0}
 --- !u!1 &616729880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4515,6 +4534,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 752e8acbda52e2e439ea74c5f7e06628, type: 2}
+    - target: {fileID: 8186982743721769045, guid: 4aaf4784a3a887a4d89f0a578c12d309,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a69e1137fd6dc0f499722504852f1db1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aaf4784a3a887a4d89f0a578c12d309, type: 3}
 --- !u!1001 &2102415380
@@ -4739,22 +4763,22 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.y
-      value: -0.000061035156
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 4.999916
+      value: 4.999917
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 5.0001574
+      value: 5.000157
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}

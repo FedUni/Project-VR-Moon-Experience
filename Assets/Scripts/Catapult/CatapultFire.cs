@@ -7,7 +7,7 @@ using System;
 [RequireComponent(typeof(Interactable))]
 [RequireComponent(typeof(AudioSource))]
 // Created by Wayland Bishop for The Moon VR 3.0 project
-public class DropRigButtonPress : MonoBehaviour
+public class CatapultFire : MonoBehaviour
 {
     Animator anim;
     GameObject planetSettings;
@@ -25,16 +25,16 @@ public class DropRigButtonPress : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-
+            anim.Play("CatapultAnimate");
             anim.Play("ButtonDown"); // Play The animation so the button goes down.
 
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos) // If this planet has an atmos the sound should be played
-            { 
+            {
 
                 GetComponent<AudioSource>().Play(); // Play the sound
                 GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
             }
-            
+
         }
 
         GrabTypes endingGrabType = hand.GetGrabEnding();
