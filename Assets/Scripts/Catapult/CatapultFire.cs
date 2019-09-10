@@ -45,6 +45,9 @@ public class CatapultFire : MonoBehaviour
             anim.Play("ButtonUp"); // play the button aniamtion so the button goes up
         }
     }
-
+    private void Update()
+    {
+        Debug.Log(launchAngle);
+    }
 }
 
