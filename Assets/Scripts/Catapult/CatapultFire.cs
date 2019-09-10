@@ -10,11 +10,13 @@ using System;
 public class CatapultFire : MonoBehaviour
 {
     Animator anim;
+    public float launchAngle;
     GameObject planetSettings;
     public AudioClip buttonSound;
     void Start()
     {
-        anim = gameObject.GetComponentInParent<Animator>(); // Get animation controller from the object
+        GameObject catapult = GameObject.Find("Catapult");
+        anim = catapult.GetComponent<Animator>(); // Get animation controller from the object
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
         GetComponent<AudioSource>().clip = buttonSound; // Assign the button sound
@@ -25,8 +27,8 @@ public class CatapultFire : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            anim.Play("CatapultAnimate");
-            anim.Play("ButtonDown"); // Play The animation so the button goes down.
+            //anim.Play("CatapultAnimate");
+            anim.Play("CatapultAnimate"); // Play The animation so the button goes down.
 
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos) // If this planet has an atmos the sound should be played
             {

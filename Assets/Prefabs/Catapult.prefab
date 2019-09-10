@@ -232,11 +232,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8759504922289144795}
-  - component: {fileID: 8759504922296347711}
   - component: {fileID: 8411894056768972645}
-  - component: {fileID: 7434960955976844163}
   - component: {fileID: 8819553843265208217}
   - component: {fileID: 1017957758706906455}
+  - component: {fileID: 1273214300094959372}
   m_Layer: 8
   m_Name: Catapult
   m_TagString: Untagged
@@ -265,25 +264,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8759504922296347711
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759504922289053691}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 22fe61a589baab7428716f05135b7af4, type: 3}
-  m_Controller: {fileID: 9100000, guid: caf10139e6a32d945875cecea42fb4e4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &8411894056768972645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,18 +315,6 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
---- !u!114 &7434960955976844163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759504922289053691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39089356b2ad84f48b1483e8f51ddc2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8819553843265208217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -376,6 +344,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4481201, y: 1.2845173, z: 0.16778564}
   m_Center: {x: -4.2784424, y: -0.14225864, z: 2.4646301}
+--- !u!95 &1273214300094959372
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8759504922289053691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 22fe61a589baab7428716f05135b7af4, type: 3}
+  m_Controller: {fileID: 9100000, guid: caf10139e6a32d945875cecea42fb4e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8759504922289053693
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +869,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2931315491138079809, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082159680911942919, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082159680911942919, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082159680911942919, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5529360460720887368, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262799123440437489, guid: 08b823ce5a13ad747a533aac66135e6f,
+        type: 3}
+      propertyPath: m_Name
+      value: CatapultFireButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b823ce5a13ad747a533aac66135e6f, type: 3}
