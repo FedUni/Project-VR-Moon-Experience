@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 214213754518330645}
   - component: {fileID: 6022406459950512245}
   - component: {fileID: 5144121025127261938}
+  - component: {fileID: 3727924493000089479}
+  - component: {fileID: 7980354908133655316}
   m_Layer: 0
   m_Name: Balloon
   m_TagString: Untagged
@@ -39,7 +41,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_Children: []
+  m_Children:
+  - {fileID: 1548714879563162451}
   m_Father: {fileID: 3981018656104638825}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -114,8 +117,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: bd9566abdbf08834281bfb4ea8b92a5d, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -361,7 +364,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 225843b6084e75440a6ea970a17c93aa, type: 2}
+  - {fileID: 2100000, guid: ff6663d927968dc4482d24a8495316de, type: 2}
   - {fileID: 2100000, guid: 225843b6084e75440a6ea970a17c93aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -382,7 +385,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_SortMode: 1
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -413,7 +416,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554478046}
   serializedVersion: 6
-  lengthInSec: 0.5
+  lengthInSec: 3
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -422,7 +425,7 @@ ParticleSystem:
   looping: 0
   prewarm: 0
   playOnAwake: 0
-  useUnscaledTime: 0
+  useUnscaledTime: 1
   autoRandomSeed: 1
   useRigidbodyForVelocity: 0
   startDelay:
@@ -480,7 +483,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 0
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -488,7 +491,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 6
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -541,7 +544,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -595,7 +598,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
-      maxColor: {r: 0.13231826, g: 1, b: 0, a: 1}
+      maxColor: {r: 1, g: 0.09547347, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
@@ -657,7 +660,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -973,7 +976,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 10
+    maxNumParticles: 100
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -1038,7 +1041,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 0
     donutRadius: 0.2
-    m_Position: {x: 0, y: 2.8, z: 0}
+    m_Position: {x: 0, y: 1.9, z: 0}
     m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -1107,19 +1110,19 @@ ParticleSystem:
     m_SpriteRenderer: {fileID: 0}
     m_UseMeshMaterialIndex: 0
     m_UseMeshColors: 1
-    alignToDirection: 0
+    alignToDirection: 1
     m_Texture: {fileID: 2800000, guid: a742eafd25923234ca4d16db1a12aec7, type: 3}
     m_TextureClipChannel: 3
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0
-    m_TextureColorAffectsParticles: 1
-    m_TextureAlphaAffectsParticles: 1
+    m_TextureColorAffectsParticles: 0
+    m_TextureAlphaAffectsParticles: 0
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.4413387
+      value: 0.32390213
       mode: 0
       spread: 0
       speed:
@@ -1177,7 +1180,7 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 3
       spread: 0
       speed:
         serializedVersion: 2
@@ -1405,26 +1408,26 @@ ParticleSystem:
     enabled: 1
     curve:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0
-      minScalar: 1
+      minMaxState: 1
+      scalar: 1
+      minScalar: 20
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
+          time: 0.1624758
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -1458,9 +1461,9 @@ ParticleSystem:
         m_RotationOrder: 4
     y:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0
-      minScalar: 1
+      minMaxState: 1
+      scalar: 1
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1511,9 +1514,9 @@ ParticleSystem:
         m_RotationOrder: 4
     z:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0
-      minScalar: 1
+      minMaxState: 1
+      scalar: 1
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1562,7 +1565,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    separateAxes: 1
+    separateAxes: 0
   RotationModule:
     enabled: 0
     x:
@@ -1726,7 +1729,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -1917,7 +1920,7 @@ ParticleSystem:
     enabled: 0
     x:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -1970,7 +1973,7 @@ ParticleSystem:
         m_RotationOrder: 4
     y:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -2023,7 +2026,7 @@ ParticleSystem:
         m_RotationOrder: 4
     z:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -2944,11 +2947,11 @@ ParticleSystem:
     inWorldSpace: 0
     multiplyDragByParticleSize: 1
     multiplyDragByParticleVelocity: 1
-    dampen: 0.8
+    dampen: 0.2
     drag:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -2999,7 +3002,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   NoiseModule:
-    enabled: 0
+    enabled: 1
     strength:
       serializedVersion: 2
       minMaxState: 0
@@ -3160,9 +3163,9 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.5
+    frequency: 1
     damping: 1
-    octaves: 1
+    octaves: 4
     octaveMultiplier: 0.5
     octaveScale: 2
     quality: 2
@@ -4254,7 +4257,7 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 1
+    enabled: 0
     mode: 0
     ratio: 0.5
     lifetime:
@@ -5081,6 +5084,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 922eefa0123897d4bafa631a2b096721, type: 3}
+--- !u!114 &3727924493000089479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554478046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 8300000, guid: 47d891b15a42bf24589e022c2d7d2cdf, type: 3}
+--- !u!138 &7980354908133655316
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554478046}
+  m_ConnectedBody: {fileID: 5131137067785015548}
+  m_BreakForce: 0.1
+  m_BreakTorque: 0.001
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 0
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &146697468472838639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,6 +5129,7 @@ GameObject:
   - component: {fileID: 6128279713237428024}
   - component: {fileID: 1380968112158687805}
   - component: {fileID: 6830300154171269899}
+  - component: {fileID: 7763033841214846050}
   m_Layer: 0
   m_Name: Cube (23)
   m_TagString: Untagged
@@ -5324,6 +5356,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7763033841214846050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146697468472838639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &1133332275651755773
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,6 +5387,7 @@ GameObject:
   - component: {fileID: 1278763836707332207}
   - component: {fileID: 5557465008851893877}
   - component: {fileID: 8157929868540400303}
+  - component: {fileID: 7107573996087526861}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -5567,6 +5614,99 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7107573996087526861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133332275651755773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
+--- !u!1 &1931708920018086848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3159863864572899634}
+  - component: {fileID: 2175166656239532322}
+  - component: {fileID: 6590054611994088956}
+  m_Layer: 5
+  m_Name: Symbol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3159863864572899634
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931708920018086848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0016108, y: 1.0016108, z: 1.0016108}
+  m_Children: []
+  m_Father: {fileID: 1548714879563162451}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2175166656239532322
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931708920018086848}
+  m_CullTransparentMesh: 1
+--- !u!114 &6590054611994088956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931708920018086848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.078431375, g: 1, b: 0, a: 0.8235294}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: H
 --- !u!1 &2522595777365676326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5584,6 +5724,7 @@ GameObject:
   - component: {fileID: 4859140365760723366}
   - component: {fileID: 5326438346925564995}
   - component: {fileID: 595174489901995116}
+  - component: {fileID: 8131331075134727001}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Untagged
@@ -5810,6 +5951,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &8131331075134727001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522595777365676326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &2694571447208240355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5827,6 +5982,7 @@ GameObject:
   - component: {fileID: 4796128161619233964}
   - component: {fileID: 3365359355552053255}
   - component: {fileID: 6460826473255610951}
+  - component: {fileID: 7956930567134781204}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -6053,6 +6209,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7956930567134781204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2694571447208240355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &2810355507595247976
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,6 +6240,7 @@ GameObject:
   - component: {fileID: 6600914674154763952}
   - component: {fileID: 2929346193408444074}
   - component: {fileID: 3467283831533971715}
+  - component: {fileID: 2129476591354783584}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -6296,6 +6467,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &2129476591354783584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2810355507595247976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &3298765437057448243
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,6 +6498,7 @@ GameObject:
   - component: {fileID: 3783574990044688498}
   - component: {fileID: 307005972452508766}
   - component: {fileID: 1181384553477031267}
+  - component: {fileID: 6352062122704309240}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -6539,6 +6725,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &6352062122704309240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298765437057448243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &3374001467076679262
 GameObject:
   m_ObjectHideFlags: 0
@@ -6556,6 +6756,7 @@ GameObject:
   - component: {fileID: 899733327286977022}
   - component: {fileID: 5192331571562811487}
   - component: {fileID: 3488729477091903931}
+  - component: {fileID: 2850155224817595430}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -6782,6 +6983,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &2850155224817595430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374001467076679262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &3696588829209732124
 GameObject:
   m_ObjectHideFlags: 0
@@ -6799,6 +7014,7 @@ GameObject:
   - component: {fileID: 3936038074937673169}
   - component: {fileID: 4054292286716526825}
   - component: {fileID: 7485977817426211849}
+  - component: {fileID: 3740154022371763272}
   m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Untagged
@@ -7025,6 +7241,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &3740154022371763272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696588829209732124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &3873309313700294766
 GameObject:
   m_ObjectHideFlags: 0
@@ -7042,6 +7272,7 @@ GameObject:
   - component: {fileID: 7503619648653337887}
   - component: {fileID: 6060088358790820536}
   - component: {fileID: 6079245938030813489}
+  - component: {fileID: 377723584561623701}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -7268,6 +7499,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &377723584561623701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873309313700294766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4024115235702282153
 GameObject:
   m_ObjectHideFlags: 0
@@ -7285,6 +7530,7 @@ GameObject:
   - component: {fileID: 7841046559587910141}
   - component: {fileID: 6603167139129648461}
   - component: {fileID: 4833299860176008107}
+  - component: {fileID: 7303311067342669084}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -7511,6 +7757,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7303311067342669084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4024115235702282153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4162468870159346828
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,6 +7788,7 @@ GameObject:
   - component: {fileID: 6294975719427657561}
   - component: {fileID: 742133099053712502}
   - component: {fileID: 1709709778021078357}
+  - component: {fileID: 7513619236835741785}
   m_Layer: 0
   m_Name: Cube (29)
   m_TagString: Untagged
@@ -7754,6 +8015,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7513619236835741785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4162468870159346828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4167172112080570261
 GameObject:
   m_ObjectHideFlags: 0
@@ -7771,6 +8046,7 @@ GameObject:
   - component: {fileID: 2890049297827875826}
   - component: {fileID: 798426020947721363}
   - component: {fileID: 3084961766282594449}
+  - component: {fileID: 7447016618101322057}
   m_Layer: 0
   m_Name: Cube (21)
   m_TagString: Untagged
@@ -7997,6 +8273,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7447016618101322057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167172112080570261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4258558276465228404
 GameObject:
   m_ObjectHideFlags: 0
@@ -8014,6 +8304,7 @@ GameObject:
   - component: {fileID: 2923258827356661944}
   - component: {fileID: 1040447486761136692}
   - component: {fileID: 2553031320109434632}
+  - component: {fileID: 9048305248468964143}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -8240,6 +8531,99 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &9048305248468964143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258558276465228404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
+--- !u!1 &4266578294048226563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6604870972185219599}
+  - component: {fileID: 2319632980173833735}
+  - component: {fileID: 4794296476183544458}
+  m_Layer: 5
+  m_Name: GasType
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6604870972185219599
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266578294048226563}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0016108, y: 1.0016108, z: 1.0016108}
+  m_Children: []
+  m_Father: {fileID: 1548714879563162451}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 125}
+  m_SizeDelta: {x: 0, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2319632980173833735
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266578294048226563}
+  m_CullTransparentMesh: 1
+--- !u!114 &4794296476183544458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266578294048226563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.078431375, g: 1, b: 0, a: 0.8235294}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Noble gas
 --- !u!1 &4399433389545029182
 GameObject:
   m_ObjectHideFlags: 0
@@ -8257,6 +8641,7 @@ GameObject:
   - component: {fileID: 3872153206363223014}
   - component: {fileID: 1690526732512447188}
   - component: {fileID: 7993460459931734935}
+  - component: {fileID: 559951660468409163}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Untagged
@@ -8483,6 +8868,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &559951660468409163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4399433389545029182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4824311776690889569
 GameObject:
   m_ObjectHideFlags: 0
@@ -8500,6 +8899,7 @@ GameObject:
   - component: {fileID: 9026957851571427582}
   - component: {fileID: 3002009428464810510}
   - component: {fileID: 3466895792443755727}
+  - component: {fileID: 6944250004413077722}
   m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Untagged
@@ -8726,6 +9126,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &6944250004413077722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4824311776690889569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4833114899053154150
 GameObject:
   m_ObjectHideFlags: 0
@@ -8743,6 +9157,7 @@ GameObject:
   - component: {fileID: 2982581285086773332}
   - component: {fileID: 7767362338353700053}
   - component: {fileID: 3508833107709089468}
+  - component: {fileID: 4228070681404492447}
   m_Layer: 0
   m_Name: Cube (26)
   m_TagString: Untagged
@@ -8969,6 +9384,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &4228070681404492447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4833114899053154150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &4878302484543015684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8986,6 +9415,7 @@ GameObject:
   - component: {fileID: 2203325570122133570}
   - component: {fileID: 2052104253146714207}
   - component: {fileID: 1924373314204509281}
+  - component: {fileID: 1971014055780290576}
   m_Layer: 0
   m_Name: Cube (20)
   m_TagString: Untagged
@@ -9212,6 +9642,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &1971014055780290576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878302484543015684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &5320904322333800235
 GameObject:
   m_ObjectHideFlags: 0
@@ -9229,6 +9673,7 @@ GameObject:
   - component: {fileID: 4803365347732460679}
   - component: {fileID: 901690600849597463}
   - component: {fileID: 9008846391864254084}
+  - component: {fileID: 3266409223986820939}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -9455,6 +9900,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &3266409223986820939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320904322333800235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &5499626416411678753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9472,6 +9931,7 @@ GameObject:
   - component: {fileID: 1429591970130667072}
   - component: {fileID: 2249298848761142446}
   - component: {fileID: 2205235225972667892}
+  - component: {fileID: 210682603945556883}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -9698,6 +10158,200 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &210682603945556883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499626416411678753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
+--- !u!1 &6279441702991914999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548714879563162451}
+  - component: {fileID: 4725561165945889741}
+  - component: {fileID: 4623819877004796}
+  - component: {fileID: 1202762003155850235}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1548714879563162451
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279441702991914999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.336}
+  m_LocalScale: {x: 0.0015375233, y: 0.0015375233, z: 0.0015375233}
+  m_Children:
+  - {fileID: 288773879956823008}
+  - {fileID: 3159863864572899634}
+  - {fileID: 6604870972185219599}
+  m_Father: {fileID: 7985307720414461192}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1.904}
+  m_SizeDelta: {x: 500, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &4725561165945889741
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279441702991914999}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &4623819877004796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279441702991914999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &1202762003155850235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279441702991914999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &6379559008220846118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288773879956823008}
+  - component: {fileID: 5391352286276828034}
+  - component: {fileID: 8177756187374063608}
+  m_Layer: 5
+  m_Name: GasName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &288773879956823008
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379559008220846118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548714879563162451}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: 0, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5391352286276828034
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379559008220846118}
+  m_CullTransparentMesh: 1
+--- !u!114 &8177756187374063608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379559008220846118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.078431375, g: 1, b: 0, a: 0.8235294}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Hydrogen
 --- !u!1 &6429100219813130086
 GameObject:
   m_ObjectHideFlags: 0
@@ -9715,6 +10369,7 @@ GameObject:
   - component: {fileID: 4497879235569859322}
   - component: {fileID: 1897517462161960027}
   - component: {fileID: 7827724421569590887}
+  - component: {fileID: 4209949025560949784}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -9941,6 +10596,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &4209949025560949784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6429100219813130086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &6430599159169289456
 GameObject:
   m_ObjectHideFlags: 0
@@ -9958,6 +10627,7 @@ GameObject:
   - component: {fileID: 4154680310364644206}
   - component: {fileID: 3263229930375495433}
   - component: {fileID: 7943007853058455156}
+  - component: {fileID: 8325708848558086069}
   m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Untagged
@@ -10184,6 +10854,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &8325708848558086069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6430599159169289456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &6562204501943866690
 GameObject:
   m_ObjectHideFlags: 0
@@ -10201,6 +10885,7 @@ GameObject:
   - component: {fileID: 767675966102888331}
   - component: {fileID: 2059732325422698174}
   - component: {fileID: 2705290896655866369}
+  - component: {fileID: 5419257023004898963}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -10427,6 +11112,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &5419257023004898963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6562204501943866690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &6567491425286337323
 GameObject:
   m_ObjectHideFlags: 0
@@ -10444,6 +11143,7 @@ GameObject:
   - component: {fileID: 178166822993867704}
   - component: {fileID: 645905899296332408}
   - component: {fileID: 4536264643067132}
+  - component: {fileID: 3350784931528395097}
   m_Layer: 0
   m_Name: Cube (28)
   m_TagString: Untagged
@@ -10670,6 +11370,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &3350784931528395097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567491425286337323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &6569644890680492477
 GameObject:
   m_ObjectHideFlags: 0
@@ -10687,6 +11401,7 @@ GameObject:
   - component: {fileID: 7002002325313008194}
   - component: {fileID: 217292164901549047}
   - component: {fileID: 2063581436994506262}
+  - component: {fileID: 1879509558796469340}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -10913,6 +11628,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &1879509558796469340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569644890680492477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &6821995253047551388
 GameObject:
   m_ObjectHideFlags: 0
@@ -10930,6 +11659,7 @@ GameObject:
   - component: {fileID: 2984322816581803547}
   - component: {fileID: 5176313929078130053}
   - component: {fileID: 2775655523009944176}
+  - component: {fileID: 3439631038808463779}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Untagged
@@ -11156,6 +11886,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &3439631038808463779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821995253047551388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &7045040915850655967
 GameObject:
   m_ObjectHideFlags: 0
@@ -11173,6 +11917,7 @@ GameObject:
   - component: {fileID: 7816808413290873360}
   - component: {fileID: 3507388244688869705}
   - component: {fileID: 3873285963709253093}
+  - component: {fileID: 1439221206871901046}
   m_Layer: 0
   m_Name: Cube (25)
   m_TagString: Untagged
@@ -11399,6 +12144,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &1439221206871901046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045040915850655967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &7193651999266736108
 GameObject:
   m_ObjectHideFlags: 0
@@ -11416,6 +12175,7 @@ GameObject:
   - component: {fileID: 8952497105834430655}
   - component: {fileID: 8895501778135317282}
   - component: {fileID: 3600002615212377447}
+  - component: {fileID: 223410468369650716}
   m_Layer: 0
   m_Name: Cube (24)
   m_TagString: Untagged
@@ -11642,6 +12402,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &223410468369650716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193651999266736108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &7275875184842520820
 GameObject:
   m_ObjectHideFlags: 0
@@ -11659,6 +12433,7 @@ GameObject:
   - component: {fileID: 5780790868676181011}
   - component: {fileID: 6196889269839275254}
   - component: {fileID: 4784174465188631151}
+  - component: {fileID: 7270169347250483308}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -11885,6 +12660,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &7270169347250483308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275875184842520820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &7882080462929719028
 GameObject:
   m_ObjectHideFlags: 0
@@ -11902,6 +12691,7 @@ GameObject:
   - component: {fileID: 2302852081539110989}
   - component: {fileID: 4004136117366829558}
   - component: {fileID: 5640840120191076743}
+  - component: {fileID: 3951970931869235396}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Untagged
@@ -12128,6 +12918,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &3951970931869235396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882080462929719028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}
 --- !u!1 &8665478522130397475
 GameObject:
   m_ObjectHideFlags: 0
@@ -12137,6 +12941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3981018656104638825}
+  - component: {fileID: 5131137067785015548}
   m_Layer: 0
   m_Name: Balloon
   m_TagString: Untagged
@@ -12189,6 +12994,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &5131137067785015548
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665478522130397475}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &8848804033002080440
 GameObject:
   m_ObjectHideFlags: 0
@@ -12206,6 +13027,7 @@ GameObject:
   - component: {fileID: 3114686699930149206}
   - component: {fileID: 6703091943451181449}
   - component: {fileID: 5608857565207760896}
+  - component: {fileID: 3960812540031156215}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -12432,3 +13254,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &3960812540031156215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848804033002080440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71489aa178be5644c885362ec5bd3da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0
+  popSound: {fileID: 0}

@@ -39,7 +39,7 @@ public class Droppable : MonoBehaviour
         if (planetSettings.GetComponent<PlanetSettings>().isMoon == true) { // These set the drag up for eatch planet setting
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0;
             dustColor = new Color(84 / 255f, 84 / 255f, 84 / 255f, 255 / 255f);
-            transform.GetComponentInChildren<Rigidbody>().mass = 1;
+            //transform.GetComponentInChildren<Rigidbody>().mass = 1;
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMars == true)
         {

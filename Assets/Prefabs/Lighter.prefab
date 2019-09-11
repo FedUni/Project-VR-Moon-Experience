@@ -4601,6 +4601,7 @@ GameObject:
   - component: {fileID: 2417385657330468296}
   - component: {fileID: 298464491273605460}
   - component: {fileID: 964951980937125531}
+  - component: {fileID: 4563222874724414271}
   m_Layer: 0
   m_Name: Lighter
   m_TagString: Untagged
@@ -9628,3 +9629,16 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!65 &4563222874724414271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6740460018266392003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03223172, y: 0.029122487, z: 0.014388507}
+  m_Center: {x: 0.12006222, y: -0.02668181, z: -0.00045132637}
