@@ -6,7 +6,7 @@ using System;
 
 [RequireComponent(typeof(Interactable))]
 // Created by Hein Reimert for The Moon VR 3.0 project
-public class launch20 : MonoBehaviour
+public class SpeedSetting1 : MonoBehaviour
 {
     CatapultFire script;
     void Start()
@@ -20,11 +20,10 @@ public class launch20 : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            Debug.Log(script.launchAngle);
-            script.launchAngle = 0.20f;
-            Debug.Log(script.launchAngle);
+            script.speed = 5f;
         }
 
     }
 
 }
+

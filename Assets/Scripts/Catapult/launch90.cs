@@ -12,7 +12,7 @@ public class launch90 : MonoBehaviour
     void Start()
     {
         GameObject catapultFireButton = GameObject.Find("CatapultFireButton");
-       script = catapultFireButton.GetComponent<CatapultFire>(); // Get animation controller from the object
+        script = catapultFireButton.GetComponentInChildren<CatapultFire>(); // Get animation controller from the object
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
@@ -21,7 +21,7 @@ public class launch90 : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
             Debug.Log(script.launchAngle);
-            script.launchAngle = 0.90f;
+            script.launchAngle = 1f;
             Debug.Log(script.launchAngle);
         }
 
