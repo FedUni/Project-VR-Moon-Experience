@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6916430446846181143}
   - component: {fileID: 6459376717526893388}
   - component: {fileID: 79787843867623276}
+  - component: {fileID: 208157591949387606}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -288,6 +289,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: 4147a1595d380e34bb20fbfb0e4bdf37, type: 3}
+--- !u!114 &208157591949387606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363911559551536597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cfcf4f33b77d4438154d957bdf70eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1786749140937768597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,6 +2532,7 @@ GameObject:
   - component: {fileID: 2437817201884721139}
   - component: {fileID: 2490392183031769609}
   - component: {fileID: 7690441722378344915}
+  - component: {fileID: 458362082725050007}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -2762,6 +2776,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: 4147a1595d380e34bb20fbfb0e4bdf37, type: 3}
+--- !u!114 &458362082725050007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5774558608346983061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2c7ab443797cc409db74db29eeb50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5932231302812232864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,6 +2833,7 @@ GameObject:
   - component: {fileID: 1130075083008143802}
   - component: {fileID: 7454184823765574705}
   - component: {fileID: 1718712716876058364}
+  - component: {fileID: 7184026722938234528}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -3049,6 +3076,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: 4147a1595d380e34bb20fbfb0e4bdf37, type: 3}
+--- !u!114 &7184026722938234528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6286272529814748624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e8f73f249e9884ca819a499c40d0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7122893296748746791
 GameObject:
   m_ObjectHideFlags: 0
