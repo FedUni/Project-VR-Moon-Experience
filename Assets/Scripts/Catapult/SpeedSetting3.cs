@@ -20,7 +20,7 @@ public class SpeedSetting3 : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            script.speed = 500f;
+            script.speed = 30f;
         }
 
     }

@@ -25,7 +25,6 @@ public class CatapultFire : MonoBehaviour
     {
         GameObject catapult = GameObject.Find("Catapult");
         anim = catapult.GetComponent<Animator>(); // Get animation controller from the object
-        //anim.StopPlayback();
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
@@ -38,7 +37,6 @@ public class CatapultFire : MonoBehaviour
     {
         if (isInterping)
         {
-            Debug.Log(animateAngle);
             animationState = anim.GetCurrentAnimatorStateInfo(0);
             aniLocation = animationState.normalizedTime % 1;
             float playAmount = Mathf.Lerp(aniLocation, animateAngle, (speed * Time.deltaTime)/animateAngle);
@@ -77,7 +75,6 @@ public class CatapultFire : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
             if (!beenPressed) {
-                Debug.Log("Pressed");
                 beenPressed = true;
                 animateAngle = launchAngle;
                 isInterping = true;
