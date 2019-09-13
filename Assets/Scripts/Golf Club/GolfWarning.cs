@@ -1,20 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
+//Created by Hein for the Moon VR 3.0 Project
 public class GolfWarning : MonoBehaviour
 {
-if (!Physics.Raycast(myray, out myhit, 1000.0f))
-  {
-      if(myhit.gameObject.tag == "Object")
-      {
-          text.setActive(true);
-          text.GetComponent<Text>().text = "text needed";
-      }
-      else
-      {
-          text.setActive(false);
-          text.GetComponent<Text>().text = "";
-      }
-  }
+     Canvas warning;
+    void Start()
+    {
+        warning = gameObject.GetComponentInChildren<Canvas>();
+    }
+
+    private void HandHoverUpdate(Hand hand)
+    {
+        GrabTypes startingGrabType = hand.GetGrabStarting();
+        if (startingGrabType != GrabTypes.None)
+        {
+            warning.enabled = true;
+            StartCoroutine(waitForCanvas());
+        }
+        else
+        {
+            warning.enabled = false;
+        }
+       
+    }
+    public IEnumerator waitForCanvas()
+    {
+
+        yield return new WaitForSeconds(10.0f);
+        warning.enabled = false;
+
+    }
+  
+}
+
