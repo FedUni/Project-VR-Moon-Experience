@@ -34,3 +34,11 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Prefabs/GolfBall.prefab
+Assets/Prefabs/GolfBall.prefab.meta
+Assets/Prefabs/GolfBallNoLCD.prefab
+Assets/Prefabs/GolfBallNoLCD.prefab.meta
+Assets/Scenes/Levels/MoonScene.unity
+Assets/Scripts/Golf Club/GolfPoints.cs
+Assets/Scripts/Golf Club/GolfPoints.cs.meta
+Assets/Scripts/Golf Club/GolfWarning.cs
