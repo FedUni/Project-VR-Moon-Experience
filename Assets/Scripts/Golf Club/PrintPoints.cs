@@ -15,19 +15,10 @@ public class PrintPoints : MonoBehaviour
 
     void Start()
     {
-        
+     
         golfPoints = GetComponent<GolfPoints>();
         scoreText = gameObject.GetComponentInChildren<Text>();
         scoreText.enabled = false;
-    }
-
-    float dropTime = Time.time;
-    double congrats = 50;
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
 
         if (GolfPoints.hit == true)
         {
@@ -36,6 +27,15 @@ public class PrintPoints : MonoBehaviour
             scoreText.text = "Goodjob!\n " + "Your score was " + "<Color=#00FFFF>" + GolfPoints.hitScore + "</color>";
 
         }
+    
+
+    float dropTime = Time.time;
+    double congrats = 50;
+
+
+  
+
+       
     }
     public IEnumerator waitForCanvas()
     {
