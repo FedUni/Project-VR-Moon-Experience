@@ -15,8 +15,10 @@ public class PrintPoints : MonoBehaviour
 
     void Start()
     {
+        
         golfPoints = GetComponent<GolfPoints>();
         scoreText = gameObject.GetComponentInChildren<Text>();
+        scoreText.enabled = false;
     }
 
     float dropTime = Time.time;

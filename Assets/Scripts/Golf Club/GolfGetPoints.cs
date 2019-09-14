@@ -40,7 +40,7 @@ public class GolfPoints : MonoBehaviour
     {
 
 
-        if (collision.GetContact(0).otherCollider.name == "Terrain" && GolfPoints.hasBeenHit == true)
+        if (collision.GetContact(0).otherCollider.name == "Terrain" && hasBeenHit == true)
         {
             hit = true;
 
