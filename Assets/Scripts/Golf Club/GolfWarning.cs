@@ -8,10 +8,15 @@ using UnityEngine.UI;
 //Created by Hein for the Moon VR 3.0 Project
 public class GolfWarning : MonoBehaviour
 {
-     Canvas warning;
+    Canvas warning;
+    private Vector3 scale;
+    private Vector3 originalScale;
+    public float speed;
     void Start()
     {
         warning = gameObject.GetComponentInChildren<Canvas>();
+        originalScale = warning.GetComponent<RectTransform>().localScale;
+        scale = warning.GetComponent<RectTransform>().localScale;
     }
 
     private void HandHoverUpdate(Hand hand)
@@ -20,7 +25,8 @@ public class GolfWarning : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
             warning.enabled = true;
-            StartCoroutine(waitForCanvas());
+            warning.GetComponent<RectTransform>().localScale = new Vector3(0,0,0);
+            StartCoroutine(waitForCanvasScaleUp());
         }
         else
         {
@@ -28,13 +34,19 @@ public class GolfWarning : MonoBehaviour
         }
        
     }
-    public IEnumerator waitForCanvas()
+
+    public IEnumerator waitForCanvasScaleUp()
     {
-
-        yield return new WaitForSeconds(10.0f);
+        scale = originalScale;
+        yield return new WaitForSeconds(8.0f);
+        scale = new Vector3(0, 0, 0);
+        yield return new WaitForSeconds(1.0f);
         warning.enabled = false;
-
     }
-  
+    private void Update()
+    {
+        warning.GetComponent<RectTransform>().localScale = Vector3.Lerp(warning.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
+    }
+
 }
 

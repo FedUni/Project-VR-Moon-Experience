@@ -20,11 +20,14 @@ public class launch20 : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            Debug.Log(script.launchAngle);
             script.launchAngle = 0.20f;
-            Debug.Log(script.launchAngle);
         }
 
+    }
+
+    public void setAngle()
+    {
+        script.launchAngle = 0.20f;
     }
 
 }

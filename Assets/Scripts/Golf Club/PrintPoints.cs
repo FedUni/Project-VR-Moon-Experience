@@ -13,6 +13,7 @@ public class PrintPoints : MonoBehaviour
     Text scoreText;
 
 
+    /*
     void Start()
     {
 
@@ -48,6 +49,7 @@ public class PrintPoints : MonoBehaviour
 
        
     }
+    */
     public IEnumerator waitForCanvas()
     {
 

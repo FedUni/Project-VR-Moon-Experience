@@ -74,17 +74,23 @@ public class CatapultFire : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            if (!beenPressed) {
-                beenPressed = true;
-                animateAngle = launchAngle;
-                isInterping = true;
-            }
+            fireCatapult();
+        }
+    }
 
-            if (planetSettings.GetComponent<PlanetSettings>().hasAtmos) // If this planet has an atmos the sound should be played
-            {
-                GetComponent<AudioSource>().Play(); // Play the sound
-                GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
-            }
+    public void fireCatapult()
+    {
+        if (!beenPressed)
+        {
+            beenPressed = true;
+            animateAngle = launchAngle;
+            isInterping = true;
+        }
+
+        if (planetSettings.GetComponent<PlanetSettings>().hasAtmos) // If this planet has an atmos the sound should be played
+        {
+            GetComponent<AudioSource>().Play(); // Play the sound
+            GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
         }
     }
 }
