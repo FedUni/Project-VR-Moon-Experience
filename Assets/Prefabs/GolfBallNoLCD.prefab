@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 1222124603}
   - component: {fileID: 1751165005281282739}
   - component: {fileID: 6441316193890189892}
-  - component: {fileID: 1084835029789775729}
+  - component: {fileID: 6171360581976853341}
   m_Layer: 8
   m_Name: GolfBall
   m_TagString: Untagged
@@ -5146,7 +5146,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &1084835029789775729
+--- !u!114 &6171360581976853341
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5155,6 +5155,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1222124596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c20693a1189fcda47a9b39d801868703, type: 3}
+  m_Script: {fileID: 11500000, guid: 73c1f706c6909b346a5d1aeb9db395f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasBeenHit: 0
+  hit: 0
+  hitScore: 0
