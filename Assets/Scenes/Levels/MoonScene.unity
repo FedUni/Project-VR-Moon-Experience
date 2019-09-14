@@ -3862,6 +3862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GolfClub
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 41654947dbe45a640888afc5c20b5f42, type: 3}
+      propertyPath: m_Name
+      value: GolfClub
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41654947dbe45a640888afc5c20b5f42, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.904999
