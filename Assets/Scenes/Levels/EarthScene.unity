@@ -1619,7 +1619,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 51.53251
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2300000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 52b7d70b1de7c4ce09662b77c14d9fda, type: 2}
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
 --- !u!4 &996121229 stripped
 Transform:
@@ -2055,7 +2060,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1233875150}
   - component: {fileID: 1233875149}
-  - component: {fileID: 1233875151}
   m_Layer: 0
   m_Name: lightCycle-sunLight
   m_TagString: Untagged
@@ -2117,19 +2121,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 48.067, y: 179.99998, z: 0}
---- !u!114 &1233875151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233875148}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 930c74aef36ae43488c8b16f28d466c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minutesInDay: 1.5
 --- !u!1001 &1297548418
 PrefabInstance:
   m_ObjectHideFlags: 0
