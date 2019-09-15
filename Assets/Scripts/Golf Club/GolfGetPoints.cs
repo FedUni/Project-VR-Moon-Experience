@@ -20,11 +20,16 @@ public class GolfGetPoints : MonoBehaviour
     private Vector3 postion;
     public float speed;
     bool scaleOn = false;
+    bool hasScoreBoard = false;
 
     void Start()
     {
-        
-        if (GameObject.Find("GolfScoreBoard") != null)
+
+        if (GameObject.Find("GolfScoreBoard") != null) {
+            hasScoreBoard = true;
+        }
+
+        if (hasScoreBoard)
         {
             golfScoreBoard = GameObject.Find("GolfScoreBoard").GetComponent<Canvas>();
             scoreText = GameObject.Find("GolfScoreBoard").GetComponentInChildren<Text>();
@@ -54,8 +59,14 @@ public class GolfGetPoints : MonoBehaviour
             hitTime = Time.time;
             isFalling = false;
         }
-        golfScoreBoard.GetComponent<RectTransform>().localScale = Vector3.Lerp(golfScoreBoard.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
-        golfScoreBoard.GetComponent<RectTransform>().position = Vector3.Lerp(golfScoreBoard.GetComponent<RectTransform>().position, postion, speed * Time.deltaTime);
+
+        if (hasScoreBoard)
+        {
+            golfScoreBoard.GetComponent<RectTransform>().localScale = Vector3.Lerp(golfScoreBoard.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
+            golfScoreBoard.GetComponent<RectTransform>().position = Vector3.Lerp(golfScoreBoard.GetComponent<RectTransform>().position, postion, speed * Time.deltaTime);
+        }
+
+        
 
         if (scaleOn) {
             StartCoroutine(waitForCanvasScaleUp());
