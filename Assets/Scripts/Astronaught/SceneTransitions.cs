@@ -109,7 +109,7 @@ public class SceneTransitions : MonoBehaviour
         }
 
         mesh.materials = dissolveMat;
-        GameObject.Find("Watch").SetActive(false);
+        //GameObject.Find("Watch").SetActive(false);
         shouldDissolve = true;
         yield return new WaitForSeconds(2.0f); // Wait for the animation to play
         SceneManager.LoadScene(sceneName); // Load the scene

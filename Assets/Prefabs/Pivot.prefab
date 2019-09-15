@@ -530,8 +530,8 @@ MonoBehaviour:
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: MarsScene
   dissolveMat:
-  - {fileID: 0}
-  disolveMat: {fileID: 0}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &716941839460157831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,8 +2570,8 @@ MonoBehaviour:
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: MoonScene
   dissolveMat:
-  - {fileID: 0}
-  disolveMat: {fileID: 0}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &2109745758776577992
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,8 +6873,8 @@ MonoBehaviour:
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: EarthScene
   dissolveMat:
-  - {fileID: 0}
-  disolveMat: {fileID: 0}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &5980869719816045302
 GameObject:
   m_ObjectHideFlags: 0
@@ -8135,8 +8135,8 @@ MonoBehaviour:
   transitionAnim: {fileID: 5532924606643821760}
   sceneName: LaunchScene
   dissolveMat:
-  - {fileID: 0}
-  disolveMat: {fileID: 0}
+  - {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
+  disolveMat: {fileID: 2100000, guid: 179555ab8bd66734b8c1ac67e84c7cbc, type: 2}
 --- !u!1 &6853802258531189828
 GameObject:
   m_ObjectHideFlags: 0
