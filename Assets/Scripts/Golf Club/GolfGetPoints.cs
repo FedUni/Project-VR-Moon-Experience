@@ -80,7 +80,7 @@ public class GolfGetPoints : MonoBehaviour
         if (collision.GetContact(0).otherCollider.name == "Terrain" && hasBeenHit == true && GameObject.Find("GolfScoreBoard") != null && Math.Round(Time.time - hitTime, 1) > 1.5f)
         {
             golfScoreBoard.GetComponent<RectTransform>().position = originalPostion;
-            scoreText.text = "Goodjob!\n " + "Your score was " + "<Color=#00FFFF>" + Math.Round(Time.time - hitTime, 1) + "</color>";
+            scoreText.text = "<Color=red>"+"Goodjob!\n " + "Your score was " + "</color>" + "<Color=#0000FF>" + Math.Round(Time.time - hitTime, 1) + "</color>";
             hasBeenHit = false;
             golfScoreBoard.enabled = true;
             golfScoreBoard.GetComponent<RectTransform>().localScale = new Vector3(0, 0, 0);
