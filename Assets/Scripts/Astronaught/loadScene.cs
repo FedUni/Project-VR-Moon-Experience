@@ -47,7 +47,7 @@ public class loadScene : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
+        /* if (Input.GetKeyDown("space"))
         {
             SteamVR_LoadLevel.Begin("moonSceneMain");
         }
@@ -59,6 +59,6 @@ public class loadScene : MonoBehaviour {
             {
                 hand.HideSkeleton();
             }
-        }
+        }*/
     }
 }

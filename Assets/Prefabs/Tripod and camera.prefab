@@ -1534,7 +1534,7 @@ MonoBehaviour:
   polariodPlaceHolder: {fileID: 81412250}
   polariodPrefab: {fileID: 1357286678287322788, guid: f49abf262ccfcd746aba52debb2030ad,
     type: 3}
-  flashEffectAnimator: {fileID: 0}
+  flashEffectAnimator: {fileID: 715397305}
   renderTexture: {fileID: 8400000, guid: 5e00be67facbcd748b8d30f584e7fccd, type: 2}
 --- !u!114 &715397307
 MonoBehaviour:

@@ -10,13 +10,13 @@ using System;
 public class CatapultFire : MonoBehaviour
 {
     Animator anim;
-    public float launchAngle;
+    public float launchAngle = 1f;
     GameObject planetSettings;
     public AudioClip launchSound;
     bool isInterping = false;
     AnimatorStateInfo animationState;
     float aniLocation = 0;
-    public float speed = 10f;
+    public float speed = 5f;
     float animateAngle;
     bool isDoneLaunch = false;
     bool beenPressed = false;
@@ -30,6 +30,8 @@ public class CatapultFire : MonoBehaviour
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
         GetComponent<AudioSource>().clip = launchSound; // Assign the button sound
         anim.Play("CatapultAnimate", 0, 0);
+        speed = 5f;
+        animateAngle = 1f;
     }
     //Called every Update() while a Hand is hovering over this object
    

@@ -36,7 +36,7 @@ public class CameraPolaroidController : MonoBehaviour {
         if ( hand.GetStandardInteractionButtonDown() || ( ( hand.controller != null ) && hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_Grip ) ) )
         {
 */
-            Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
+            //Debug.Log("Begin animating: " + gameObject.name + ", using animation: " + anim.name);
             //anim.StartPlayback();//doesnt work?
             //anim.Play("CameraButtonAnim");
 

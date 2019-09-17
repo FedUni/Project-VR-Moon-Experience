@@ -2810,6 +2810,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: teleportViaWatchUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6991262866287538770, guid: 39e05e1de17021c438619f72a4d60c56,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1031544790, guid: ccc35565d8b405e44baeb1809a573710,
+        type: 3}
+    - target: {fileID: 6991262866287538770, guid: 39e05e1de17021c438619f72a4d60c56,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: laserAni
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e05e1de17021c438619f72a4d60c56, type: 3}
 --- !u!114 &523544890956615629 stripped

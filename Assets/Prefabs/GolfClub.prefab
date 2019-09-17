@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 238564259}
   m_LocalRotation: {x: 0.34716433, y: 0.616017, z: 0.616017, w: 0.34716433}
   m_LocalPosition: {x: 0, y: 0, z: -3.867899}
-  m_LocalScale: {x: 0.007300011, y: 0.0072001796, z: 0.0072983615}
+  m_LocalScale: {x: 0.009939695, y: 0.0098037645, z: 0.009937449}
   m_Children:
   - {fileID: 8910324237555382981}
   - {fileID: 2007168763}
@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -31.192001, y: 90, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3.6799965, y: -0.7169969}
+  m_AnchoredPosition: {x: 3.05, y: 0.32}
   m_SizeDelta: {x: 1000, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &238564263
@@ -125,8 +125,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573552820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.904999, y: 2.282104, z: -6.527481}
-  m_LocalScale: {x: 0.24999997, y: 0.2650941, z: 0.24999997}
+  m_LocalPosition: {x: -4.1322, y: 2.0171, z: -5.0904}
+  m_LocalScale: {x: 0.16880998, y: 0.16881, z: 0.16880998}
   m_Children:
   - {fileID: 1984790211}
   m_Father: {fileID: 0}
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasDropped: 0
   timeFalling: 0
-  collisionSound: {fileID: 0}
+  collisionSound: {fileID: 8300000, guid: 86f1a0227d5c83c4e873a380bdf246c3, type: 3}
 --- !u!114 &1984790216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,8 +452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityAverageFrames: 5
-  angularVelocityAverageFrames: 11
+  velocityAverageFrames: 1
+  angularVelocityAverageFrames: 1
   estimateOnAwake: 0
 --- !u!114 &1984790219
 MonoBehaviour:
@@ -469,9 +469,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateActionSetOnAttach:
     actionSetPath: 
-  hideHandOnAttach: 1
+  hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 0
+  hideControllerOnAttach: 1
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 1
