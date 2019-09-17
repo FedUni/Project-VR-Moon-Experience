@@ -4,6 +4,7 @@ using UnityEngine;
 using Valve.VR.InteractionSystem;
 using UnityEngine.UI;
 using System;
+using System.Linq;
 
 //Created by Hein for the Moon VR 3.0 Project
 
@@ -21,7 +22,7 @@ public class GolfGetPoints : MonoBehaviour
     public float speed;
     bool scaleOn = false;
     bool hasScoreBoard = false;
-    List<double> userScores = new List<double>();
+    List<double> userScoresArray = new List<double>();
 
     void Start()
     {
@@ -88,7 +89,11 @@ public class GolfGetPoints : MonoBehaviour
             golfScoreBoard.enabled = true;
             golfScoreBoard.GetComponent<RectTransform>().localScale = new Vector3(0, 0, 0);
             scaleOn = true;
-            userScores.Add(Math.Round(Time.time - hitTime, 1)); //user score system add to array
+            //update the score board
+            userScoresArray.Add(Math.Round(Time.time - hitTime, 1)); //user score system add to array
+            double highestUserScore = userScoresArray.Max(); //sorts the array for the max and makes max highestUserScore
+            //TODO make a canavas and print text to canvas.
+
         }
     }
 
