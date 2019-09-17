@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Sphere_Sphere
+    100004: BowlingBall:Sphere_Sphere
     400000: //RootNode
     400002: Sphere_Sphere
+    400004: BowlingBall:Sphere_Sphere
     2100000: Sphere_SphereMat
+    2100002: initialShadingGroup
     2300000: Sphere_Sphere
+    2300002: BowlingBall:Sphere_Sphere
     3300000: Sphere_Sphere
+    3300002: BowlingBall:Sphere_Sphere
     4300000: Sphere_Sphere
+    4300002: BowlingBall:Sphere_Sphere
   externalObjects:
   - first:
       type: UnityEngine:Material
