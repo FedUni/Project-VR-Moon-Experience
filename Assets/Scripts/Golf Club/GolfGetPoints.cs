@@ -21,6 +21,7 @@ public class GolfGetPoints : MonoBehaviour
     public float speed;
     bool scaleOn = false;
     bool hasScoreBoard = false;
+    List<double> userScores = new List<double>();
 
     void Start()
     {
@@ -76,8 +77,10 @@ public class GolfGetPoints : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
+        
+    
 
-        if (collision.GetContact(0).otherCollider.name == "Terrain" && hasBeenHit == true && GameObject.Find("GolfScoreBoard") != null && Math.Round(Time.time - hitTime, 1) > 1.5f)
+            if (collision.GetContact(0).otherCollider.name == "Terrain" && hasBeenHit == true && GameObject.Find("GolfScoreBoard") != null && Math.Round(Time.time - hitTime, 1) > 1.5f)
         {
             golfScoreBoard.GetComponent<RectTransform>().position = originalPostion;
             scoreText.text = "<Color=red>"+"Goodjob!\n " + "Your score was " + "</color>" + "<Color=#0000FF>" + Math.Round(Time.time - hitTime, 1) + "</color>";
@@ -85,6 +88,7 @@ public class GolfGetPoints : MonoBehaviour
             golfScoreBoard.enabled = true;
             golfScoreBoard.GetComponent<RectTransform>().localScale = new Vector3(0, 0, 0);
             scaleOn = true;
+            userScores.Add(Math.Round(Time.time - hitTime, 1)); //user score system add to array
         }
     }
 
