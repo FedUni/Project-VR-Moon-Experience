@@ -6,17 +6,28 @@ ModelImporter:
     100000: //RootNode
     100002: jwst_body_stl1:STL_BINARY_
     100004: jwst_dish_stl1:STL_BINARY_
+    100006: JWST:STL_BINARY_
+    100008: JWST:STL_BINARY_1
     400000: //RootNode
     400002: jwst_body_stl1:STL_BINARY_
     400004: jwst_dish_stl1:STL_BINARY_
+    400006: JWST:STL_BINARY_
+    400008: JWST:STL_BINARY_1
     2100000: jwst_body_stl1_STL_BINARY_Mat
     2100002: jwst_dish_stl1_STL_BINARY_Mat
+    2100004: JWST_initialShadingGroup
     2300000: jwst_body_stl1:STL_BINARY_
     2300002: jwst_dish_stl1:STL_BINARY_
+    2300004: JWST:STL_BINARY_
+    2300006: JWST:STL_BINARY_1
     3300000: jwst_body_stl1:STL_BINARY_
     3300002: jwst_dish_stl1:STL_BINARY_
+    3300004: JWST:STL_BINARY_
+    3300006: JWST:STL_BINARY_1
     4300000: jwst_body_stl1:STL_BINARY_
     4300002: jwst_dish_stl1:STL_BINARY_
+    4300004: JWST:STL_BINARY_
+    4300006: JWST:STL_BINARY_1
   externalObjects: {}
   materials:
     importMaterials: 1
