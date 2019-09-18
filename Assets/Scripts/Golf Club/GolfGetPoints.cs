@@ -23,9 +23,22 @@ public class GolfGetPoints : MonoBehaviour
     bool scaleOn = false;
     bool hasScoreBoard = false;
     List<double> userScoresArray = new List<double>();
+   double highestUserScore;
+    Canvas GolfHighScores;
+    private Text GolfHighscoreText;
+  
 
     void Start()
     {
+
+         string TemphighestUserScoreString = PlayerPrefs.GetString("Highscores"); //Load as string
+
+            highestUserScore = double.Parse(TemphighestUserScoreString, System.Globalization.CultureInfo.InvariantCulture); //Converts back to double
+
+        GolfHighScores = GameObject.Find("GolfHighScores").GetComponent<Canvas>();
+        GolfHighscoreText = GameObject.Find("GolfHighScores").GetComponentInChildren<Text>();
+
+        GolfHighscoreText.text = "<Color=red>" + "CURRENT HIGHSCORE: " + "</color>" + "<Color=#0000FF>" + highestUserScore + "</color>";
 
         if (GameObject.Find("GolfScoreBoard") != null) {
             hasScoreBoard = true;
@@ -91,8 +104,21 @@ public class GolfGetPoints : MonoBehaviour
             scaleOn = true;
             //update the score board
             userScoresArray.Add(Math.Round(Time.time - hitTime, 1)); //user score system add to array
+
             double highestUserScore = userScoresArray.Max(); //sorts the array for the max and makes max highestUserScore
-            //TODO make a canavas and print text to canvas.
+            GolfHighScores = GameObject.Find("GolfHighScores").GetComponent<Canvas>(); //finds canvas for highscores
+            GolfHighscoreText = GameObject.Find("GolfHighScores").GetComponentInChildren<Text>();
+            GolfHighscoreText.text = "<Color=red>" + "CURRENT HIGHSCORE: " + "</color>" + "<Color=#0000FF>" + highestUserScore + "</color>";//Prints highscore!
+
+
+            string highestUserScoreString = highestUserScore.ToString(); //convert to string
+
+            PlayerPrefs.SetString("Highscores", highestUserScoreString); //Save as string
+
+            string TemphighestUserScoreString = PlayerPrefs.GetString("Highscores"); //Load as string
+
+            highestUserScore = double.Parse(TemphighestUserScoreString, System.Globalization.CultureInfo.InvariantCulture); //Converts back to double
+           
 
         }
     }
