@@ -24,9 +24,20 @@ public class GolfGetPoints : MonoBehaviour
     bool hasScoreBoard = false;
     List<double> userScoresArray = new List<double>();
 
+    Canvas GolfHighScores;
+    private Text GolfHighscoreText;
+
+    double highestUserScore;
+    string TotalPoints;
+    string TempPointsString;
+
     void Start()
     {
+        // userScoresArray - is the points
 
+     
+
+      
         if (GameObject.Find("GolfScoreBoard") != null) {
             hasScoreBoard = true;
         }
@@ -41,10 +52,22 @@ public class GolfGetPoints : MonoBehaviour
             originalPostion = golfScoreBoard.GetComponent<RectTransform>().position;
             postion = golfScoreBoard.GetComponent<RectTransform>().position;
         }
+        //grabbing highscores from playerprefs
+ 
+        string TempPointsString = PlayerPrefs.GetString("AllPointsSave");//Loads the string
+        highestUserScore = double.Parse(TempPointsString, System.Globalization.CultureInfo.InvariantCulture); //Converts to double
+        userScoresArray.Add(highestUserScore); //user score system add to array
+          
+
+        //prints out highscores before the ball is hit.
+        GolfHighScores = GameObject.Find("GolfHighScores").GetComponent<Canvas>();
+        GolfHighscoreText = GameObject.Find("GolfHighScores").GetComponentInChildren<Text>();
+        GolfHighscoreText.text = "<Color=red>" + "CURRENT HIGHSCORE: " + "</color>" + "<Color=#0000FF>" + highestUserScore + "</color>";
+
     }
 
 
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.name == "GolfClub")
@@ -92,7 +115,15 @@ public class GolfGetPoints : MonoBehaviour
             //update the score board
             userScoresArray.Add(Math.Round(Time.time - hitTime, 1)); //user score system add to array
             double highestUserScore = userScoresArray.Max(); //sorts the array for the max and makes max highestUserScore
-            //TODO make a canavas and print text to canvas.
+
+   
+            GolfHighScores = GameObject.Find("GolfHighScores").GetComponent<Canvas>(); //finds canvas for highscores
+            GolfHighscoreText = GameObject.Find("GolfHighScores").GetComponentInChildren<Text>();
+
+            GolfHighscoreText.text = "<Color=red>" + "CURRENT HIGHSCORE: " + "</color>" + "<Color=#0000FF>" + highestUserScore + "</color>";//Prints highscore!
+
+            string TotalPoints = highestUserScore.ToString(); //Convert to string
+            PlayerPrefs.SetString("AllPointsSave", TotalPoints); //Save as a string
 
         }
     }
