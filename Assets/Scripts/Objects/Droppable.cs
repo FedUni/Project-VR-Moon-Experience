@@ -45,11 +45,9 @@ public class Droppable : MonoBehaviour
         {
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 0.5f;
             dustColor = new Color(132 / 255f, 87 / 255f, 39 / 255f, 255 / 255f);
-        }
-        if (planetSettings.GetComponent<PlanetSettings>().isEarth)
-        {
+        } else { 
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 1;
-            dustColor = new Color(140 / 255f, 126 / 255f, 111 / 255f, 255 / 255f);
+            dustColor = new Color(0.2f, 0.2f, 0.15f, 1f);
         }
 
     }
@@ -106,9 +104,9 @@ public class Droppable : MonoBehaviour
             GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
         }
         if (collision.GetContact(0).otherCollider.name == "Terrain" && dust != null) { // Check to see if the collider was the ground
-            Vector3 contactPoint = collision.GetContact(0).point;  // Get the codinates of the contact point
             main.startColor = dustColor;
             trails.colorOverTrail = dustColor;
+            dust.Stop();
             dust.Play();
         }
     }
