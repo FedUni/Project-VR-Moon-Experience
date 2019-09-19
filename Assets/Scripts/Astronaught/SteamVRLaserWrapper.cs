@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class SteamVRLaserWrapper : MonoBehaviour
 {
     private SteamVR_LaserPointer steamVrLaserPointer;
-    private GameObject canvas;
+    private GameObject watchCanvas;
+    private Canvas[] labels;
     private Vector3 scale;
     private Vector3 postition;
     private Vector3 originalScale;
@@ -15,6 +16,7 @@ public class SteamVRLaserWrapper : MonoBehaviour
     public Vector3 newPostition;
     public bool isEnabled;
     public float speed;
+    Canvas labelPointedAt;
 
     private void Awake()
     {
@@ -22,11 +24,12 @@ public class SteamVRLaserWrapper : MonoBehaviour
         steamVrLaserPointer.PointerIn += OnPointerIn;
         steamVrLaserPointer.PointerOut += OnPointerOut;
         steamVrLaserPointer.PointerClick += OnPointerClick;
-        canvas = GameObject.Find("WatchUI");
-        originalScale = canvas.GetComponent<RectTransform>().localScale;
-        originalPostition = canvas.GetComponent<RectTransform>().localPosition;
-        scale = canvas.GetComponent<RectTransform>().localScale;
-        postition = canvas.GetComponent<RectTransform>().localPosition;
+        watchCanvas = GameObject.Find("WatchUI");
+        //GameObject[] objects = GameObject.FindGameObjectsWithTag("Label");
+        originalScale = watchCanvas.GetComponent<RectTransform>().localScale;
+        originalPostition = watchCanvas.GetComponent<RectTransform>().localPosition;
+        scale = watchCanvas.GetComponent<RectTransform>().localScale;
+        postition = watchCanvas.GetComponent<RectTransform>().localPosition;
     }
 
     private void OnPointerClick(object sender, PointerEventArgs e)
@@ -44,8 +47,12 @@ public class SteamVRLaserWrapper : MonoBehaviour
 
     private void Update()
     {
-        canvas.GetComponent<RectTransform>().localScale = Vector3.Lerp(canvas.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
-        canvas.GetComponent<RectTransform>().localPosition = Vector3.Lerp(canvas.GetComponent<RectTransform>().localPosition, postition, speed * Time.deltaTime);
+        watchCanvas.GetComponent<RectTransform>().localScale = Vector3.Lerp(watchCanvas.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
+        watchCanvas.GetComponent<RectTransform>().localPosition = Vector3.Lerp(watchCanvas.GetComponent<RectTransform>().localPosition, postition, speed * Time.deltaTime);
+        if (labelPointedAt != null) {
+            labelPointedAt.GetComponent<RectTransform>().localScale = Vector3.Lerp(labelPointedAt.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
+            labelPointedAt.GetComponent<RectTransform>().localPosition = Vector3.Lerp(labelPointedAt.GetComponent<RectTransform>().localPosition, postition, speed * Time.deltaTime);
+        }
     }
 
     private void OnPointerOut(object sender, PointerEventArgs e)
@@ -57,8 +64,6 @@ public class SteamVRLaserWrapper : MonoBehaviour
         }
         if (isEnabled)
         {
-            //canvas.GetComponent<RectTransform>().localScale = originalScale;
-            //canvas.GetComponent<RectTransform>().localPosition = originalPostition;
             scale = originalScale;
             postition = originalPostition;
             pointerExitHandler.OnPointerExit(new PointerEventData(EventSystem.current));
@@ -69,13 +74,12 @@ public class SteamVRLaserWrapper : MonoBehaviour
     private void OnPointerIn(object sender, PointerEventArgs e)
     {
         IPointerEnterHandler pointerEnterHandler = e.target.GetComponent<IPointerEnterHandler>();
+        //labelPointedAt = e.target.GetComponentInChildren<Canvas>();
         if (pointerEnterHandler == null)
         {
             return;
         }
         if (isEnabled) {
-            //canvas.GetComponent<RectTransform>().localScale = newScale;
-            //canvas.GetComponent<RectTransform>().localPosition = newPostition;
             scale = newScale;
             postition = newPostition;
             pointerEnterHandler.OnPointerEnter(new PointerEventData(EventSystem.current));
