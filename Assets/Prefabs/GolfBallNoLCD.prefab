@@ -561,7 +561,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 0
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -622,7 +622,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -738,7 +738,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.1
+      scalar: 0.001
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3080,7 +3080,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   NoiseModule:
-    enabled: 1
+    enabled: 0
     strength:
       serializedVersion: 2
       minMaxState: 0
@@ -5162,7 +5162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitTime: 0
   speed: 0.5
-  resetScore: 1
+  resetScore: 0
 --- !u!114 &2563573269360119370
 MonoBehaviour:
   m_ObjectHideFlags: 0

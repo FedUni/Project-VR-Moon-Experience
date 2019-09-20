@@ -25,7 +25,6 @@ public class SteamVRLaserWrapper : MonoBehaviour
         steamVrLaserPointer.PointerOut += OnPointerOut;
         steamVrLaserPointer.PointerClick += OnPointerClick;
         watchCanvas = GameObject.Find("WatchUI");
-        //GameObject[] objects = GameObject.FindGameObjectsWithTag("Label");
         originalScale = watchCanvas.GetComponent<RectTransform>().localScale;
         originalPostition = watchCanvas.GetComponent<RectTransform>().localPosition;
         scale = watchCanvas.GetComponent<RectTransform>().localScale;
@@ -36,11 +35,9 @@ public class SteamVRLaserWrapper : MonoBehaviour
     {
         IPointerClickHandler clickHandler = e.target.GetComponent<IPointerClickHandler>();
         if (clickHandler == null)
-        {
-           
+        {           
             return;
-        }
-        
+        }        
 
         clickHandler.OnPointerClick(new PointerEventData(EventSystem.current));
     }
@@ -49,10 +46,6 @@ public class SteamVRLaserWrapper : MonoBehaviour
     {
         watchCanvas.GetComponent<RectTransform>().localScale = Vector3.Lerp(watchCanvas.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
         watchCanvas.GetComponent<RectTransform>().localPosition = Vector3.Lerp(watchCanvas.GetComponent<RectTransform>().localPosition, postition, speed * Time.deltaTime);
-        if (labelPointedAt != null) {
-            labelPointedAt.GetComponent<RectTransform>().localScale = Vector3.Lerp(labelPointedAt.GetComponent<RectTransform>().localScale, scale, speed * Time.deltaTime);
-            labelPointedAt.GetComponent<RectTransform>().localPosition = Vector3.Lerp(labelPointedAt.GetComponent<RectTransform>().localPosition, postition, speed * Time.deltaTime);
-        }
     }
 
     private void OnPointerOut(object sender, PointerEventArgs e)
@@ -74,7 +67,6 @@ public class SteamVRLaserWrapper : MonoBehaviour
     private void OnPointerIn(object sender, PointerEventArgs e)
     {
         IPointerEnterHandler pointerEnterHandler = e.target.GetComponent<IPointerEnterHandler>();
-        //labelPointedAt = e.target.GetComponentInChildren<Canvas>();
         if (pointerEnterHandler == null)
         {
             return;

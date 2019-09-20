@@ -16,16 +16,10 @@ public class resetScene : MonoBehaviour {
 
 
     void Awake () {
-            if(PlayerPrefs.GetInt("MaxSceneTime") == 0)
-            {
-            
-                //Debug.Log("Value is null, Apply defualt value");
-                MAX_SCENE_TIME = 500;
-            }
-            //else 
-            //{
-                //MAX_SCENE_TIME = (double) PlayerPrefs.GetInt("MaxSceneTime");
-            //}
+        if(PlayerPrefs.GetInt("MaxSceneTime") == 0)
+        {
+            MAX_SCENE_TIME = 500;
+        }
     }
     
 	// Use this for initialization
@@ -36,17 +30,13 @@ public class resetScene : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //check if scene time is different to max time allowed. 
-        if (MAX_SCENE_TIME != 3000) { 
+        if (MAX_SCENE_TIME != 30000) { 
             TIME_REMAINING = (sceneStartTime.AddSeconds(MAX_SCENE_TIME) - DateTime.Now).TotalSeconds;
             if (DateTime.Now >= sceneStartTime.AddSeconds(MAX_SCENE_TIME))
             {
-                //Debug.Log("We have reached the max scene time.");
-                //Scene scene = SceneManager.GetActiveScene();
-                //SceneManager.LoadScene("moonSceneMenu");
-                SteamVR_LoadLevel.Begin("LaunchScene");
+                //SteamVR_LoadLevel.Begin("LaunchScene");
             }
-            audioTimeSFXplay();//check to see if time remaining needs to be played
+            //audioTimeSFXplay();//check to see if time remaining needs to be played
         }
 
 

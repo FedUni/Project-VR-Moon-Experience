@@ -11,6 +11,7 @@ public class GlowTrigger : MonoBehaviour
         if (other.GetComponentInChildren<LaunchGlow>() != null)
         {
             other.GetComponentInChildren<LaunchGlow>().isLerping = true;
+            other.GetComponentInChildren<LaunchGlow>().postion = new Vector3(-1f, 4.2f, 0.192f);
         }
     }
 }
