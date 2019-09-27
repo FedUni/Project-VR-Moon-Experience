@@ -15,6 +15,7 @@ public class DropRigDecreaseHeight : MonoBehaviour
     GameObject DropRig;
     Text[] text;
     public double dropHeight;
+    bool hasGripped = false;
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
@@ -32,33 +33,52 @@ public class DropRigDecreaseHeight : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            anim.StopPlayback(); // Stop any current playback
-            anim.SetFloat("Direction", -10); // Set the direction and in this case the speed
-            anim.Play("DropRigHeight"); // Play the animaiton
-            text[3].text = ""; // Clear the instructions
-            if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)
-            {
-                sound.Play(); // Play the sound effect
-            }
-            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
-            // This next section is to fix a delay between playing the animation in reverse becase the animation counter keep counting even when the animation is finished
-            if (animationState.normalizedTime > 1 && anim.GetBool("heightHasPlayed")) // If is more then 1 its played too far past the end also need to make sure it has been played at least once
-            {
-                anim.Play("DropRigHeight", -1, 1); // Play it from the start of the animation
-            }
+            upPressing();
+            hasGripped = true;
 
         }
         GrabTypes endingGrabType = hand.GetGrabEnding();
         if (endingGrabType != GrabTypes.None)
         {
-            anim.SetFloat("Direction", 0); // effectilty stops the animaiton for the hight ajustment
-            sound.Stop();
-            dropHeight = System.Math.Truncate(animationState.normalizedTime * 100); // calaulate the hight of the drop rig based on the animation playthrough time
-            text[2].text = "The current drop is " + (int)anim.GetFloat("wingHeight") + " Metres"; // Set the drop rig LCD text
-            text[2].color = Color.green;        }
+            upReleasing();
+            hasGripped = false;
+        }
+    }
 
+    private void upPressing()
+    {
+        anim.StopPlayback(); // Stop any current playback
+        anim.SetFloat("Direction", -10); // Set the direction and in this case the speed
+        anim.Play("DropRigHeight"); // Play the animaiton
+        text[3].text = ""; // Clear the instructions
+        if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)
+        {
+            sound.Play(); // Play the sound effect
+        }
+        AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
+                                                                                // This next section is to fix a delay between playing the animation in reverse becase the animation counter keep counting even when the animation is finished
+        if (animationState.normalizedTime > 1 && anim.GetBool("heightHasPlayed")) // If is more then 1 its played too far past the end also need to make sure it has been played at least once
+        {
+            anim.Play("DropRigHeight", -1, 1); // Play it from the start of the animation
+        }
+    }
 
+    private void upReleasing()
+    {
+        anim.SetFloat("Direction", 0); // effectilty stops the animaiton for the hight ajustment
+        sound.Stop();
+        dropHeight = System.Math.Truncate(animationState.normalizedTime * 100); // calaulate the hight of the drop rig based on the animation playthrough time
+        text[2].text = "The current drop is " + (int)anim.GetFloat("wingHeight") + " Metres"; // Set the drop rig LCD text
+        text[2].color = Color.green;
+    }
 
+    private void OnHandHoverEnd(Hand hand)
+    {
+        if (hasGripped)
+        {
+            upReleasing();
+            hasGripped = false;
+        }
     }
 
 }

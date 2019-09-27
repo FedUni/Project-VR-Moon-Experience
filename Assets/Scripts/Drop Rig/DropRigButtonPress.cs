@@ -12,6 +12,7 @@ public class DropRigButtonPress : MonoBehaviour
     Animator anim;
     GameObject planetSettings;
     public AudioClip buttonSound;
+    bool hasGripped = false;
     void Start()
     {
         anim = gameObject.GetComponentInParent<Animator>(); // Get animation controller from the object
@@ -27,6 +28,7 @@ public class DropRigButtonPress : MonoBehaviour
         {
 
             anim.Play("ButtonDown"); // Play The animation so the button goes down.
+            hasGripped = true;
 
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos) // If this planet has an atmos the sound should be played
             { 
@@ -35,12 +37,22 @@ public class DropRigButtonPress : MonoBehaviour
                 GetComponent<AudioSource>().pitch = (UnityEngine.Random.value * 0.5f + 0.5f); // Change the pitch randomly to get a better effect
             }
             
-        }
+        }        
 
         GrabTypes endingGrabType = hand.GetGrabEnding();
         if (endingGrabType != GrabTypes.None)
         {
             anim.Play("ButtonUp"); // play the button aniamtion so the button goes up
+            hasGripped = false;
+        }
+    }
+
+    private void OnHandHoverEnd(Hand hand)
+    {
+        if (hasGripped)
+        {
+            anim.Play("ButtonUp"); // play the button aniamtion so the button goes up
+            hasGripped = false;
         }
     }
 

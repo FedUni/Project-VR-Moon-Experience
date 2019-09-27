@@ -16,7 +16,7 @@ public class DropRigIncreaseHeight : MonoBehaviour
     GameObject DropRig;
     Text[] text;
     public double dropHeight;
-    bool pointerDown = false;
+    bool hasGripped = false;
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
@@ -71,14 +71,25 @@ public class DropRigIncreaseHeight : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
             upPressing();
+            hasGripped = true;
         }
         GrabTypes endingGrabType = hand.GetGrabEnding();
         if (endingGrabType != GrabTypes.None)
         {
             upReleasing();
+            hasGripped = false;
         }
 
 
+    }
+
+    private void OnHandHoverEnd(Hand hand)
+    {
+        if (hasGripped)
+        {
+            upReleasing();
+            hasGripped = false;
+        }
     }
 
 

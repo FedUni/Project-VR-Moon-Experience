@@ -7,8 +7,8 @@
 using UnityEngine;
 using Valve.VR;
 
-namespace Valve.VR
-{
+//namespace Valve.VR
+//{
     public class SteamVR_TrackedObject : MonoBehaviour
     {
         public enum EIndex
@@ -108,4 +108,4 @@ namespace Valve.VR
                 this.index = (EIndex)index;
         }
     }
-}
+//}

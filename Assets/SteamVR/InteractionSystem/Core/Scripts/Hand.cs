@@ -22,6 +22,13 @@ namespace Valve.VR.InteractionSystem
     {
         // The flags used to determine how an object is attached to the hand.
         [Flags]
+
+        public enum HandType
+        {
+            Left,
+            Right,
+            Any
+        };
         public enum AttachmentFlags
         {
             SnapOnAttach = 1 << 0, // The object should snap to the position of the specified attachment point on the hand.
@@ -41,6 +48,8 @@ namespace Valve.VR.InteractionSystem
                                                               AttachmentFlags.SnapOnAttach;
 
         public Hand otherHand;
+        public HandType startingHandType;
+
         public SteamVR_Input_Sources handType;
 
         public SteamVR_Behaviour_Pose trackedObject;
@@ -52,6 +61,8 @@ namespace Valve.VR.InteractionSystem
         public SteamVR_Action_Vibration hapticAction = SteamVR_Input.GetAction<SteamVR_Action_Vibration>("Haptic");
         
         public SteamVR_Action_Boolean uiInteractAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI");
+
+        public SteamVR_Controller.Device controller;
 
         public bool useHoverSphere = true;
         public Transform hoverSphereTransform;
@@ -116,6 +127,8 @@ namespace Valve.VR.InteractionSystem
         {
             get { return attachedObjects.AsReadOnly(); }
         }
+
+
 
         public bool hoverLocked { get; private set; }
 
@@ -211,6 +224,31 @@ namespace Valve.VR.InteractionSystem
 
                 return null;
             }
+        }
+
+        public HandType GuessCurrentHandType()
+        {
+            if (startingHandType == HandType.Left || startingHandType == HandType.Right)
+            {
+                return startingHandType;
+            }
+
+            if (startingHandType == HandType.Any && otherHand != null && otherHand.controller == null)
+            {
+                return HandType.Right;
+            }
+
+            if (controller == null || otherHand == null || otherHand.controller == null)
+            {
+                return startingHandType;
+            }
+
+            if (controller.index == SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost))
+            {
+                return HandType.Left;
+            }
+
+            return HandType.Right;
         }
 
         public AttachedObject? currentAttachedObjectInfo

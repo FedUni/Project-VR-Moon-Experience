@@ -16,6 +16,8 @@ namespace Valve.VR
         public SteamVR_ExternalCamera externalCamera;
         public string externalCameraConfigPath = "externalcamera.cfg";
 
+        public ETrackingUniverseOrigin trackingSpace = ETrackingUniverseOrigin.TrackingUniverseStanding;
+
         public static EVREye eye { get; private set; }
         
         public static SteamVR_Render instance { get { return SteamVR_Behaviour.instance.steamvr_render; } }
@@ -348,6 +350,9 @@ namespace Valve.VR
 
         void Update()
         {
+            // Force controller update in case no one else called this frame to ensure prevState gets updated.
+            SteamVR_Controller.Update();
+
             if (SteamVR.active == false)
                 return;
 

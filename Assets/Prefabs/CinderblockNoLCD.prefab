@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 8246818388576995158}
   - component: {fileID: 5363885707703875730}
   - component: {fileID: 4943200980069124852}
+  - component: {fileID: 6101374588240921461}
   m_Layer: 9
   m_Name: CinderblockNoLCD
   m_TagString: Droppable
@@ -5298,3 +5299,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLerping: 0
   isDebug: 1
+  postion: {x: 0, y: 0, z: 0}
+--- !u!114 &6101374588240921461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8929310312965267108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627cbb87a858b5a47a914a7fba8fbf99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rBody: {fileID: 7467276425258509812}
+  forcePushPullPower: 1
