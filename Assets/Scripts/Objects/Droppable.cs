@@ -23,9 +23,16 @@ public class Droppable : MonoBehaviour
     Text[] text;
     Color dustColor;
     float mass;
+    Quaternion difference;
+
+    private Rigidbody rBody;
+    private int forcePushPullPower = 1;
+    private float moveScale;
+
     // Start is called before the first frame update
     void Start()
     {
+        rBody = GetComponent<Rigidbody>();
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
         GetComponent<AudioSource>().clip = collisionSound; // Assign the button sound
@@ -109,6 +116,48 @@ public class Droppable : MonoBehaviour
             dust.Stop();
             dust.Play();
         }
+    }
+    public void Grab(bool shouldGrab)
+    {
+        Debug.Log("Kinematic turned to " + shouldGrab);
+        rBody.isKinematic = shouldGrab;
+    }
+
+    public void Move(Vector3 curHandPos, Vector3 lastHandPos, Quaternion currenHandRotation, Quaternion lastHandRotation, Quaternion lastObjectRotation)
+    {
+        rBody.MovePosition(rBody.position + (curHandPos - lastHandPos) * moveScale);
+        //rBody.MoveRotation(Quaternion.Lerp((curHandRot * lastObjectRot), lastObjectRot, Time.deltaTime * 50f));
+
+        //difference =  lastHandRot * Quaternion.Inverse(curHandRot);
+
+        Vector3 currenHandRotationE = currenHandRotation.eulerAngles;
+        Vector3 lastHandRotationE = lastHandRotation.eulerAngles;
+        Vector3 lastObjectRotationE = lastObjectRotation.eulerAngles;
+
+
+
+        Vector3 result = (lastHandRotationE - currenHandRotationE) + lastObjectRotationE;
+        //result = result + currenHandRotationE;
+
+        //rBody.MoveRotation(Quaternion.Euler(result.x, result.y, result.z));
+
+        //rBody.rotation = lastHandRot * difference;
+        //rBody.rotation = difference * lastObjectRot;
+        //rBody.MoveRotation(curHandRot);
+        //rBody.MoveRotation(Quaternion.Lerp(lastObjectRot, difference * lastObjectRot, Time.deltaTime * 5f));
+
+        rBody.AddTorque(result);
+    }
+
+    public void SetMoveScale(Vector3 handPostion)
+    {
+        Vector3 origin = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+        moveScale = Vector3.Magnitude(transform.position - origin) / Vector3.Magnitude(handPostion - origin);
+    }
+
+    public void ForcePush(Vector3 direction, int power)
+    {
+        rBody.AddForce(direction * power, ForceMode.Acceleration);
     }
 
 }

@@ -581,6 +581,7 @@ MonoBehaviour:
   mass: "7.34767309 \xD7 10^22 kg"
   lenthOfDay: 27d 0h 0m
   gravity: 0.166
+  forceEnabled: 1
 --- !u!4 &252990797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2095205503, guid: 847f68bda57f6e74d8b85a7d778f1169,

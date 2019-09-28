@@ -9,75 +9,76 @@ public class TheForce : MonoBehaviour
     private SteamVR_Controller.Device controller;
     public LineRenderer lRender;
     private Vector3[] postions;
-    private GrabObject grabbable;
+    private Droppable grabbable;
     private bool grabbed;
     public SteamVR_TrackedObject trackedObj;
     public Hand hand;
-    private bool isGripping = false;
-
+    private Quaternion lastHandRot;
+    private Quaternion lastObjectRot;
     private Vector3 lastHandPos;
+    private PlanetSettings planetsettings;
+    //private bool forceEnabled;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //SteamVR_TrackedObject trackedObj = GetComponent<SteamVR_TrackedObject>();
         controller = SteamVR_Controller.Input((int) trackedObj.index);
-        //lRender = GetComponent<LineRenderer>();
         postions = new Vector3[2];
-       
+        planetsettings = GameObject.Find("PlanetSettings").GetComponent<PlanetSettings>();
+        //forceEnabled = planetsettings.forceEnabled;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!grabbed)
+        if (planetsettings.forceEnabled)
         {
-            grabbable = RaycastForGrabbedObject();
-            if (!grabbable) return;
-        }
+            if (!grabbed)
+            {
+                grabbable = RaycastForGrabbedObject();
+                if (!grabbable) return;
+            }
 
-        Vector3 curHandPos = transform.position;
+            Vector3 curHandPos = transform.position;
+            Quaternion curHandRot = transform.rotation;
+            GrabTypes startingGrabType = hand.GetGrabStarting();
+            if (startingGrabType == GrabTypes.Pinch) // Force grab
+            {
+                grabbed = true;
+                grabbable.Grab(true);
+                grabbable.SetMoveScale(transform.position);
+                lastHandPos = curHandPos;
+                lastHandRot = curHandRot;
+                DisplayLine(false, transform.position);
+            }
 
-        GrabTypes startingGrabType = hand.GetGrabStarting();
-        if (startingGrabType == GrabTypes.Grip) // Force grab
-        {
-            isGripping = true;
-            grabbed = true;
-            grabbable.Grab(true);
-            grabbable.SetMoveScale(transform.position);
+            if (hand.IsGrabbingWithType(GrabTypes.Pinch)) // Force move 
+            {
+                grabbable.Move(curHandPos, lastHandPos, curHandRot, lastHandRot, lastObjectRot);
+            }
+
+            GrabTypes endingGrabType = hand.GetGrabEnding();
+            if (endingGrabType == GrabTypes.Pinch) // Release
+            {
+                grabbed = false;
+                grabbable.Grab(false);
+            }
+
             lastHandPos = curHandPos;
-            DisplayLine(false, transform.position);
-        }
+            lastHandRot = curHandRot;
 
-        if (hand.IsGrabbingWithType(GrabTypes.Grip)) // Force move 
-        {
-            grabbable.Move(curHandPos, lastHandPos);
-        }
 
-        GrabTypes endingGrabType = hand.GetGrabEnding();
-        if (endingGrabType == GrabTypes.Grip) // Release
-        {
-            isGripping = false;
-            grabbed = false;
-            grabbable.Grab(false);            
-        }
-        lastHandPos = curHandPos;
+            GrabTypes pushPullGrabType = hand.GetGrabStarting();
+            if (startingGrabType == GrabTypes.Grip && hand.startingHandType == Hand.HandType.Left)
+            {
+                grabbable.ForcePush(-1 * transform.forward, 200);
+            }
 
-        if (!isGripping) // Fix for hand hover bug
-        {
-            grabbable.Grab(false);
-        }
-
-        GrabTypes pushPullGrabType = hand.GetGrabStarting();
-        if (startingGrabType == GrabTypes.Pinch && hand.startingHandType == Hand.HandType.Left)
-        {
-            grabbable.ForcePush(-1 * transform.forward, 200);
-        }
-
-        if (startingGrabType == GrabTypes.Pinch && hand.startingHandType == Hand.HandType.Right)
-        {
-            grabbable.ForcePush(transform.forward, 300);
+            if (startingGrabType == GrabTypes.Grip && hand.startingHandType == Hand.HandType.Right)
+            {
+                grabbable.ForcePush(transform.forward, 300);
+            }
         }
     }
 
@@ -86,17 +87,26 @@ public class TheForce : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
-    private GrabObject RaycastForGrabbedObject() {
+    private Droppable RaycastForGrabbedObject() {
         RaycastHit hit;
         Ray r = new Ray(transform.position, transform.forward);
 
-        if (Physics.Raycast(r, out hit, Mathf.Infinity) && hit.collider.gameObject.GetComponent<GrabObject>() != null)
+        if (Physics.Raycast(r, out hit, Mathf.Infinity) && hit.collider.gameObject.GetComponent<Droppable>() != null)
         {
-            if (!isGripping)
+
+            if (hit.distance > 1)
             {
-                DisplayLine(true, hit.point);                
+                DisplayLine(true, hit.point);
+                lastObjectRot = hit.collider.gameObject.transform.rotation;
+                return hit.collider.gameObject.GetComponent<Droppable>();
             }
-            return hit.collider.gameObject.GetComponent<GrabObject>();
+            else
+            {
+                DisplayLine(false, transform.position);
+                return null;
+            }
+
+            
         } else
         {
             DisplayLine(false, transform.position);

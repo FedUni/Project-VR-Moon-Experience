@@ -19,6 +19,7 @@ public class PlanetSettings : MonoBehaviour
     public string mass; // Planets mass
     public string lenthOfDay; // Planets lenth of day
     public float gravity; // Multiplier for gravity based on earths gravity
+    public bool forceEnabled;
     // Start is called before the first frame update
     void Start()
     {

@@ -480,6 +480,7 @@ MonoBehaviour:
   mass: "5.972 \xD7 10^24 kg"
   lenthOfDay: 1d 0h 0m
   gravity: 1
+  forceEnabled: 1
 --- !u!4 &274832143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd,
@@ -727,6 +728,14 @@ PrefabInstance:
       value: JWST
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cb6deb8909e80c449819ad355d681786, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: cb6deb8909e80c449819ad355d681786, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: cb6deb8909e80c449819ad355d681786, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -978,14 +987,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9540d2c66d61a7b499df46259f6c2eaa, type: 2}
-    - target: {fileID: 100006, guid: cb6deb8909e80c449819ad355d681786, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: cb6deb8909e80c449819ad355d681786, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: cb6deb8909e80c449819ad355d681786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.02
