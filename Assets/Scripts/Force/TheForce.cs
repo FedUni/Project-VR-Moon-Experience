@@ -29,7 +29,7 @@ public class TheForce : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!grabbed)
         {
@@ -40,36 +40,50 @@ public class TheForce : MonoBehaviour
         Vector3 curHandPos = transform.position;
 
         GrabTypes startingGrabType = hand.GetGrabStarting();
-        if (startingGrabType == GrabTypes.Pinch) // Force grab
+        if (startingGrabType == GrabTypes.Grip) // Force grab
         {
             isGripping = true;
             grabbed = true;
             grabbable.Grab(true);
+            grabbable.SetMoveScale(transform.position);
             lastHandPos = curHandPos;
             DisplayLine(false, transform.position);
         }
-        if (isGripping) // Force move 
+
+        if (hand.IsGrabbingWithType(GrabTypes.Grip)) // Force move 
         {
-            grabbable.Move(curHandPos, lastHandPos);  
-        }
-        GrabTypes pushPullGrabType = hand.GetGrabStarting();
-        if (startingGrabType == GrabTypes.Grip)
-        {            
-            grabbable.ForcePush(transform.forward, 300);           
+            grabbable.Move(curHandPos, lastHandPos);
         }
 
         GrabTypes endingGrabType = hand.GetGrabEnding();
-        if (endingGrabType == GrabTypes.Pinch) // Release
+        if (endingGrabType == GrabTypes.Grip) // Release
         {
             isGripping = false;
             grabbed = false;
             grabbable.Grab(false);            
         }
         lastHandPos = curHandPos;
-        if (!isGripping)
+
+        if (!isGripping) // Fix for hand hover bug
         {
             grabbable.Grab(false);
         }
+
+        GrabTypes pushPullGrabType = hand.GetGrabStarting();
+        if (startingGrabType == GrabTypes.Pinch && hand.startingHandType == Hand.HandType.Left)
+        {
+            grabbable.ForcePush(-1 * transform.forward, 200);
+        }
+
+        if (startingGrabType == GrabTypes.Pinch && hand.startingHandType == Hand.HandType.Right)
+        {
+            grabbable.ForcePush(transform.forward, 300);
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
     }
 
     private GrabObject RaycastForGrabbedObject() {

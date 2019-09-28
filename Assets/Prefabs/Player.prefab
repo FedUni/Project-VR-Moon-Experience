@@ -980,7 +980,7 @@ LineRenderer:
   m_GameObject: {fileID: 945060429}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 0
   m_LightProbeUsage: 0
@@ -2228,7 +2228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherHand: {fileID: 945060430}
-  startingHandType: 0
+  startingHandType: 1
   handType: 2
   trackedObject: {fileID: 0}
   grabPinchAction:
@@ -2372,7 +2372,7 @@ LineRenderer:
   m_GameObject: {fileID: 2077468735}
   m_Enabled: 1
   m_CastShadows: 0
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 0
   m_LightProbeUsage: 0

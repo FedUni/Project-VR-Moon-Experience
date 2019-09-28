@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7530514137292741680}
   - component: {fileID: 8646771913989489793}
   - component: {fileID: 2490387547511771898}
+  - component: {fileID: 8389886433781383900}
   m_Layer: 0
   m_Name: JengaBlock
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &8772212933285095783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5000,6 +5001,19 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &8389886433781383900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662431491476041941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627cbb87a858b5a47a914a7fba8fbf99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forcePushPullPower: 0
 --- !u!1 &6696878021699401927
 GameObject:
   m_ObjectHideFlags: 0
