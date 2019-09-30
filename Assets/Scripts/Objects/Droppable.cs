@@ -23,7 +23,6 @@ public class Droppable : MonoBehaviour
     Text[] text;
     Color dustColor;
     float mass;
-    Quaternion difference;
 
     private Rigidbody rBody;
     private int forcePushPullPower = 1;
@@ -89,6 +88,7 @@ public class Droppable : MonoBehaviour
             }
 
         }
+
     }
 
     private void OnTriggerEnter(Collider other) // When the object collides with the trigger collider
@@ -119,34 +119,15 @@ public class Droppable : MonoBehaviour
     }
     public void Grab(bool shouldGrab)
     {
-        Debug.Log("Kinematic turned to " + shouldGrab);
         rBody.isKinematic = shouldGrab;
     }
 
-    public void Move(Vector3 curHandPos, Vector3 lastHandPos, Quaternion currenHandRotation, Quaternion lastHandRotation, Quaternion lastObjectRotation)
+    public void Move(Vector3 curHandPos, Vector3 lastHandPos)
     {
-        rBody.MovePosition(rBody.position + (curHandPos - lastHandPos) * moveScale);
-        //rBody.MoveRotation(Quaternion.Lerp((curHandRot * lastObjectRot), lastObjectRot, Time.deltaTime * 50f));
+        //rBody.AddForce((curHandPos - transform.position) * 1000, ForceMode.Impulse);
 
-        //difference =  lastHandRot * Quaternion.Inverse(curHandRot);
-
-        Vector3 currenHandRotationE = currenHandRotation.eulerAngles;
-        Vector3 lastHandRotationE = lastHandRotation.eulerAngles;
-        Vector3 lastObjectRotationE = lastObjectRotation.eulerAngles;
-
-
-
-        Vector3 result = (lastHandRotationE - currenHandRotationE) + lastObjectRotationE;
-        //result = result + currenHandRotationE;
-
-        //rBody.MoveRotation(Quaternion.Euler(result.x, result.y, result.z));
-
-        //rBody.rotation = lastHandRot * difference;
-        //rBody.rotation = difference * lastObjectRot;
-        //rBody.MoveRotation(curHandRot);
-        //rBody.MoveRotation(Quaternion.Lerp(lastObjectRot, difference * lastObjectRot, Time.deltaTime * 5f));
-
-        rBody.AddTorque(result);
+        //transform.position = (Vector3.Lerp(rBody.position, rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
+        rBody.MovePosition(Vector3.Lerp(rBody.position , rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
     }
 
     public void SetMoveScale(Vector3 handPostion)

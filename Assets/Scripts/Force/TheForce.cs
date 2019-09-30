@@ -13,11 +13,16 @@ public class TheForce : MonoBehaviour
     private bool grabbed;
     public SteamVR_TrackedObject trackedObj;
     public Hand hand;
-    private Quaternion lastHandRot;
-    private Quaternion lastObjectRot;
     private Vector3 lastHandPos;
     private PlanetSettings planetsettings;
-    //private bool forceEnabled;
+    public ParticleSystem laserBeam;
+    private ParticleSystem ZP;
+    private ParticleSystem EP;
+    public GameObject endpointSpark;
+    public GameObject ZeroPoint;
+    private float endWidth = 0.07f;
+    private float speed = 10f;
+    private bool holding = false;
 
 
     // Start is called before the first frame update
@@ -26,7 +31,8 @@ public class TheForce : MonoBehaviour
         controller = SteamVR_Controller.Input((int) trackedObj.index);
         postions = new Vector3[2];
         planetsettings = GameObject.Find("PlanetSettings").GetComponent<PlanetSettings>();
-        //forceEnabled = planetsettings.forceEnabled;
+        ZP = ZeroPoint.GetComponent<ParticleSystem>();
+        EP = endpointSpark.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -46,16 +52,27 @@ public class TheForce : MonoBehaviour
             if (startingGrabType == GrabTypes.Pinch) // Force grab
             {
                 grabbed = true;
-                grabbable.Grab(true);
+                grabbable.Grab(true); // Change this to true to type two force mode
                 grabbable.SetMoveScale(transform.position);
                 lastHandPos = curHandPos;
-                lastHandRot = curHandRot;
                 DisplayLine(false, transform.position);
+                LaserLine(false);
+                laserBeam.Play();
+                EP.Play();
+                ZP.Play();
+                ZeroPoint.transform.LookAt(grabbable.transform);
+                speed = 10;
+                holding = true;
             }
 
-            if (hand.IsGrabbingWithType(GrabTypes.Pinch)) // Force move 
+            if (hand.IsGrabbingWithType(GrabTypes.Pinch) && holding == true) // Force move 
             {
-                grabbable.Move(curHandPos, lastHandPos, curHandRot, lastHandRot, lastObjectRot);
+                grabbable.Move(curHandPos, lastHandPos);
+                postions[0] = transform.position;
+                postions[1] = grabbable.transform.position;
+                endpointSpark.transform.position = grabbable.transform.position;
+                lRender.SetPositions(postions);
+                ZeroPoint.transform.LookAt(grabbable.transform);
             }
 
             GrabTypes endingGrabType = hand.GetGrabEnding();
@@ -63,31 +80,62 @@ public class TheForce : MonoBehaviour
             {
                 grabbed = false;
                 grabbable.Grab(false);
+                endWidth = 0.07f;
+                laserBeam.Stop();
+                EP.Stop();
+                ZP.Stop();
+                holding = false;
+                            
             }
 
             lastHandPos = curHandPos;
-            lastHandRot = curHandRot;
-
 
             GrabTypes pushPullGrabType = hand.GetGrabStarting();
-            if (startingGrabType == GrabTypes.Grip && hand.startingHandType == Hand.HandType.Left)
+            if (startingGrabType == GrabTypes.Grip && hand.startingHandType == Hand.HandType.Left && holding == false)
             {
+                laserBeam.Play();
                 grabbable.ForcePush(-1 * transform.forward, 200);
+                EP.Play();
+                ZP.Play();
+                ZeroPoint.transform.LookAt(grabbable.transform);
+                var main = ZP.main;
+                main.simulationSpeed = 10;
+                endWidth = 0.2f;
+                speed = 100f;
+                StartCoroutine(Wait(1f));
             }
 
-            if (startingGrabType == GrabTypes.Grip && hand.startingHandType == Hand.HandType.Right)
+            if (startingGrabType == GrabTypes.Grip && hand.startingHandType == Hand.HandType.Right && holding == false)
             {
+                laserBeam.Play();
                 grabbable.ForcePush(transform.forward, 300);
+                EP.Play();
+                ZP.Play();
+                ZeroPoint.transform.LookAt(grabbable.transform);
+                var main = ZP.main;
+                main.simulationSpeed = 10;
+                endWidth = 0.2f;
+                speed = 100f;
+                StartCoroutine(Wait(1f));
             }
         }
+        //lRender.endWidth = Mathf.PingPong(5f * Time.deltaTime, 0.5f);
+        lRender.endWidth = Mathf.Lerp(lRender.endWidth, endWidth, 15f * Time.deltaTime);
     }
 
-    IEnumerator Wait()
+    IEnumerator Wait(float time)
     {
-        yield return new WaitForSeconds(0.5f);
+        endWidth = 0.07f;
+        yield return new WaitForSeconds(time);
+        laserBeam.Stop();
+        EP.Stop();
+        ZP.Stop();
+        var main = ZP.main;
+        main.simulationSpeed = 1;
+        speed = 10f;
     }
 
-    private Droppable RaycastForGrabbedObject() {
+private Droppable RaycastForGrabbedObject() {
         RaycastHit hit;
         Ray r = new Ray(transform.position, transform.forward);
 
@@ -97,7 +145,7 @@ public class TheForce : MonoBehaviour
             if (hit.distance > 1)
             {
                 DisplayLine(true, hit.point);
-                lastObjectRot = hit.collider.gameObject.transform.rotation;
+                ZeroPoint.transform.LookAt(hit.point);
                 return hit.collider.gameObject.GetComponent<Droppable>();
             }
             else
@@ -105,7 +153,6 @@ public class TheForce : MonoBehaviour
                 DisplayLine(false, transform.position);
                 return null;
             }
-
             
         } else
         {
@@ -117,8 +164,17 @@ public class TheForce : MonoBehaviour
     void DisplayLine (bool display, Vector3 endpoint)
     {
         lRender.enabled = display;
+        lRender.material.color = new Color(1f, 0f, 0f, 0f);
+        lRender.material.SetColor("_EmissionColor", Color.red * Mathf.LinearToGammaSpace(1.0f));
         postions[0] = transform.position;
         postions[1] = endpoint;
         lRender.SetPositions(postions);
+    }
+
+    void LaserLine(bool display)
+    {
+        endWidth = 0.07f;
+        lRender.material.color = new Color(1f, 0f, 0f, 0.5f);               
+        lRender.enabled = display;
     }
 }
