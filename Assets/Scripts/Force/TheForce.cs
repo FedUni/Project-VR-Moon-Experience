@@ -35,6 +35,8 @@ public class TheForce : MonoBehaviour
         planetsettings = GameObject.Find("PlanetSettings").GetComponent<PlanetSettings>();
         ZP = ZeroPoint.GetComponent<ParticleSystem>();
         EP = endpointSpark.GetComponent<ParticleSystem>();
+        ZP.Play();
+        ZP.Stop();
     }
 
     // Update is called once per frame
@@ -65,6 +67,7 @@ public class TheForce : MonoBehaviour
                 ZeroPoint.transform.LookAt(grabbable.transform);
                 speed = 10;
                 difference = transform.rotation * Quaternion.Inverse(grabbable.transform.rotation);
+                //difference = Quaternion.Inverse(transform.rotation) * transform.rotation;
                 holding = true;
             }
 
@@ -88,7 +91,8 @@ public class TheForce : MonoBehaviour
                 EP.Stop();
                 ZP.Stop();
                 holding = false;
-                            
+                difference = transform.rotation * Quaternion.Inverse(grabbable.transform.rotation);
+
             }
 
             lastHandPos = curHandPos;

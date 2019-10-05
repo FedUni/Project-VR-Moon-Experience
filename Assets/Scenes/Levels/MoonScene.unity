@@ -580,7 +580,7 @@ MonoBehaviour:
   mass: "7.34767309 \xD7 10^22 kg"
   lenthOfDay: 27d 0h 0m
   gravity: 0.166
-  forceEnabled: 1
+  forceEnabled: 0
 --- !u!4 &252990797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2095205503, guid: 847f68bda57f6e74d8b85a7d778f1169,
@@ -3352,6 +3352,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: laserAni
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383282502972250792, guid: 1523daeb4e8e2a247a002e5aabf7f65e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 28.302002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383282502972250792, guid: 1523daeb4e8e2a247a002e5aabf7f65e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.043930054
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9170427883906945369, guid: 1523daeb4e8e2a247a002e5aabf7f65e, type: 3}

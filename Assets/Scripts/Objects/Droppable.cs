@@ -128,8 +128,12 @@ public class Droppable : MonoBehaviour
 
         //transform.position = (Vector3.Lerp(rBody.position, rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
         rBody.MovePosition(Vector3.Lerp(rBody.position , rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
-        //rBody.MoveRotation(Quaternion.Lerp(transform.rotation, difference * currentHandRotation, 5f * Time.deltaTime));
-        rBody.MoveRotation(difference * currentHandRotation);
+        //rBody.MoveRotation(Quaternion.RotateTowards(rBody.rotation, difference * currentHandRotation, 50f * Time.deltaTime));
+        //Quaternion newRot = Quaternion.Lerp(transform.rotation, difference * currentHandRotation, 50f * Time.deltaTime);
+        //rBody.MoveRotation(newRot);
+        //Quaternion torque = difference * Quaternion.Inverse(currentHandRotation); 
+        //rBody.AddRelativeTorque(torque.eulerAngles / 500);
+        //rBody.
     }
 
     public void SetMoveScale(Vector3 handPostion)
