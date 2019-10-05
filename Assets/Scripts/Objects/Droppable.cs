@@ -122,12 +122,14 @@ public class Droppable : MonoBehaviour
         rBody.isKinematic = shouldGrab;
     }
 
-    public void Move(Vector3 curHandPos, Vector3 lastHandPos)
+    public void Move(Vector3 curHandPos, Vector3 lastHandPos, Quaternion difference, Quaternion currentHandRotation)
     {
         //rBody.AddForce((curHandPos - transform.position) * 1000, ForceMode.Impulse);
 
         //transform.position = (Vector3.Lerp(rBody.position, rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
         rBody.MovePosition(Vector3.Lerp(rBody.position , rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
+        //rBody.MoveRotation(Quaternion.Lerp(transform.rotation, difference * currentHandRotation, 5f * Time.deltaTime));
+        rBody.MoveRotation(difference * currentHandRotation);
     }
 
     public void SetMoveScale(Vector3 handPostion)

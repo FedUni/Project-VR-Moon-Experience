@@ -5,9 +5,9 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 2
     smallestHole: 0.25
-    backfaceThreshold: 5
+    backfaceThreshold: 38.2
   m_SceneGUID: 1236afa6b11f3194bb909659f8c0bb3c
   m_OcclusionCullingData: {fileID: 36300000, guid: ee3c8343e0a569f4785b1463437d9727,
     type: 2}
@@ -15,10 +15,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.04
   m_LinearFogStart: -268.9
   m_LinearFogEnd: 2000.39
   m_AmbientSkyColor: {r: 0.21586053, g: 0.21586053, b: 0.21586053, a: 1}

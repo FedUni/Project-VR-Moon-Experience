@@ -19,6 +19,8 @@ public class TheForce : MonoBehaviour
     private ParticleSystem ZP;
     private ParticleSystem EP;
     public GameObject endpointSpark;
+    Quaternion curHandRotation;
+    Quaternion difference;
     public GameObject ZeroPoint;
     private float endWidth = 0.07f;
     private float speed = 10f;
@@ -62,12 +64,13 @@ public class TheForce : MonoBehaviour
                 ZP.Play();
                 ZeroPoint.transform.LookAt(grabbable.transform);
                 speed = 10;
+                difference = transform.rotation * Quaternion.Inverse(grabbable.transform.rotation);
                 holding = true;
             }
 
             if (hand.IsGrabbingWithType(GrabTypes.Pinch) && holding == true) // Force move 
             {
-                grabbable.Move(curHandPos, lastHandPos);
+                grabbable.Move(curHandPos, lastHandPos, difference, transform.rotation);
                 postions[0] = transform.position;
                 postions[1] = grabbable.transform.position;
                 endpointSpark.transform.position = grabbable.transform.position;
