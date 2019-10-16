@@ -24,7 +24,7 @@ public class GolfWarning : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            warning.enabled = true;
+            warning.enabled = true; //Enables the canvas with the warning message
             warning.GetComponent<RectTransform>().localScale = new Vector3(0,0,0);
             StartCoroutine(waitForCanvasScaleUp());
         }
@@ -35,7 +35,7 @@ public class GolfWarning : MonoBehaviour
        
     }
 
-    public IEnumerator waitForCanvasScaleUp()
+    public IEnumerator waitForCanvasScaleUp() //scales the canvas size
     {
         scale = originalScale;
         yield return new WaitForSeconds(8.0f);

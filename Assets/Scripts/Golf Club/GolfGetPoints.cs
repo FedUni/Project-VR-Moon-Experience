@@ -37,7 +37,7 @@ public class GolfGetPoints : MonoBehaviour
     void Start()
     {
 
-        golfClub = GameObject.Find("GolfClubFace");
+        golfClub = GameObject.Find("GolfClubFace");//Find item Golf Club Face
 
         if (resetScore)
         {
@@ -67,7 +67,7 @@ public class GolfGetPoints : MonoBehaviour
             
     }
 
-    void FixedUpdate()
+    void FixedUpdate() //checks for an update
     {
         clubSpeed = (golfClub.transform.position - lastPosition);
         lastPosition = golfClub.transform.position;
