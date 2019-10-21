@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5835255900226801711}
   - component: {fileID: 393704577543195372}
   - component: {fileID: 2953669583846659617}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Equipment Labels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 4656974185463489556}
   - component: {fileID: 5773532508015833662}
   - component: {fileID: 6884991157201116101}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: MMSEVWindows
   m_TagString: Untagged
   m_Icon: {fileID: 0}

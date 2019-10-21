@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7151419521892297697}
   - component: {fileID: 2169520434374258570}
   - component: {fileID: 3706223865349043031}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: AllLabels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8140376206539107785}
   - component: {fileID: 474931535358053291}
   - component: {fileID: 3261498523225739933}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Equipment Labels
   m_TagString: Untagged
   m_Icon: {fileID: 0}

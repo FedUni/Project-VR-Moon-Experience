@@ -363,7 +363,7 @@ MonoBehaviour:
     actionSetPath: 
   hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 1
+  hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 0
@@ -5312,5 +5312,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627cbb87a858b5a47a914a7fba8fbf99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: {fileID: 7467276425258509812}
-  forcePushPullPower: 1

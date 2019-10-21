@@ -9,31 +9,162 @@ ModelImporter:
     100006: Lamp
     100008: Support frame
     100010: Winch
+    100012: pCylinder1
+    100014: Catapult
+    100016: pCylinder2
+    100018: pCylinder3
+    100020: polySurface1
+    100022: polySurface10
+    100024: polySurface11
+    100026: polySurface12
+    100028: polySurface13
+    100030: polySurface14
+    100032: polySurface15
+    100034: polySurface16
+    100036: polySurface17
+    100038: polySurface18
+    100040: polySurface19
+    100042: polySurface2
+    100044: polySurface20
+    100046: polySurface21
+    100048: polySurface22
+    100050: polySurface3
+    100052: polySurface4
+    100054: polySurface5
+    100056: polySurface6
+    100058: polySurface7
+    100060: polySurface8
+    100062: polySurface9
+    100064: pSphere1
+    100066: pSphere2
+    100068: transform1
+    100070: transform10
+    100072: transform11
+    100074: transform12
+    100076: transform13
+    100078: transform14
+    100080: transform15
+    100082: transform16
+    100084: transform17
+    100086: transform18
+    100088: transform19
+    100090: transform2
+    100092: transform20
+    100094: transform21
+    100096: transform22
+    100098: transform23
+    100100: transform24
+    100102: transform25
+    100104: transform26
+    100106: transform27
+    100108: transform28
+    100110: transform3
+    100112: transform4
+    100114: transform5
+    100116: transform6
+    100118: transform7
+    100120: transform8
+    100122: transform9
+    100124: Spoon
     400000: Camera
     400002: Catapult arm
     400004: //RootNode
     400006: Lamp
     400008: Support frame
     400010: Winch
+    400012: pCylinder1
+    400014: Catapult
+    400016: pCylinder2
+    400018: pCylinder3
+    400020: polySurface1
+    400022: polySurface10
+    400024: polySurface11
+    400026: polySurface12
+    400028: polySurface13
+    400030: polySurface14
+    400032: polySurface15
+    400034: polySurface16
+    400036: polySurface17
+    400038: polySurface18
+    400040: polySurface19
+    400042: polySurface2
+    400044: polySurface20
+    400046: polySurface21
+    400048: polySurface22
+    400050: polySurface3
+    400052: polySurface4
+    400054: polySurface5
+    400056: polySurface6
+    400058: polySurface7
+    400060: polySurface8
+    400062: polySurface9
+    400064: pSphere1
+    400066: pSphere2
+    400068: transform1
+    400070: transform10
+    400072: transform11
+    400074: transform12
+    400076: transform13
+    400078: transform14
+    400080: transform15
+    400082: transform16
+    400084: transform17
+    400086: transform18
+    400088: transform19
+    400090: transform2
+    400092: transform20
+    400094: transform21
+    400096: transform22
+    400098: transform23
+    400100: transform24
+    400102: transform25
+    400104: transform26
+    400106: transform27
+    400108: transform28
+    400110: transform3
+    400112: transform4
+    400114: transform5
+    400116: transform6
+    400118: transform7
+    400120: transform8
+    400122: transform9
+    400124: Spoon
     2000000: Camera
     2100000: Material
     2100002: Material.001
     2100004: Material.002
+    2100006: lambert1
+    2100008: Base
+    2100010: Spoon1
+    2100012: Winch1
     2300000: Catapult arm
     2300002: Support frame
     2300004: Winch
+    2300006: pCylinder1
+    2300008: Catapult
+    2300010: pSphere2
+    2300012: Spoon
     3300000: Catapult arm
     3300002: Support frame
     3300004: Winch
+    3300006: pCylinder1
+    3300008: Catapult
+    3300010: pSphere2
+    3300012: Spoon
     4300000: Support frame
     4300002: Winch
     4300004: Catapult arm
+    4300006: pCylinder1
+    4300008: Catapult
+    4300010: pSphere2
+    4300012: Spoon
     7400000: Winch|Cylinder.001Action
     7400002: Winch|Cylinder.007Action.001
     7400004: Catapult arm|Cylinder.001Action
     7400006: CatapultAnimate
     9500000: //RootNode
     10800000: Lamp
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -165,7 +296,7 @@ ModelImporter:
       name: CatapultAnimate
       takeName: Catapult arm|Cylinder.007Action.001
       firstFrame: 0
-      lastFrame: 6
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -10,7 +10,13 @@ public class PlanetValues1 : MonoBehaviour
     void Start()
     {
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
-        GameObject.Find("Atmos").GetComponent<Text>().text = planetSettings.GetComponent<PlanetSettings>().hasAtmos.ToString(); // Set the text
+        if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)
+        {
+            GameObject.Find("Atmos").GetComponent<Text>().text = "Yes";
+        } else
+        {
+            GameObject.Find("Atmos").GetComponent<Text>().text = "None";
+        }
         GameObject.Find("Radius").GetComponent<Text>().text = planetSettings.GetComponent<PlanetSettings>().radius; // Set the text
         GameObject.Find("Distance").GetComponent<Text>().text = planetSettings.GetComponent<PlanetSettings>().distanceToEarth; // Set the text
         GameObject.Find("Orbital").GetComponent<Text>().text = planetSettings.GetComponent<PlanetSettings>().orbitalPeriod; // Set the text

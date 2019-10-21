@@ -73,7 +73,13 @@ public class BalloonSleep : MonoBehaviour
 
         if (other.name == "Lighter") // Only do this if the object has been dropped to prevent this from playing if the played knocks the objects off the drig or they fall off it
         {
-           
+
+            Rigidbody[] strings = gameObject.transform.parent.GetComponentsInChildren<Rigidbody>();
+            foreach (Rigidbody str in strings)
+            {
+                str.useGravity = true;
+            }
+            floatStrength = 0f;
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos && gameObject.GetComponent<AudioSource>() != null && playedOnce == false)
             { // If this planet has an atmos the sound should be played
 
@@ -89,8 +95,7 @@ public class BalloonSleep : MonoBehaviour
             gameObject.GetComponent<ParticleSystem>().Play();
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             gameObject.GetComponentInChildren<Canvas>().enabled = false;
-            floatStrength = 0f;
-            Destroy(gameObject,30f);
+            Destroy(gameObject, 0.5f);
         }
     }
 }

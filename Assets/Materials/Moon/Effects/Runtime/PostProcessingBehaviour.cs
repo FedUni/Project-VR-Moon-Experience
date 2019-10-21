@@ -143,7 +143,7 @@ namespace UnityEngine.PostProcessing
 
             // Find out which camera flags are needed before rendering begins
             // Note that motion vectors will only be available one frame after being enabled
-            var flags = context.camera.depthTextureMode;
+            var flags = DepthTextureMode.None;
             foreach (var component in m_Components)
             {
                 if (component.active)
@@ -182,6 +182,8 @@ namespace UnityEngine.PostProcessing
         }
 
         // Classic render target pipeline for RT-based effects
+        // Note that any effect that happens after this stack will work in LDR
+        [ImageEffectTransformsToLDR]
         void OnRenderImage(RenderTexture source, RenderTexture destination)
         {
             if (profile == null || m_Camera == null)
@@ -326,6 +328,10 @@ namespace UnityEngine.PostProcessing
                 DisableComponents();
 
             m_Components.Clear();
+
+            // Reset camera mode
+            if (m_Camera != null)
+                m_Camera.depthTextureMode = DepthTextureMode.None;
 
             // Factories
             m_MaterialFactory.Dispose();

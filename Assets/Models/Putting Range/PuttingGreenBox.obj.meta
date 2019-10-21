@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: pasted__pCube2_group
     100002: //RootNode
+    100004: PuttingGreenBox:pasted__pCube2group
     400000: pasted__pCube2_group
     400002: //RootNode
+    400004: PuttingGreenBox:pasted__pCube2group
     2100000: pasted__pCube2_groupMat
+    2100002: initialShadingGroup
     2300000: pasted__pCube2_group
+    2300002: PuttingGreenBox:pasted__pCube2group
     3300000: pasted__pCube2_group
+    3300002: PuttingGreenBox:pasted__pCube2group
     4300000: pasted__pCube2_group
+    4300002: PuttingGreenBox:pasted__pCube2group
   externalObjects: {}
   materials:
     importMaterials: 1

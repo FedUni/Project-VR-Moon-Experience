@@ -68,7 +68,7 @@ public class LaunchGlow : MonoBehaviour
 
     public IEnumerator retractDistanceCanvas()
     {
-        postion = new Vector3(-1f, 3.611f, 0.192f);
+        postion = new Vector3(1.563f, 3.614f, 1.628f);
         yield return new WaitForSeconds(1f); // Show the scoreborad for 10 seconds
         isLerping = false;
     }

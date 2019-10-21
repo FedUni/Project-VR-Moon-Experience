@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: hammer:Mesh
+    100004: hammer1:Mesh
     400000: //RootNode
     400002: hammer:Mesh
+    400004: hammer1:Mesh
     2100000: hammer_MeshMat
+    2100002: initialShadingGroup
     2300000: hammer:Mesh
+    2300002: hammer1:Mesh
     3300000: hammer:Mesh
+    3300002: hammer1:Mesh
     4300000: hammer:Mesh
+    4300002: hammer1:Mesh
   externalObjects:
   - first:
       type: UnityEngine:Material

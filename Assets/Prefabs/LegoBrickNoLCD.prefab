@@ -110,7 +110,7 @@ MonoBehaviour:
     actionSetPath: 
   hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 1
+  hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 0
@@ -5132,6 +5132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLerping: 0
   isDebug: 1
+  postion: {x: 0, y: 0, z: 0}
 --- !u!1 &5820954564881799320
 GameObject:
   m_ObjectHideFlags: 0

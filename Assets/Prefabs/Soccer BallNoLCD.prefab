@@ -230,13 +230,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateActionSetOnAttach:
     actionSetPath: 
-  hideHandOnAttach: 1
+  hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  useHandObjectAttachmentPoint: 1
-  attachEaseIn: 0
+  useHandObjectAttachmentPoint: 0
+  attachEaseIn: 1
   snapAttachEaseInCurve:
     serializedVersion: 2
     m_Curve:
@@ -264,7 +264,7 @@ MonoBehaviour:
   snapAttachEaseInTime: 0.15
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
-  handFollowTransform: 1
+  handFollowTransform: 0
   highlightOnHover: 1
   hideHighlight: []
 --- !u!114 &166984947
@@ -5131,6 +5131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLerping: 0
   isDebug: 1
+  postion: {x: 0, y: 0, z: 0}
 --- !u!1 &509776109637695143
 GameObject:
   m_ObjectHideFlags: 0

@@ -125,8 +125,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573552820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4606, y: 2.3651, z: -6.9951}
-  m_LocalScale: {x: 0.27545136, y: 0.27545136, z: 0.27545136}
+  m_LocalPosition: {x: -6.4606, y: 2.3651, z: -6.633}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1984790211}
   m_Father: {fileID: 0}
@@ -474,7 +474,7 @@ MonoBehaviour:
     actionSetPath: 
   hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 1
+  hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 0

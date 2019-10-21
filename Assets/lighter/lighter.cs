@@ -14,6 +14,9 @@ public class lighter : MonoBehaviour
     GameObject planetSettings;
     public AudioClip collisionSound;
     Color dustColor;
+    bool hasAtmos = false;
+    AudioSource flameOn;
+    bool hasGripped = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,7 @@ public class lighter : MonoBehaviour
         GetComponent<AudioSource>().clip = collisionSound; // Assign the button sound
         particles = gameObject.GetComponents<ParticleSystem>();
         dust = particles[0];
-        //flame = gameObject.GetComponentInChildren<GameObject>();
+        flameOn = GameObject.Find("FlameOn").GetComponent<AudioSource>();
         main = dust.main;
         trails = dust.trails;
         if (planetSettings.GetComponent<PlanetSettings>().isMoon == true)
@@ -39,28 +42,26 @@ public class lighter : MonoBehaviour
         {
             GetComponent<Rigidbody>().drag = GetComponent<Rigidbody>().drag * 1;
             dustColor = new Color(140 / 255f, 126 / 255f, 111 / 255f, 255 / 255f);
+            hasAtmos = true;
         }
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDetachedFromHand(Hand hand)
     {
-        
+        flame.SetActive(false);
+        flameOn.Stop();
     }
 
-    private void HandHoverUpdate(Hand hand)
+    private void OnAttachedToHand(Hand hand)
     {
-        GrabTypes startingGrabType = hand.GetGrabStarting();
-        if (startingGrabType != GrabTypes.None)
+        flame.SetActive(true);
+        if (hasAtmos)
         {
-            flame.SetActive(true);
+            flameOn.Play();
         }
-        else {
-            flame.SetActive(false);
-        }
-
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (planetSettings.GetComponent<PlanetSettings>().hasAtmos && collision.relativeVelocity.magnitude > 0.5)
@@ -76,9 +77,6 @@ public class lighter : MonoBehaviour
             main.startColor = dustColor;
             trails.colorOverTrail = dustColor;
             dust.Play();
-            Debug.Log("Trying to play: " + dust.name);
-            //Debug.Log("Right now the puff of dust would be happeing if we had one.");
-            //Debug.Log("It should be spawned at " + contactPoint);
         }
     }
 }
