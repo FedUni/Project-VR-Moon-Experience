@@ -4462,7 +4462,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: cd5519b2797d6e146b5223f20003a7ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.11
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4964,6 +4964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RoboticArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 474931535358053291, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: highlightOnHover
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
