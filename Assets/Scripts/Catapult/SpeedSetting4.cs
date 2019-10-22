@@ -20,7 +20,7 @@ public class SpeedSetting4 : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            script.speed = 40f;
+            script.speed = 40f; // If this is changed the script for the control screen will need changing (CatapultInfoText)
         }
 
     }

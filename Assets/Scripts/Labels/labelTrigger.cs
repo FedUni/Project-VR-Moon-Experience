@@ -8,12 +8,12 @@ public class labelTrigger : MonoBehaviour
     GameObject[] objects;
     public void Start()
     {
-        objects = GameObject.FindObjectsOfType<GameObject>();
+        objects = GameObject.FindObjectsOfType<GameObject>(); // Get every object in the scene
     }
     
     public void hideLabels()
     {
-        foreach (GameObject equiptLabel in objects)
+        foreach (GameObject equiptLabel in objects) // For every label turn if off
         {
             if (equiptLabel.name.Contains("Equipment Labels"))
             {
@@ -24,7 +24,7 @@ public class labelTrigger : MonoBehaviour
 
     public void showLabels()
     {
-        foreach (GameObject equiptLabel in objects)
+        foreach (GameObject equiptLabel in objects) // For every label turn if on
         {
             if (equiptLabel.name.Contains("Equipment Labels"))
             {

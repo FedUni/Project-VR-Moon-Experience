@@ -19,7 +19,7 @@ public class LaserButtonTrigger : MonoBehaviour
         if (startingGrabType != GrabTypes.None)
         {
 
-            laserExperiment.laserAni();
+            laserExperiment.laserAni(); // Animate the laser
 
         }
     }

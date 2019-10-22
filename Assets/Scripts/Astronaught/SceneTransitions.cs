@@ -32,7 +32,7 @@ public class SceneTransitions : MonoBehaviour
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
         if (DropRig != null)
         {
-            panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the text elements in the drop rig
+            panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the lights elements in the drop rig
         }
         
         if (PlayerPrefs.GetInt("FirstLoad") == 1) { // We dont want to load the cords on the first run only after they have teleported once before
@@ -47,63 +47,67 @@ public class SceneTransitions : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // The space bar is used by the operator the change scenes
-        {
-            StartCoroutine(LoadScene(sceneName));
-        }
-        if (Input.GetKeyDown(KeyCode.P)) // The space bar is used by the operator the change scenes
-        {
-            //Pause();
-        }
-        if (shouldDissolve)
+        if (shouldDissolve) // The disolve animation should begin
         {
 
 
-            Light[] lights = GameObject.FindObjectsOfType<Light>();
-            MeshRenderer[] everything = GameObject.FindObjectsOfType<MeshRenderer>();
-            SkinnedMeshRenderer[] skinnedMeshes = GameObject.FindObjectsOfType<SkinnedMeshRenderer>();
-            Material disMat = dissolveMat[0];
+            Light[] lights = GameObject.FindObjectsOfType<Light>(); // Get all the light in the scene
+            MeshRenderer[] everything = GameObject.FindObjectsOfType<MeshRenderer>(); // Get all the meshes
+            SkinnedMeshRenderer[] skinnedMeshes = GameObject.FindObjectsOfType<SkinnedMeshRenderer>(); //Get the player model
+            Material disMat = dissolveMat[0]; // Set the disolve mat
             
-            foreach (Light light in lights)
+            foreach (Light light in lights) // For every light in the scene
             {
-                light.shadowStrength = shadowAmount;
+                light.shadowStrength = shadowAmount; // Set the shadow amount to a new value
 
             }
-            disMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 1f * Time.deltaTime));
-            shadowAmount = Mathf.Lerp(shadowAmount, 0, 1f * Time.deltaTime);
+            disMat.SetFloat("_DissolveAmount", Mathf.Lerp(disolveMat.GetFloat("_DissolveAmount"), 1, 1f * Time.deltaTime)); // Lerp the effect
+            shadowAmount = Mathf.Lerp(shadowAmount, 0, 5f * Time.deltaTime); // Lerp the shadow amount
 
         }
 
     }
     public IEnumerator LoadScene(String sceneName)
     {    
-        transitionAnim.SetTrigger("end"); // Set the animation up
-        disolveMat.SetFloat("_DissolveAmount", 0.3f);
+        transitionAnim.SetTrigger("end"); // Set the animation up for the fade to black
+        disolveMat.SetFloat("_DissolveAmount", 0.3f); // Set the disove mat to start a third threw
 
 
-        mesh = GameObject.Find("AstronautShoeL").GetComponent<SkinnedMeshRenderer>();
+        mesh = GameObject.Find("AstronautShoeL").GetComponent<SkinnedMeshRenderer>(); // Find the player mesh by name
 
-        MeshRenderer[] everything = GameObject.FindObjectsOfType<MeshRenderer>();
-        SkinnedMeshRenderer[] skinnedMeshes = GameObject.FindObjectsOfType<SkinnedMeshRenderer>();
-        Canvas[] canvasEverything = GameObject.FindObjectsOfType<Canvas>();
+        MeshRenderer[] everything = GameObject.FindObjectsOfType<MeshRenderer>(); // Get every mesh rendering in the scene
+        SkinnedMeshRenderer[] skinnedMeshes = GameObject.FindObjectsOfType<SkinnedMeshRenderer>(); // and the player mech
+        Canvas[] canvasEverything = GameObject.FindObjectsOfType<Canvas>(); // Get all the canvases
 
         foreach (SkinnedMeshRenderer skinnedStuff in skinnedMeshes)
         {
-            skinnedStuff.materials = dissolveMat;
+            skinnedStuff.materials = dissolveMat; // Apply the disove mat
             
         }
 
         foreach (MeshRenderer stuff in everything)
         {
-            stuff.materials = dissolveMat;
+            stuff.materials = dissolveMat; // Apply the disove mat
         }
 
         foreach (Canvas canvasStuff in canvasEverything)
         {
-            canvasStuff.GetComponentInChildren<Canvas>().enabled = false;
+            canvasStuff.GetComponentInChildren<Canvas>().enabled = false; // Turn the canvases off
 
         }
-        if (DropRig != null) {
+
+        Light[] lights = GameObject.FindObjectsOfType<Light>(); // Get all the light in the scene
+
+        foreach (Light light in lights)
+        {
+            if (light.name != "Sunlight")
+            {
+                light.intensity = 0f;
+            }
+        }
+        if (DropRig != null) { //  Turn off the drop rig light
+
+            
             panelLights[0].intensity = 0;
             panelLights[1].intensity = 0;
         }

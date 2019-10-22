@@ -20,32 +20,32 @@ public class CatapultInfoText : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (CFscript.launchAngle == 1f)
+        if (CFscript.launchAngle == 1f) // If this is changed the script for the angle button will need changing (Launch90)
         {
             catapultTexts[0].text = "The angle is currently set to 70°";
         }
-        if (CFscript.launchAngle == 0.5f)
+        if (CFscript.launchAngle == 0.5f) // If this is changed the script for the angle button will need changing (Launch45)
         {
             catapultTexts[0].text = "The angle is currently set to 35°";
         }
-        if (CFscript.launchAngle == 0.2f)
+        if (CFscript.launchAngle == 0.2f) // If this is changed the script for the angle button will need changing (Launch20)
         {
             catapultTexts[0].text = "The angle is currently set to 15°";
         }
         /////////////////////////////////////////////////////////////////////////
-        if (CFscript.speed == 5f)
+        if (CFscript.speed == 5f) // If this is changed the script for the speed button will need changing (SpeedSetting1)
         {
             catapultTexts[1].text = "The power is curretly set to low";
         }
-        if (CFscript.speed == 10f)
+        if (CFscript.speed == 10f) // If this is changed the script for the speed button will need changing (SpeedSetting2)
         {
             catapultTexts[1].text = "The power is curretly set to medium";
         }
-        if (CFscript.speed == 30f)
+        if (CFscript.speed == 30f) // If this is changed the script for the speed button will need changing (SpeedSetting3)
         {
             catapultTexts[1].text = "The power is curretly set to high";
         }
-        if (CFscript.speed == 40f)
+        if (CFscript.speed == 40f) // If this is changed the script for the speed button will need changing (SpeedSetting4)
         {
             catapultTexts[1].text = "The power is curretly set to very high";
         }

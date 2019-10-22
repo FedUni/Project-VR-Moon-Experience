@@ -35,29 +35,29 @@ public class BalloonSleep : MonoBehaviour
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         if (planetSettings.GetComponent<PlanetSettings>().isEarth) // If this planet has an atmos the sound should be played
         {
-            floatStrength = floatStrength * 1f;
+            floatStrength = floatStrength * 1f; // Set the upward float amount
             if (isHydrogen) {
-                fireIsNeeded = true;
+                fireIsNeeded = true; // Should burn
             }
             if (isOxygen)
             {
-                fireIsNeeded = true;
+                fireIsNeeded = true; // Should burn
             }
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMoon) // If this planet has an atmos the sound should be played
         {
-            floatStrength = floatStrength * 0f;
+            floatStrength = floatStrength * 0f; // Set the upward float amount
             if (isOxygen)
             {
-                fireIsNeeded = true;
+                fireIsNeeded = true; // Should burn
             }
         }
         if (planetSettings.GetComponent<PlanetSettings>().isMars) // If this planet has an atmos the sound should be played
         {
-            floatStrength = floatStrength * 0.2f;
+            floatStrength = floatStrength * 0.2f; // Set the upward float amount
             if (isOxygen)
             {
-                fireIsNeeded = true;
+                fireIsNeeded = true; // Should burn
             }
         }
     }
@@ -65,21 +65,21 @@ public class BalloonSleep : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            GetComponent<Rigidbody>().AddForce(new Vector3(0, 0.0005f, 0) * floatStrength);
+            GetComponent<Rigidbody>().AddForce(new Vector3(0, 0.0005f, 0) * floatStrength); // continually add the float force
     }
     private void OnTriggerEnter(Collider other) // When the object collides with the trigger collider
     {
 
 
-        if (other.name == "Lighter") // Only do this if the object has been dropped to prevent this from playing if the played knocks the objects off the drig or they fall off it
+        if (other.name == "Lighter") // The lighter was touched tot eh balloon
         {
 
-            Rigidbody[] strings = gameObject.transform.parent.GetComponentsInChildren<Rigidbody>();
+            Rigidbody[] strings = gameObject.transform.parent.GetComponentsInChildren<Rigidbody>(); // The the string pieces on this balloon
             foreach (Rigidbody str in strings)
             {
-                str.useGravity = true;
+                str.useGravity = true; // Make them fall down
             }
-            floatStrength = 0f;
+            floatStrength = 0f; // Stop the ballon flating
             if (planetSettings.GetComponent<PlanetSettings>().hasAtmos && gameObject.GetComponent<AudioSource>() != null && playedOnce == false)
             { // If this planet has an atmos the sound should be played
 
@@ -89,13 +89,13 @@ public class BalloonSleep : MonoBehaviour
             }
             if (fireIsNeeded)
             {
-                smoke.Play();
-                smoke3.Play();
+                smoke.Play(); // Play the smoke
+                smoke3.Play(); // Play the smoke
             }
-            gameObject.GetComponent<ParticleSystem>().Play();
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
-            gameObject.GetComponentInChildren<Canvas>().enabled = false;
-            Destroy(gameObject, 0.5f);
+            gameObject.GetComponent<ParticleSystem>().Play(); // PLay the ballon pop
+            gameObject.GetComponent<MeshRenderer>().enabled = false; // Hide the ballon mesh
+            gameObject.GetComponentInChildren<Canvas>().enabled = false; // Turn the canvas for the gas details off
+            Destroy(gameObject, 0.5f); // Destroy the ballon
         }
     }
 }

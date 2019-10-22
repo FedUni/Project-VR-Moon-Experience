@@ -2579,7 +2579,7 @@ GameObject:
   - component: {fileID: 1233875150}
   - component: {fileID: 1233875149}
   m_Layer: 0
-  m_Name: lightCycle-sunLight
+  m_Name: Sunlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

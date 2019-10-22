@@ -118,7 +118,7 @@ public class GolfGetPoints : MonoBehaviour
             GolfHighScores = GameObject.Find("GolfHighScores").GetComponent<Canvas>(); //finds canvas for highscores
             GolfHighscoreText = GameObject.Find("GolfHighScores").GetComponentInChildren<Text>();
 
-            GolfHighscoreText.text = "<Color=red>" + "CURRENT HIGHSCORE: " + "</color>" + "<Color=#0000FF>" + highestUserScore + "</color>";//Prints highscore!
+            GolfHighscoreText.text = "<Color=red>" + "CURRENT HIGHSCORE: " + "</color>" + "<Color=#0000FF>" + highestUserScore + "</color>"; //Prints highscore!
             StartCoroutine(highScoreCanvasWiggle()); // Start to wait function
 
             GolfHighScores.enabled = true;
@@ -143,7 +143,7 @@ public class GolfGetPoints : MonoBehaviour
         yield return new WaitForSeconds(5.0f); // Show the scoreborad for 10 seconds
         scale = newScale;
     }
-    public IEnumerator highScoreCanvasWiggle()
+    public IEnumerator highScoreCanvasWiggle() // Just a visual wiggle for interest
     {
         for (int i = 0; i < 10; i++)
         {

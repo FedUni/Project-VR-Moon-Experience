@@ -975,35 +975,6 @@ MonoBehaviour:
   lRender: {fileID: 536619642880615856}
   trackedObj: {fileID: 6151756985022589615}
   hand: {fileID: 945060430}
-  laserGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 1, a: 0.24313726}
-    key2: {r: 1, g: 1, b: 0, a: 1}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 32768
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 32768
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 3
   laserBeam: {fileID: 6448430997661846030}
   endpointSpark: {fileID: 2062597357492206499}
   ZeroPoint: {fileID: 2062597357492206499}
@@ -6906,7 +6877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095bc109edf03b94080b071a75d4d85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScale: {x: 0.0003974478, y: 0.0003974483, z: 0.0002515115}
+  newScale: {x: 0.00047, y: 0.00047, z: 0.0002515115}
   newPostition: {x: -0.002, y: 0.0629, z: 0}
   isEnabled: 1
   speed: 5
@@ -6925,35 +6896,6 @@ MonoBehaviour:
   lRender: {fileID: 3314077273034676215}
   trackedObj: {fileID: 8398223492438421162}
   hand: {fileID: 2077468737}
-  laserGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 1, a: 0.24313726}
-    key2: {r: 1, g: 1, b: 0, a: 1}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 32768
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 32768
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 3
   laserBeam: {fileID: 3155748491853141765}
   endpointSpark: {fileID: 6583508148850083692}
   ZeroPoint: {fileID: 2842413789968675510}

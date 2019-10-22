@@ -20,13 +20,13 @@ public class launch45 : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            script.launchAngle = 0.5f;
+            script.launchAngle = 0.5f; // If this is changed the script for the control screen will need changing (CatapultInfoText)
         }
 
     }
-    public void setAngle()
+    public void setAngle() // Callable method so other object can the the angle
     {
-        script.launchAngle = 0.5f;
+        script.launchAngle = 0.5f; // If this is changed the script for the control screen will need changing (CatapultInfoText)
     }
 
 }

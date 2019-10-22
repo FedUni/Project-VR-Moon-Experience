@@ -47,13 +47,13 @@ public class lighter : MonoBehaviour
 
     }
 
-    private void OnDetachedFromHand(Hand hand)
+    private void OnDetachedFromHand(Hand hand) // Stop when dropped
     {
         flame.SetActive(false);
         flameOn.Stop();
     }
 
-    private void OnAttachedToHand(Hand hand)
+    private void OnAttachedToHand(Hand hand) // PLay when picked up
     {
         flame.SetActive(true);
         if (hasAtmos)

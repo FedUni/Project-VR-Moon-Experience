@@ -7,7 +7,7 @@ public class PlanetValues1 : MonoBehaviour
 {
     GameObject planetSettings;
     // Start is called before the first frame update
-    void Start()
+    void Start() // Set up the watch planet atributes screen based on current planet
     {
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         if (planetSettings.GetComponent<PlanetSettings>().hasAtmos)

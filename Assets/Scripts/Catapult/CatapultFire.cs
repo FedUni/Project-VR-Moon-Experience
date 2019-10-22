@@ -23,7 +23,7 @@ public class CatapultFire : MonoBehaviour
     
     void Start()
     {
-        GameObject catapult = GameObject.Find("Catapult");
+        GameObject catapult = GameObject.Find("Catapult"); // Get the catapult
         anim = catapult.GetComponent<Animator>(); // Get animation controller from the object
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
         AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
@@ -37,38 +37,38 @@ public class CatapultFire : MonoBehaviour
    
     private void Update()
     {
-        if (isInterping)
+        if (isInterping) // Only do this if we need to
         {
             animationState = anim.GetCurrentAnimatorStateInfo(0);
             aniLocation = animationState.normalizedTime % 1;
-            float playAmount = Mathf.Lerp(aniLocation, animateAngle, (speed * Time.deltaTime)/animateAngle);
+            float playAmount = Mathf.Lerp(aniLocation, animateAngle, (speed * Time.deltaTime)/animateAngle); // Lerp from were it is to where we want it to stop
 
-            anim.Play("CatapultAnimate", 0, playAmount);
-            StartCoroutine(WaitFire());
+            anim.Play("CatapultAnimate", 0, playAmount); // Play it 
+            StartCoroutine(WaitFire()); // Wait for it to move
         }
         if (isDoneLaunch)
         {
             isInterping = true;
             animationState = anim.GetCurrentAnimatorStateInfo(0);
             aniLocation = animationState.normalizedTime % 1;
-            float playAmount = Mathf.Lerp(aniLocation, 0, speed * Time.deltaTime);
-            anim.Play("CatapultAnimate", 0, playAmount);
-            StartCoroutine(WaitReturn());
+            float playAmount = Mathf.Lerp(aniLocation, 0, speed * Time.deltaTime); // Make it go from were it is back to home
+            anim.Play("CatapultAnimate", 0, playAmount); // Play it
+            StartCoroutine(WaitReturn()); // wait for it to get back to home
 
         }
     }
     IEnumerator WaitFire()
     {
         yield return new WaitForSeconds(0.5f);
-        isDoneLaunch = true;
-        isInterping = false;
+        isDoneLaunch = true; // Lanch completed
+        isInterping = false; // No longer need to interp
     }
     IEnumerator WaitReturn()
     {
         yield return new WaitForSeconds(0.5f);
-        isDoneLaunch = false;
-        isInterping = false;
-        beenPressed = false;
+        isDoneLaunch = false; // Curenlty launching
+        isInterping = false; // No longer need to interp
+        beenPressed = false; // No longer pressed
     }
 
     private void HandHoverUpdate(Hand hand)
@@ -76,11 +76,11 @@ public class CatapultFire : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            fireCatapult();
+            fireCatapult(); // Fire the catapult
         }
     }
 
-    public void fireCatapult()
+    public void fireCatapult() // Externally called method so other object can operate the catapult
     {
         if (!beenPressed)
         {

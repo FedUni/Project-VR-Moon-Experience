@@ -122,27 +122,18 @@ public class Droppable : MonoBehaviour
         rBody.isKinematic = shouldGrab;
     }
 
-    public void Move(Vector3 curHandPos, Vector3 lastHandPos, Quaternion difference, Quaternion currentHandRotation)
+    public void Move(Vector3 curHandPos, Vector3 lastHandPos, Quaternion difference, Quaternion currentHandRotation) // Used to forec move this object
     {
-        //rBody.AddForce((curHandPos - transform.position) * 1000, ForceMode.Impulse);
-
-        //transform.position = (Vector3.Lerp(rBody.position, rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
-        rBody.MovePosition(Vector3.Lerp(rBody.position , rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime));
-        //rBody.MoveRotation(Quaternion.RotateTowards(rBody.rotation, difference * currentHandRotation, 50f * Time.deltaTime));
-        //Quaternion newRot = Quaternion.Lerp(transform.rotation, difference * currentHandRotation, 50f * Time.deltaTime);
-        //rBody.MoveRotation(newRot);
-        //Quaternion torque = difference * Quaternion.Inverse(currentHandRotation); 
-        //rBody.AddRelativeTorque(torque.eulerAngles / 500);
-        //rBody.
+        rBody.MovePosition(Vector3.Lerp(rBody.position , rBody.position + (curHandPos - lastHandPos) * moveScale * 10, 10 * Time.deltaTime)); // Move it
     }
 
-    public void SetMoveScale(Vector3 handPostion)
+    public void SetMoveScale(Vector3 handPostion) // Set the move exaguration
     {
         Vector3 origin = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
         moveScale = Vector3.Magnitude(transform.position - origin) / Vector3.Magnitude(handPostion - origin);
     }
 
-    public void ForcePush(Vector3 direction, int power)
+    public void ForcePush(Vector3 direction, int power) // Apply a forece shunt or pull
     {
         rBody.AddForce(direction * power, ForceMode.Acceleration);
     }
