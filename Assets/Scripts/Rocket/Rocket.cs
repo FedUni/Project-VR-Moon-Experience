@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Valve.VR;
+using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class Rocket : MonoBehaviour
 
     public void launched()
     {
-        SteamVR_LoadLevel.Begin("MoonScene", false, 5f);
+        SceneManager.LoadScene("MoonScene"); // Load the scene
     }
 
     void Update()
