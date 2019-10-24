@@ -69,8 +69,9 @@ public class GolfGetPoints : MonoBehaviour
 
     void FixedUpdate() //checks for an update
     {
-        clubSpeed = (golfClub.transform.position - lastPosition);
         lastPosition = golfClub.transform.position;
+        clubSpeed = (golfClub.transform.position - lastPosition);
+        
     }
 
     private void OnTriggerEnter(Collider other)

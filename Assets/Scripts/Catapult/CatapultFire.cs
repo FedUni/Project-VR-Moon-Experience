@@ -21,7 +21,7 @@ public class CatapultFire : MonoBehaviour
     bool isDoneLaunch = false;
     bool beenPressed = false;
     
-    void Start()
+    void Awake()
     {
         GameObject catapult = GameObject.Find("Catapult"); // Get the catapult
         anim = catapult.GetComponent<Animator>(); // Get animation controller from the object

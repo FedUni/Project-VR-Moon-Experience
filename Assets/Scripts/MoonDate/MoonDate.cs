@@ -16,18 +16,24 @@ public class MoonDate : MonoBehaviour
  
 
 
-    void Start()
-    { MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "365,964KM" + "</color> See how far you can get!";
-        string month= System.DateTime.Now.Month.ToString();
+    public void Calculate()
+    {
+        //MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "365,964KM" + "</color> See how far you can get!";
+        string month = System.DateTime.Now.Month.ToString();
         int monthInt = Int32.Parse(month);
-        string DeafultMonth = "Unable to get distance";
-        MoonDateText.text = "Distance to Earth  <color=#00FFFF>Unknown</color> Activate the laser module to find out!";
+        //string DeafultMonth = "Unable to get distance";
+        //MoonDateText.text = "Distance to Earth  <color=#00FFFF>Unknown</color> Activate the laser module to find out!";
         if (monthInt == 1)
         {
             MoonDateCanvas = GameObject.Find("LaserSignGolf").GetComponent<Canvas>();
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>365,964KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "365,964KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "365,964KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 2)
         {
@@ -35,6 +41,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>360,464KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "360,464KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "360,464KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 3)
         {
@@ -42,6 +53,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>357,123KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "357,123KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "357,123KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 4)
         {
@@ -49,6 +65,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>356,909KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "356,909KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "356,909KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 5)
         {
@@ -56,6 +77,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>359,656KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "359,656KM " + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "359,656KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 6)
         {
@@ -63,6 +89,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>364,366KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "364,366KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "364,366KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 7)
         {
@@ -70,6 +101,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>363,513KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "363,513KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "363,513KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 8)
         {
@@ -77,12 +113,22 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>368,367K</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "368,367KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "368,367KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 9) { 
             MoonDateCanvas = GameObject.Find("LaserSignGolf").GetComponent<Canvas>();
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>359,081KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "359,081KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "359,081KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 10)
         {
@@ -90,6 +136,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>361,316KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "361,316KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "361,316KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 11)
         {
@@ -97,6 +148,11 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>366,721KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "366,721KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "366,721KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
         if (monthInt == 12)
         {
@@ -104,6 +160,22 @@ public class MoonDate : MonoBehaviour
             MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
             GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>370,260KM</color>"; // Set the text
             MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "370,260KM" + "</color> See how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "370,260KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
+        }
+        else {
+            MoonDateCanvas = GameObject.Find("LaserSignGolf").GetComponent<Canvas>();
+            MoonDateText = GameObject.Find("LaserSignGolf").GetComponentInChildren<Text>();
+            GameObject.Find("LaserSignExp").GetComponent<Text>().text = "Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>370,260KM</color>"; // Set the text
+            MoonDateText.text = "Distance to Earth  <color=#00FFFF>" + "Unable to get distance" + "</color> But still see how far you can get!";
+            if (GameObject.Find("LaserActive") != null) // This is for when the controller are turned off
+            {
+                GameObject.Find("LaserDist").GetComponent<Text>().text = "???,???KM"; // Set the text
+                GameObject.Find("LaserTime").GetComponent<Text>().text = "1.3 Seconds"; // Set the text
+            }
         }
     }
 

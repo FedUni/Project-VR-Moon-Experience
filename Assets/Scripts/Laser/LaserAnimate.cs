@@ -9,6 +9,7 @@ public class LaserAnimate : MonoBehaviour {
     Animator anim;
     public MeshRenderer laserBeam;
     GameObject planetSettings;
+    public MoonDate moonDate;
 
     void Start()
     {
