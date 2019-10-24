@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2234626029227741605}
   - component: {fileID: 6460792492025803853}
-  - component: {fileID: 8772212933285095783}
   - component: {fileID: 1437868708210160550}
   - component: {fileID: 3509317625988371757}
   - component: {fileID: 1470161264139110344}
@@ -19,6 +18,7 @@ GameObject:
   - component: {fileID: 8646771913989489793}
   - component: {fileID: 2490387547511771898}
   - component: {fileID: 8389886433781383900}
+  - component: {fileID: 8914654238003866852}
   m_Layer: 0
   m_Name: JengaBlock
   m_TagString: Untagged
@@ -54,22 +54,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!65 &8772212933285095783
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5662431491476041941}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.40542603, y: 0.10469681, z: 0.10177612}
-  m_Center: {x: -0.014984131, y: 0.056062564, z: -0.0005187988}
+  m_CollisionDetection: 0
 --- !u!114 &1437868708210160550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1167,7 +1154,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -5013,6 +5000,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627cbb87a858b5a47a914a7fba8fbf99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8914654238003866852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662431491476041941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4023414, y: 0.10000001, z: 0.1}
+  m_Center: {x: -0.014425695, y: 0.0557219, z: 0}
 --- !u!1 &6696878021699401927
 GameObject:
   m_ObjectHideFlags: 0
