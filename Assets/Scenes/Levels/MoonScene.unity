@@ -2255,7 +2255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Distance to Earth  <color=#00FFFF>Unknown</color> Activate the laser module
+  m_Text: Distance to Earth  <color=#00FFFF>Unknown</color>, Activate the laser module
     to find out!
 --- !u!222 &760002523
 CanvasRenderer:
