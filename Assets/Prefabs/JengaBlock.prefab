@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2490387547511771898}
   - component: {fileID: 8389886433781383900}
   - component: {fileID: 8914654238003866852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: JengaBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5024,7 +5024,7 @@ GameObject:
   - component: {fileID: 5471075867919872354}
   - component: {fileID: 1335201925797937348}
   - component: {fileID: 7530320007395042869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
