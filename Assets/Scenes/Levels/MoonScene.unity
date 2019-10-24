@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: f084d048e2acec748aca5f2b0a07ae06, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00094013487, g: 0.0009921491, b: 0.0010984271, a: 1}
+  m_IndirectSpecularColor: {r: 0.00094049354, g: 0.0009925282, b: 0.0010988457, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -579,6 +579,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &45348621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1031544789, guid: ccc35565d8b405e44baeb1809a573710,
+    type: 3}
+  m_PrefabInstance: {fileID: 375613469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &45348622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45348621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69854e06793593a46aef1c06cc2b3cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &58087614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012973112960, guid: 5bdfe15d7ddb6cb40879d6c788a6d21e,
@@ -678,7 +696,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 375613469}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 45348621}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c45bd4f2bbd983746b72e362c346eb48, type: 3}
@@ -804,24 +822,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3e7b594893498ec42932503e8327d53c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9712e5171a9a47245825f9869587ebc5, type: 3}
---- !u!1 &267969966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: 9712e5171a9a47245825f9869587ebc5,
-    type: 3}
-  m_PrefabInstance: {fileID: 267969965}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &267969967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267969966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d72dc58578b38084e806417e17562be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &274832143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd,
@@ -2255,8 +2255,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Distance to Earth  <color=#00FFFF>???,???km</color> See how far you can
-    get!
+  m_Text: Distance to Earth  <color=#00FFFF>Unknown</color>, Activate the laser module
+    to find out!
 --- !u!222 &760002523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4687,7 +4687,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lunar Laser Ranging Experiment Distacne to earth is <color=#00FFFF>???,???km</color>
+  m_Text: 'Lunar Laser Ranging Experiment Distance to Earth is <color=#00FFFF>Unknown</color>
 
 '
 --- !u!222 &1415591923
@@ -7340,17 +7340,17 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 4.999916
+      value: 4.999917
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 5.0001574
+      value: 5.000157
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
