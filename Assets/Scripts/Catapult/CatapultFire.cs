@@ -9,24 +9,24 @@ using System;
 // Created by Wayland Bishop for The Moon VR 3.0 project
 public class CatapultFire : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
     public float launchAngle = 1f;
     GameObject planetSettings;
     public AudioClip launchSound;
     bool isInterping = false;
-    AnimatorStateInfo animationState;
+    //AnimatorStateInfo animationState;
     float aniLocation = 0;
     public float speed = 5f;
     float animateAngle;
     bool isDoneLaunch = false;
     bool beenPressed = false;
     
-    void Awake()
+    void Start()
     {
-        GameObject catapult = GameObject.Find("Catapult"); // Get the catapult
-        anim = catapult.GetComponent<Animator>(); // Get animation controller from the object
+        //GameObject catapult = GameObject.Find("Catapult"); // Get the catapult
+        //anim = catapult.GetComponent<Animator>(); // Get animation controller from the object
         planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
-        AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
+        //AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
         GetComponent<AudioSource>().playOnAwake = false; // Dont play this object strait away
         GetComponent<AudioSource>().clip = launchSound; // Assign the button sound
         anim.Play("CatapultAnimate", 0, 0);
@@ -39,23 +39,31 @@ public class CatapultFire : MonoBehaviour
     {
         if (isInterping) // Only do this if we need to
         {
+            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
             animationState = anim.GetCurrentAnimatorStateInfo(0);
             aniLocation = animationState.normalizedTime % 1;
-            float playAmount = Mathf.Lerp(aniLocation, animateAngle, (speed * Time.deltaTime)/animateAngle); // Lerp from were it is to where we want it to stop
-
+            StartCoroutine(EaseinFire()); // Wait for it to move
+            float playAmount = Mathf.Lerp(aniLocation, animateAngle, ((speed * Time.deltaTime)/animateAngle) * 0.2f); // Lerp from were it is to where we want it to stop
             anim.Play("CatapultAnimate", 0, playAmount); // Play it 
             StartCoroutine(WaitFire()); // Wait for it to move
         }
         if (isDoneLaunch)
         {
+            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
             isInterping = true;
             animationState = anim.GetCurrentAnimatorStateInfo(0);
             aniLocation = animationState.normalizedTime % 1;
-            float playAmount = Mathf.Lerp(aniLocation, 0, speed * Time.deltaTime); // Make it go from were it is back to home
+            float playAmount = Mathf.Lerp(aniLocation, 0, (speed * Time.deltaTime)); // Make it go from were it is back to home
             anim.Play("CatapultAnimate", 0, playAmount); // Play it
             StartCoroutine(WaitReturn()); // wait for it to get back to home
 
         }
+    }
+
+    IEnumerator EaseinFire()
+    {
+        float playAmount = Mathf.Lerp(aniLocation, animateAngle, ((speed * Time.deltaTime) / animateAngle) * 0.05f); // Lerp from were it is to where we want it to stop
+        yield return new WaitForSeconds(1f);
     }
     IEnumerator WaitFire()
     {

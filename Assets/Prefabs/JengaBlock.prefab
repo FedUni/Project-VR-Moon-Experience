@@ -164,7 +164,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 86f1a0227d5c83c4e873a380bdf246c3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasDropped: 0
   timeFalling: 0
-  collisionSound: {fileID: 0}
+  collisionSound: {fileID: 8300000, guid: 86f1a0227d5c83c4e873a380bdf246c3, type: 3}
 --- !u!199 &8646771913989489793
 ParticleSystemRenderer:
   serializedVersion: 6

@@ -24,11 +24,11 @@ public class GolfGetPoints : MonoBehaviour
     private GameObject golfClub;
     private bool scaleOn = false;
     private bool hasScoreBoard = false;
-    private List<double> userScoresArray = new List<double>();
+    private List<float> userScoresArray = new List<float>();
     private Canvas GolfHighScores;
     private Text GolfHighscoreText;
-    double highestUserScore;
-    private string TotalPoints;
+    float highestUserScore;
+    private float TotalPoints;
     private string TempPointsString;
     public bool resetScore;
     private RectTransform rect;
@@ -45,7 +45,7 @@ public class GolfGetPoints : MonoBehaviour
 
         if (resetScore)
         {
-            PlayerPrefs.SetString("AllPointsSave", "0"); //Reset score for testing
+            PlayerPrefs.SetFloat("AllPointsSave", 0); //Reset score for testing
         }
 
         if (GameObject.Find("GolfScoreBoard") != null)
@@ -59,8 +59,8 @@ public class GolfGetPoints : MonoBehaviour
 
             club = GameObject.Find("GolfClubFace").GetComponent<GolfWarning>();
 
-            string TempPointsString = PlayerPrefs.GetString("AllPointsSave");//Loads the string
-            highestUserScore = double.Parse(TempPointsString, System.Globalization.CultureInfo.InvariantCulture); //Converts to double
+            float TempPointsString = PlayerPrefs.GetFloat("AllPointsSave");//Loads the string
+            highestUserScore = TempPointsString;
             userScoresArray.Add(highestUserScore); //user score system add to array
             
             //prints out highscores before the ball is hit.
@@ -118,8 +118,8 @@ public class GolfGetPoints : MonoBehaviour
             StartCoroutine(waitForScoreCanvasScaleUp()); // Start to wait function
 
             //update the score board
-            userScoresArray.Add(Math.Round(Time.time - hitTime, 1)); //user score system add to array
-            double highestUserScore = userScoresArray.Max(); //sorts the array for the max and makes max highestUserScore
+            userScoresArray.Add(Mathf.Round(Time.time - hitTime)); //user score system add to array
+            float highestUserScore = userScoresArray.Max(); //sorts the array for the max and makes max highestUserScore
 
 
             GolfHighScores = GameObject.Find("GolfHighScores").GetComponent<Canvas>(); //finds canvas for highscores
@@ -131,8 +131,8 @@ public class GolfGetPoints : MonoBehaviour
             GolfHighScores.enabled = true;
             highScoreScale = new Vector3(0.07f, 0.07f, 0.04f); // Set the scale var used to lerp to to the orginal scale the canvas was
 
-            string TotalPoints = highestUserScore.ToString(); //Convert to string
-            PlayerPrefs.SetString("AllPointsSave", TotalPoints); //Save as a string
+            float TotalPoints = highestUserScore; //Convert to string
+            PlayerPrefs.SetFloat("AllPointsSave", TotalPoints); //Save as a string
         }
     }
 

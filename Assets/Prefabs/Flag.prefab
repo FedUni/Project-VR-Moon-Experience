@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 7366986252373273963}
   - component: {fileID: 4856768700867057406}
   - component: {fileID: 9196973328613600154}
-  - component: {fileID: 3673314287213905446}
   m_Layer: 8
   m_Name: Flag
   m_TagString: Untagged
@@ -150,18 +149,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7366986252373273963}
-        m_MethodName: DetachFromHand
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
@@ -176,8 +164,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.09656805, y: 0.32236123, z: 0.114753485}
-  m_Center: {x: -0.007680696, y: -0.81382954, z: 0.80359495}
+  m_Size: {x: 0.0464091, y: 0.6127906, z: 0.041216016}
+  m_Center: {x: -0.00042130286, y: -0.9590442, z: 0.7854274}
 --- !u!114 &7366986252373273963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +202,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 86f1a0227d5c83c4e873a380bdf246c3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -300,21 +288,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3673314287213905446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2613626804884709189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df7546949977e8b45afdf325344e0387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasDropped: 0
-  timeFalling: 0
-  collisionSound: {fileID: 8300000, guid: 86f1a0227d5c83c4e873a380bdf246c3, type: 3}
 --- !u!1 &3238727209795617496
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,8 +443,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: -0.0000019073486, y: 0, z: 0}
-    m_Extent: {x: 4.9999995, y: 2.6770434, z: 5.000004}
+    m_Center: {x: 0.27866936, y: -3.0984497, z: -0.308815}
+    m_Extent: {x: 6.010133, y: 5.46046, z: 4.974}
   m_DirtyAABB: 0
 --- !u!183 &7727215035186083514
 Cloth:

@@ -25,7 +25,7 @@ public class Flag : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag.Equals(other.name == "Terrain"))
+        if (other.name == "Terrain")
         {
             rb.isKinematic = false;
             touchingGround = false;
