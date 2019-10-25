@@ -59,7 +59,7 @@ public class LaunchGlow : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.GetContact(0).otherCollider.name == "Terrain")
+        if (collision.GetContact(0).otherCollider.name == "Terrain" || collision.GetContact(0).otherCollider.name == "PuttingGreen" || collision.GetContact(0).otherCollider.name == "pasted__pCube2_group")
         {            
             glowCanvas.enabled = false; // Turn the canvas off when it hits the grounb
             StartCoroutine(retractDistanceCanvas()); // Start to wait function

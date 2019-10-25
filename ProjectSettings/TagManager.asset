@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Droppable
   - ShouldDissolve
+  - GolfBall
+  - GolfClub
   layers:
   - Default
   - TransparentFX

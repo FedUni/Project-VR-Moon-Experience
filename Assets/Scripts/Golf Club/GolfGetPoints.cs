@@ -33,6 +33,10 @@ public class GolfGetPoints : MonoBehaviour
     public bool resetScore;
     private RectTransform rect;
     private RectTransform highScoreRect;
+    private Vector3 inPostion;
+    private Vector3 outPostion;
+    private bool clubHit = false;
+    private GolfWarning club;
 
     void Start()
     {
@@ -49,10 +53,11 @@ public class GolfGetPoints : MonoBehaviour
             golfScoreBoard = GameObject.Find("GolfScoreBoard").GetComponent<Canvas>();
             scoreText = GameObject.Find("GolfScoreBoard").GetComponentInChildren<Text>();            
             rect = golfScoreBoard.GetComponent<RectTransform>();
-            originalScale = rect.localScale;
-            rect.localScale = newScale;
+            rect.localScale = new Vector3(0, 0, 0);
             golfScoreBoard.enabled = false;
             hasScoreBoard = true;
+
+            club = GameObject.Find("GolfClubFace").GetComponent<GolfWarning>();
 
             string TempPointsString = PlayerPrefs.GetString("AllPointsSave");//Loads the string
             highestUserScore = double.Parse(TempPointsString, System.Globalization.CultureInfo.InvariantCulture); //Converts to double
@@ -67,23 +72,17 @@ public class GolfGetPoints : MonoBehaviour
             
     }
 
-    void FixedUpdate() //checks for an update
-    {
-        lastPosition = golfClub.transform.position;
-        clubSpeed = (golfClub.transform.position - lastPosition);
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.name == "GolfClubFace")
         {
+            //lastPosition = other.transform.position;
             hasBeenHit = true;
             isFalling = true;
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (hasBeenHit && isFalling)
         {
@@ -91,9 +90,18 @@ public class GolfGetPoints : MonoBehaviour
             isFalling = false;
         }
 
-        if (hasScoreBoard)
+        if (hasScoreBoard) // 0.4f, 0.5f, 0.2f // 0.09f, 0.09f, 0.06f
         {
-            rect.localScale = Vector3.Lerp(rect.localScale, scale, speed * Time.deltaTime);
+
+            scale.x = Mathf.Clamp(scale.x, 0f, 0.4f);
+            scale.y = Mathf.Clamp(scale.y, 0f, 0.5f);
+            scale.z = Mathf.Clamp(scale.z, 0f, 0.2f);
+
+            highScoreScale.x = Mathf.Clamp(highScoreScale.x, 0f, 0.07f);
+            highScoreScale.y = Mathf.Clamp(highScoreScale.y, 0f, 0.07f);
+            highScoreScale.z = Mathf.Clamp(highScoreScale.z, 0f, 0.07f);
+
+            rect.localScale =   Vector3.Lerp(rect.localScale, scale, speed * Time.deltaTime);
             highScoreRect.localScale = Vector3.Lerp(highScoreRect.localScale, highScoreScale, speed * Time.deltaTime);
         }
     }
@@ -101,12 +109,10 @@ public class GolfGetPoints : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.collider.name == "GolfClubFace")
+
+        if (collision.GetContact(0).otherCollider.name == "Terrain" && hasBeenHit == true && GameObject.Find("GolfScoreBoard") != null && Time.time - club.hitTime > 5f)
         {
-            GetComponent<Rigidbody>().AddForce(clubSpeed * 10000);
-        }
-        if (collision.GetContact(0).otherCollider.name == "Terrain" && hasBeenHit == true && GameObject.Find("GolfScoreBoard") != null)
-        {
+            club.hitTime = Time.time;
             scoreText.text = "<Color=red>" + "Goodjob!\n " + "Your score was " + "</color>" + "<Color=#0000FF>" + Math.Round(Time.time - hitTime, 1) + "</color>";
             hasBeenHit = false;
             StartCoroutine(waitForScoreCanvasScaleUp()); // Start to wait function
@@ -134,29 +140,23 @@ public class GolfGetPoints : MonoBehaviour
     {
         golfScoreBoard.enabled = true;
         scale = new Vector3(0.4f,0.5f,0.2f); // Set the scale var used to lerp to to the orginal scale the canvas was
-        yield return new WaitForSeconds(5.0f); // Show the scoreborad for 10 seconds
-        scale = newScale;
-    }
-    public IEnumerator waitForHighScoreCanvasScaleUp()
-    {
-        GolfHighScores.enabled = true;
-        scale = new Vector3(0.4f, 0.5f, 0.2f); // Set the scale var used to lerp to to the orginal scale the canvas was
-        yield return new WaitForSeconds(5.0f); // Show the scoreborad for 10 seconds
-        scale = newScale;
+        yield return new WaitForSeconds(3.0f); // Show the scoreborad for 10 seconds
+        scale = new Vector3(0, 0, 0);
     }
     public IEnumerator highScoreCanvasWiggle() // Just a visual wiggle for interest
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 3; i++)
         {
             highScoreScale = new Vector3(0.09f, 0.09f, 0.06f);
-            yield return new WaitForSeconds(1f);
-            highScoreScale = new Vector3(0.07f, 0.07f, 0.04f);
-            yield return new WaitForSeconds(1f);           
+            yield return new WaitForSeconds(0.25f);
+            highScoreScale = new Vector3(0.07f, 0.07f, 0.007f);
+            yield return new WaitForSeconds(0.25f);           
         }
 
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(3f);
         highScoreScale = new Vector3(0.0f, 0.0f, 0.0f);
     }
+
 }
 
 

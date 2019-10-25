@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 417819302}
   m_Layer: 8
   m_Name: GolfBallNoLCD
-  m_TagString: Untagged
+  m_TagString: GolfBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 2563573269360119370}
   m_Layer: 8
   m_Name: GolfBall
-  m_TagString: Untagged
+  m_TagString: GolfBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

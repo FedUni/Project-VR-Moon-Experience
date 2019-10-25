@@ -32,7 +32,7 @@ public class MoonDate : MonoBehaviour
 
     public void Calculate()
     {
-        setText(distances[System.DateTime.Now.Month] + 1);        
+        setText(distances[System.DateTime.Now.Month + 1]);        
     }
 
     private void setText(string distance) {
