@@ -19,10 +19,11 @@ public class GolfWarning : MonoBehaviour
     private Rigidbody ballHit;
     private bool ballWasHit = false;
     public float hitPower;
-    public float hitTime = Time.time;
+    public float hitTime;
 
     void Start()
     {
+        hitTime = Time.time;
         Warning1 = gameObject.GetComponentsInChildren<Canvas>()[0]; // Get the canvas on the club
         Warning2 = gameObject.GetComponentsInChildren<Canvas>()[1]; // Get the canvas on the club
         originalScale = Warning1.GetComponent<RectTransform>().localScale; // Store the original scale
