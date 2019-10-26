@@ -78,7 +78,11 @@ public class OperatorControls : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Backslash))
         {
-            laserControls.GetComponentInChildren<LaserAnimate>().laserAni();
+            if (laserControls != null)
+            {
+                laserControls.GetComponentInChildren<LaserAnimate>().laserAni();
+            }
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha9))
