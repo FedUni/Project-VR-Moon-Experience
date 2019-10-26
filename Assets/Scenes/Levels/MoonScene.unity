@@ -248,7 +248,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <b>Cantilevered cockpit:</B> Mobility Chasis or RCS sled does not obstruct
+      value: <b>Cantilevered Cockpit:</B> Mobility Chasis or RCS sled does not obstruct
         visibility.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -974,6 +974,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1455263165}
     m_Modifications:
+    - target: {fileID: 1000011790220474, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
+      propertyPath: m_Name
+      value: rock5 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 337.3009
@@ -1005,10 +1009,6 @@ PrefabInstance:
     - target: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011790220474, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
-      propertyPath: m_Name
-      value: rock5 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
@@ -2551,6 +2551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MMSEVSuit
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3eebd8a404bd8de4988012de5440527e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &783041614
@@ -3877,6 +3882,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MMSEVHatches
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d9f58e72117d9f40b23c0f74c941cb9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &1099677899
@@ -6159,6 +6169,108 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861dc82f3f57d7c4baf0dde27166c679, type: 3}
+--- !u!1 &1702039568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 941188308675037922, guid: 861dc82f3f57d7c4baf0dde27166c679,
+    type: 3}
+  m_PrefabInstance: {fileID: 1702039567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1702039569
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702039568}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a23216918c2514a478817abf45aebc3a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1717037207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011917822554, guid: 6c9dd5f2d71302142a69c0674808d94d,
@@ -6950,6 +7062,11 @@ PrefabInstance:
       value: <B>Portable Utility Pallet</B> Aft-mounted deployable PUP carries additional
         consumables.
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce8878faab4334e46b8d66519346191f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &1891197685
@@ -7098,6 +7215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1455263165}
     m_Modifications:
+    - target: {fileID: 1000011790220474, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
+      propertyPath: m_Name
+      value: rock5 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 309.915
@@ -7129,10 +7250,6 @@ PrefabInstance:
     - target: {fileID: 4000011371244636, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011790220474, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
-      propertyPath: m_Name
-      value: rock5 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34b4efb65e5c7324694b99cbd39f93fd, type: 3}
@@ -7830,6 +7947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MMSEVModular
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f1e5f5df5cf275479fc5cd72103b433, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &315147291489386132
