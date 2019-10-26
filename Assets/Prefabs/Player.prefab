@@ -6783,12 +6783,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   hoverUpdateInterval: 0.1
-  useControllerHoverComponent: 1
+  useControllerHoverComponent: 0
   controllerHoverComponent: tip
   controllerHoverRadius: 0.15
   useFingerJointHover: 1
   fingerJointHover: 10
-  fingerJointHoverRadius: 0.05
+  fingerJointHoverRadius: 0.09
   objectAttachmentPoint: {fileID: 1122070137}
   noSteamVRFallbackCamera: {fileID: 0}
   noSteamVRFallbackMaxDistanceNoItem: 10
