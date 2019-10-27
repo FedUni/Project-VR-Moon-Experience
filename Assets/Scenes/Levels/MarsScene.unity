@@ -668,6 +668,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 120931678}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127085280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2256423544760628182, guid: 5dd9327cc07293e44b20bd757b2e6594,
+    type: 3}
+  m_PrefabInstance: {fileID: 2077819359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &127085281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127085280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f877dcf4aeee84a9c963b8d2be8b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &131850932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2767,6 +2785,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9625ab8966063c47ac24c12f53842bd, type: 3}
+--- !u!1 &1330587256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2256423544760628182, guid: 5dd9327cc07293e44b20bd757b2e6594,
+    type: 3}
+  m_PrefabInstance: {fileID: 1382346899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330587258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330587256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f877dcf4aeee84a9c963b8d2be8b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1382346899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2918,7 +2954,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: b5d58fa1014608c4980da61314954e19, type: 3}
+      objectReference: {fileID: 8300000, guid: 41dfaeae558aaf349b84babc76ac43e3, type: 3}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Name
@@ -5328,6 +5364,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 167
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 21a30a52520245d40a74561b639d4977, type: 3}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Name

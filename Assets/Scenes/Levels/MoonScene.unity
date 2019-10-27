@@ -7399,9 +7399,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: b5d58fa1014608c4980da61314954e19, type: 3}
+      objectReference: {fileID: 8300000, guid: f1a77d2a714141f40a5d574a033c5415, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
+--- !u!1 &1970095164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2256423544760628182, guid: 5dd9327cc07293e44b20bd757b2e6594,
+    type: 3}
+  m_PrefabInstance: {fileID: 1970095163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1970095165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970095164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f877dcf4aeee84a9c963b8d2be8b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &1970344213 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4548120152001847602, guid: 1523daeb4e8e2a247a002e5aabf7f65e,
