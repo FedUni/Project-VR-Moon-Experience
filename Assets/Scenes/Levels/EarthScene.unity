@@ -431,7 +431,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Sunshield</B> '
+      value: "<B>Sunshield</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -1264,12 +1264,12 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 4.999916
+      value: 4.999917
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -1279,7 +1279,7 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 5.0001574
+      value: 5.000157
       objectReference: {fileID: 0}
     - target: {fileID: 315147290685345321, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -3179,7 +3179,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<color=#00FFFF><B>James Webb Space Telescope</B></color> '
+      value: "<color=#00FFFF><B>James Webb Space Telescope\t\t\t\t\u21D3</B></color> "
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -3275,6 +3275,31 @@ PrefabInstance:
         type: 3}
       propertyPath: floatInY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.960783
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.7745416
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.000054382
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000011843
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00020321
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
@@ -3659,12 +3684,13 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Optical Telescope Element (OTE) Primary Mirror</B> '
+      value: "<B>Optical Telescope Element (OTE) Primary Mirror</B> \n     \u25B6
+        \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 121
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -4493,12 +4519,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Spacecraft Bus</B>
+      value: "<B>Spacecraft Bus</B>\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 174
+      value: 152
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}

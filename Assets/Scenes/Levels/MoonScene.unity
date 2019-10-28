@@ -248,8 +248,13 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <b>Cantilevered Cockpit:</B> Mobility Chasis or RCS sled does not obstruct
-        visibility.
+      value: "<b>Cantilevered Cockpit:</B> Mobility Chasis or RCS sled does not obstruct
+        visibility.\n     \u25B6 \t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -743,7 +748,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: LRV Rear Payload Pallet
+      value: "LRV Rear Payload Pallet\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -876,7 +881,7 @@ PrefabInstance:
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.7214
+      value: 6.595
       objectReference: {fileID: 0}
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
@@ -921,12 +926,12 @@ PrefabInstance:
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -8.5749
+      value: -7.504
       objectReference: {fileID: 0}
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.226
+      value: 0.799
       objectReference: {fileID: 0}
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
@@ -971,7 +976,7 @@ PrefabInstance:
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.00094867207
+      value: 0.0015762186
       objectReference: {fileID: 0}
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
@@ -981,7 +986,7 @@ PrefabInstance:
     - target: {fileID: 1795963041882743747, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.001007964
+      value: 0.0018206855
       objectReference: {fileID: 0}
     - target: {fileID: 6884991157201116101, guid: 861dc82f3f57d7c4baf0dde27166c679,
         type: 3}
@@ -1016,7 +1021,7 @@ MonoBehaviour:
   rotationSpeed: 4
   floatSpeed: 0.0005
   floatRate: 0.5
-  startScale: {x: 0.0009486721, y: 0.001007964, z: 0.001442772}
+  startScale: {x: 0.001576219, y: 0.001820685, z: 0.001442772}
   endScale: {x: 0, y: 0, z: 0}
   scaleSpeed: 1
   scaleRate: 1
@@ -2174,12 +2179,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Thrust Chamber Assembly Cluster</B> '
+      value: "<B>Thrust Chamber Assembly Cluster</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 144
+      value: 132
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -2816,13 +2821,13 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Suit Shelter                  </B> EVA Suits are enclosed to protect
-        them from dust, radiation and micrometerites.
+      value: "<B>Suit Shelter       \t\t\t           </B> EVA Suits are enclosed to
+        protect them from dust, radiation and micrometerites.\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 90
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -3848,7 +3853,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Landing Probe + Landing Gear</B> '
+      value: "<B>Landing Probe + Landing Gear</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -4157,8 +4162,13 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Dual Docking Hatches</B> Allow pressurized crew transfer from between
-        modules.
+      value: "<B>Dual Docking Hatches</B> Allow pressurized crew transfer from between
+        modules.\n     \u25B6 \t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -4785,12 +4795,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Forward Hatch</B>
+      value: "<B>Forward Hatch</B>\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 212
+      value: 155
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -5287,7 +5297,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: Under-Seat Bag Stowage
+      value: "Under-Seat Bag Stowage\n     \u25B6 \t"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
@@ -6444,6 +6454,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.00073000183
       objectReference: {fileID: 0}
+    - target: {fileID: 6884991157201116101, guid: 861dc82f3f57d7c4baf0dde27166c679,
+        type: 3}
+      propertyPath: m_Text
+      value: "<B>Multiple Large Windows</B> Provide visibility as good, or better
+        than EVA suit visibility.\n     \u25B6 \t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884991157201116101, guid: 861dc82f3f57d7c4baf0dde27166c679,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 87
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861dc82f3f57d7c4baf0dde27166c679, type: 3}
 --- !u!1 &1702039568 stripped
@@ -6590,7 +6611,7 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 59.93
+      value: 47.56
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -6635,12 +6656,12 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 8.73
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -16.51
+      value: -13.3
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -6700,12 +6721,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Egress Platform</B>
+      value: "<B>Egress Platform</B>\n \u25B6"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 191
+      value: 149
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7035,12 +7056,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>VHF Antenna</B> '
+      value: "<B>VHF Antenna</B>\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 195
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7362,8 +7383,13 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Portable Utility Pallet</B> Aft-mounted deployable PUP carries additional
-        consumables.
+      value: "<B>Portable Utility Pallet</B> Aft-mounted deployable PUP carries additional
+        consumables.\n     \u25B6 \t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7507,7 +7533,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: Control Console
+      value: "Control Console\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7586,7 +7612,7 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.542
+      value: 0.54366
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7631,12 +7657,12 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.371
+      value: -0.37049
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.224
+      value: 1.2277
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7681,12 +7707,12 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.00023529751
+      value: 0.001942323
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0003198238
+      value: 0.0018756451
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -7746,17 +7772,17 @@ PrefabInstance:
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.x
-      value: 0.0004800004
+      value: 0.001942323
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.y
-      value: 0.00051
+      value: 0.001875645
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.z
-      value: 0.0007300007
+      value: 0.0006036822
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -8456,13 +8482,13 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Modular Design </B>          Cabin may be configured for use with
-        other Moon/ Mars modules for in-space operations.
+      value: "<B>Modular Design </B>         \t\t\t Cabin may be configured for use
+        with other Moon/ Mars modules for in-space operations.\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 89
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}

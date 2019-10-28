@@ -243,12 +243,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Ultra -High Frequency Antenna</B> '
+      value: "<B>Ultra -High Frequency Antenna</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 127
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -1647,12 +1647,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Panoramic Cameras</B> '
+      value: "<B>Panoramic Cameras</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 161
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -2311,12 +2311,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Robotic Arm</B> '
+      value: "<B>Robotic Arm</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 211
+      value: 186
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -2698,7 +2698,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: <B>Low + High Gain Antennas</B>
+      value: "<B>Low + High Gain Antennas</B>\n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -2812,27 +2812,27 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.088
+      value: 0.049
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.01858831
+      value: -0.015116371
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.15221043
+      value: -0.66959417
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00076886814
+      value: 0.010844901
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.988173
+      value: 0.7424942
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -2842,27 +2842,27 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.092
+      value: -0.45400003
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 273.986
+      value: 275.90198
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.41200003
+      value: 2.0830002
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.762
+      value: 0.773
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.961
+      value: 2.082
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -2907,22 +2907,22 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0004800004
+      value: 0.002368394
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.00073000067
+      value: 0.0017606538
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.00051
+      value: 0.002384539
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: "<color=#00FFFF><B>Opportunity\t\t\t     \u21D3 \u2B9F\u2B9F\u2B9F</B></color>
+      value: "<color=#00FFFF><B>Opportunity\t\t\t    \u21D3 \u2B9F\u2B9F\u2B9F</B></color>
         \   \u2304\u2304        "
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
@@ -2983,12 +2983,12 @@ PrefabInstance:
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.x
-      value: 0.0004800004
+      value: 0.001462705
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.y
-      value: 0.00051
+      value: 0.001341351
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -3994,7 +3994,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Solar + Magnet Arrays</B> '
+      value: "<B>Solar + Magnet Arrays</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -4477,12 +4477,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>High Gain Antenna</B> '
+      value: "<B>High Gain Antenna</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 180
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -4636,12 +4636,12 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Remote Sensing Mast</B> '
+      value: "<B>Remote Sensing Mast</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 167
+      value: 152
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -5263,7 +5263,7 @@ PrefabInstance:
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_Text
-      value: '<B>Robotic Arm + Front Hazcams</B> '
+      value: "<B>Robotic Arm + Front Hazcams</B> \n     \u25B6 \t"
       objectReference: {fileID: 0}
     - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -5317,7 +5317,7 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.798
+      value: 0.79793
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -5362,12 +5362,12 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.165
+      value: -0.16337
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.799
+      value: 2.8021
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -5412,12 +5412,12 @@ PrefabInstance:
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.00048245114
+      value: 0.0022160439
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.00051322643
+      value: 0.0018411828
       objectReference: {fileID: 0}
     - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
@@ -5492,17 +5492,17 @@ PrefabInstance:
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.x
-      value: 0.0004800004
+      value: 0.002216044
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.y
-      value: 0.00051
+      value: 0.001841183
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: startScale.z
-      value: 0.0007300007
+      value: 0.0007300025
       objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
