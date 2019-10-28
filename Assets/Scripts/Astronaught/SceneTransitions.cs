@@ -87,7 +87,9 @@ public class SceneTransitions : MonoBehaviour
 
         foreach (MeshRenderer stuff in everything)
         {
-            stuff.materials = dissolveMat; // Apply the disove mat
+            if (stuff.gameObject.name != "WaterProNighttime") {
+                stuff.materials = dissolveMat; // Apply the disove mat
+            }
         }
 
         foreach (Canvas canvasStuff in canvasEverything)

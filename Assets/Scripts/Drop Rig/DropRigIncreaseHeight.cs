@@ -20,21 +20,27 @@ public class DropRigIncreaseHeight : MonoBehaviour
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
-        anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
-        sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
-        AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
-        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
-        sound.loop = true;
+        if (DropRig != null)
+        {
+            anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
+            sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
+            planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+            sound.loop = true;
 
-        text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+            text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        }
     }
 
     private void Update()
     {
-        if (anim.GetBool("heightHasPlayed"))
+        if (DropRig != null)
         {
-            text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 0) + " Metres"; // Set the drop rig LCD text
-            text[2].color = Color.green;
+            if (anim.GetBool("heightHasPlayed"))
+            {
+                text[2].text = "The current drop is " + System.Math.Round(anim.GetFloat("wingHeight"), 0) + " Metres"; // Set the drop rig LCD text
+                text[2].color = Color.green;
+            }
         }
 
     }

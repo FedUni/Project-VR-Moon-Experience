@@ -15,13 +15,16 @@ public class DropRigDrop : MonoBehaviour
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
-        //anim = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<Animator>(); // Get the animation controller from the correct place in the object
-        //sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
-        anim = GameObject.Find("Drop Wings").GetComponent<Animator>(); // Get the animation controller from the correct place in the object
-        sound = GameObject.Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
-        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
-        
-        panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the light elements in the drop rig
+                                              //anim = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<Animator>(); // Get the animation controller from the correct place in the object
+                                              //sound = transform.parent.parent.Find("RightArm").Find("RightVerticalPillar").Find("RightWings").Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+        if (DropRig != null)
+        {
+            anim = GameObject.Find("Drop Wings").GetComponent<Animator>(); // Get the animation controller from the correct place in the object
+            sound = GameObject.Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+            planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+
+            panelLights = DropRig.GetComponentsInChildren<Light>(); // Get all the light elements in the drop rig
+        }
     }
 
     public void dropPressed() {

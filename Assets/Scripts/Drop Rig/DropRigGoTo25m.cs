@@ -20,37 +20,43 @@ public class DropRigGoTo25m : MonoBehaviour
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
-        anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
-        anim.Play("DropRigHeight", 0, 0);
-        sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
-        AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
-        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
-        sound.loop = true;
-        text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        if (DropRig != null)
+        {
+            anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
+            anim.Play("DropRigHeight", 0, 0);
+            sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Used Get the current animation playtime
+            planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+            sound.loop = true;
+            text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        }
     }
 
     private void Update()
     {
-        if (anim.GetBool("heightHasPlayed"))
+        if (DropRig != null)
         {
-            text[2].text = "The current drop is " + Math.Truncate(anim.GetFloat("wingHeight")) + " Meters"; // Set the drop rig LCD text
-            aniLocation = 0.25f;
-        }
-        else
-        {
-            animationState = anim.GetCurrentAnimatorStateInfo(0);
-            aniLocation = animationState.normalizedTime % 1;
-            //Debug.Log(aniLocation);
-        }
-        if (isInterping)
-        {
-            animationState = anim.GetCurrentAnimatorStateInfo(0);
-            aniLocation = animationState.normalizedTime % 1;
-            //Debug.Log(aniLocation);
-            float playAmount = Mathf.Lerp(aniLocation, 0.25f, 2f * Time.deltaTime);
-            
-            anim.Play("DropRigHeight", 0, playAmount);
-            StartCoroutine(Wait());
+            if (anim.GetBool("heightHasPlayed"))
+            {
+                text[2].text = "The current drop is " + Math.Truncate(anim.GetFloat("wingHeight")) + " Meters"; // Set the drop rig LCD text
+                aniLocation = 0.25f;
+            }
+            else
+            {
+                animationState = anim.GetCurrentAnimatorStateInfo(0);
+                aniLocation = animationState.normalizedTime % 1;
+                //Debug.Log(aniLocation);
+            }
+            if (isInterping)
+            {
+                animationState = anim.GetCurrentAnimatorStateInfo(0);
+                aniLocation = animationState.normalizedTime % 1;
+                //Debug.Log(aniLocation);
+                float playAmount = Mathf.Lerp(aniLocation, 0.25f, 2f * Time.deltaTime);
+
+                anim.Play("DropRigHeight", 0, playAmount);
+                StartCoroutine(Wait());
+            }
         }
     }
     IEnumerator Wait()

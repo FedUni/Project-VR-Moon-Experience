@@ -13,9 +13,12 @@ public class DropRigReset : MonoBehaviour
     GameObject planetSettings;
     void Start()
     {
-        anim = GameObject.Find("Drop Wings").GetComponent<Animator>(); // Get animation controller from the object
-        sound = GameObject.Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
-        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+        if (GameObject.Find("Drop Wings") != null)
+        {
+            anim = GameObject.Find("Drop Wings").GetComponent<Animator>(); // Get animation controller from the object
+            sound = GameObject.Find("Drop Wings").GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+            planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+        }
     }
 
     public void resetPressed()

@@ -19,13 +19,16 @@ public class DropRigDecreaseHeight : MonoBehaviour
     void Start()
     {
         DropRig = GameObject.Find("DropRig"); // Get the drop rig
-        anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
-        sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
-        AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Get the current animation playtime
-        planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
-        sound.loop = true;
-        
-        text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        if (DropRig != null)
+        {
+            anim = DropRig.GetComponentInParent<Animator>(); // Get animation controller from the object
+            sound = DropRig.GetComponent<AudioSource>(); // Get the sound source from the correct place in the object
+            AnimatorStateInfo animationState = anim.GetCurrentAnimatorStateInfo(0); // Get the current animation playtime
+            planetSettings = GameObject.Find("PlanetSettings"); // Get the planet settings
+            sound.loop = true;
+
+            text = DropRig.GetComponentsInChildren<Text>(); // Get all the text elements in the drop rig
+        }
     }
     //Called every Update() while a Hand is hovering over this object
     private void HandHoverUpdate(Hand hand)
