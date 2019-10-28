@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3642505917673415535}
   m_Layer: 5
   m_Name: TopHeader
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 5328714547619604199}
   m_Layer: 5
   m_Name: GoMars
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 8550839688768905063}
   m_Layer: 5
   m_Name: LabelsOn
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 8776893046443091554}
   m_Layer: 5
   m_Name: UnderExp
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 8184328724630793273}
   m_Layer: 5
   m_Name: CenterHor (1)
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1060,7 +1060,7 @@ GameObject:
   - component: {fileID: 9157930053715759477}
   m_Layer: 5
   m_Name: UnderExpLaser
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 8648258040433345809}
   m_Layer: 5
   m_Name: UnderLine
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1285,7 +1285,7 @@ GameObject:
   - component: {fileID: 9102953732220140141}
   m_Layer: 5
   m_Name: Teleport
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1330,7 +1330,7 @@ GameObject:
   - component: {fileID: 6637907089934974067}
   m_Layer: 5
   m_Name: UnderTele
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1537,7 +1537,7 @@ GameObject:
   - component: {fileID: 7755206679160901114}
   m_Layer: 5
   m_Name: 75M
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1762,7 +1762,7 @@ GameObject:
   - component: {fileID: 6292358497457562794}
   m_Layer: 5
   m_Name: FAOn
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1916,7 +1916,7 @@ GameObject:
   - component: {fileID: 3973278208896249651}
   m_Layer: 5
   m_Name: UnderPA
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1990,7 +1990,7 @@ GameObject:
   - component: {fileID: 6243496610271121236}
   m_Layer: 5
   m_Name: CenterVert
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2460,7 +2460,7 @@ GameObject:
   - component: {fileID: 2485506430708986849}
   m_Layer: 5
   m_Name: Background(Hidemelater)
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2820,7 +2820,7 @@ GameObject:
   - component: {fileID: 6819451089860291238}
   m_Layer: 5
   m_Name: GoMoon
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3138,7 +3138,7 @@ GameObject:
   - component: {fileID: 4004774308583386251}
   m_Layer: 5
   m_Name: CenterHor
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3853,7 +3853,7 @@ GameObject:
   - component: {fileID: 5027416461270513541}
   m_Layer: 5
   m_Name: TimeNumber
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4092,7 +4092,7 @@ GameObject:
   - component: {fileID: 5531753133794961558}
   m_Layer: 5
   m_Name: DropExpCont
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4257,7 +4257,7 @@ GameObject:
   - component: {fileID: 7317113835458397371}
   m_Layer: 5
   m_Name: Return
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4794,7 +4794,7 @@ GameObject:
   - component: {fileID: 8774624769777551354}
   m_Layer: 5
   m_Name: ExpLaser
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5185,7 +5185,7 @@ GameObject:
   - component: {fileID: 2799641059519908836}
   m_Layer: 5
   m_Name: 25m
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5328,7 +5328,7 @@ GameObject:
   - component: {fileID: 8522471621519650284}
   m_Layer: 5
   m_Name: SpawnObj
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5467,7 +5467,7 @@ GameObject:
   - component: {fileID: 8846438701276277964}
   m_Layer: 5
   m_Name: PlanetAttributes1
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5512,7 +5512,7 @@ GameObject:
   - component: {fileID: 3199098197746278161}
   m_Layer: 5
   m_Name: ExpDrop
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5898,7 +5898,7 @@ GameObject:
   - component: {fileID: 872283388700369632}
   m_Layer: 5
   m_Name: CenterHor
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5970,7 +5970,7 @@ GameObject:
   - component: {fileID: 207382622260337245}
   m_Layer: 5
   m_Name: PlanetAttributes2
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6013,7 +6013,7 @@ GameObject:
   - component: {fileID: 8855828481621060780}
   m_Layer: 5
   m_Name: CenterHor
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6169,7 +6169,7 @@ GameObject:
   - component: {fileID: 8524163895621928532}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6493,7 +6493,7 @@ GameObject:
   - component: {fileID: 3293927453326202217}
   m_Layer: 5
   m_Name: ExpReturn
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6807,7 +6807,7 @@ GameObject:
   - component: {fileID: 5740584669353986107}
   m_Layer: 5
   m_Name: ResetObj
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7029,7 +7029,7 @@ GameObject:
   - component: {fileID: 3822205234286514846}
   m_Layer: 5
   m_Name: TimeRemaining
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7137,7 +7137,7 @@ GameObject:
   - component: {fileID: 3009584127777149608}
   m_Layer: 5
   m_Name: GoEarth
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7346,7 +7346,7 @@ GameObject:
   - component: {fileID: 2121370263828897533}
   m_Layer: 5
   m_Name: UnderLine
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7502,7 +7502,7 @@ GameObject:
   - component: {fileID: 8765324267038508143}
   m_Layer: 5
   m_Name: LabelsOff
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7654,7 +7654,7 @@ GameObject:
   - component: {fileID: 7066224446220454339}
   m_Layer: 5
   m_Name: DropExpStats
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7780,7 +7780,7 @@ GameObject:
   - component: {fileID: 431672218103487954}
   m_Layer: 5
   m_Name: Teleportation
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8106,7 +8106,7 @@ GameObject:
   - component: {fileID: 1100528212533430641}
   m_Layer: 5
   m_Name: Experiments
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8152,7 +8152,7 @@ GameObject:
   - component: {fileID: 9118802415301395316}
   m_Layer: 5
   m_Name: PlanetAttributes
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8541,7 +8541,7 @@ GameObject:
   - component: {fileID: 3254790547120270581}
   m_Layer: 5
   m_Name: GoBase
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8846,7 +8846,7 @@ GameObject:
   - component: {fileID: 8190495267113227455}
   m_Layer: 5
   m_Name: CenterVert
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9155,7 +9155,7 @@ GameObject:
   - component: {fileID: 8263866305432778331}
   m_Layer: 5
   m_Name: Experiments
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9388,7 +9388,7 @@ GameObject:
   - component: {fileID: 264510247553787634}
   m_Layer: 5
   m_Name: UnderExpLaser
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9464,7 +9464,7 @@ GameObject:
   - component: {fileID: 2424797300930198835}
   m_Layer: 5
   m_Name: 50m
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9762,7 +9762,7 @@ GameObject:
   - component: {fileID: 1966223407826828723}
   m_Layer: 5
   m_Name: Return
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10354,7 +10354,7 @@ GameObject:
   - component: {fileID: 7565712127808504325}
   m_Layer: 5
   m_Name: WatchUI
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11181,7 +11181,7 @@ GameObject:
   - component: {fileID: 4907716480956802142}
   m_Layer: 5
   m_Name: Drop
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11334,7 +11334,7 @@ GameObject:
   - component: {fileID: 7191514871844499227}
   m_Layer: 5
   m_Name: BottomSplit (1)
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11406,7 +11406,7 @@ GameObject:
   - component: {fileID: 6552525009281044662}
   m_Layer: 5
   m_Name: LaserExpStats
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12485,7 +12485,7 @@ GameObject:
   - component: {fileID: 7090597244449201079}
   m_Layer: 5
   m_Name: FAOff
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12716,7 +12716,7 @@ GameObject:
   - component: {fileID: 3520985825483269733}
   m_Layer: 5
   m_Name: Main
-  m_TagString: Untagged
+  m_TagString: WatchUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

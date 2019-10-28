@@ -1,6 +1,10 @@
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Valve.VR.InteractionSystem;
+using UnityEngine.UI;
+
 
 namespace Valve.VR.Extras
 {
@@ -97,7 +101,7 @@ namespace Valve.VR.Extras
                 this.transform.GetChild(0).gameObject.SetActive(true);
             }
 
-            float dist = 0.1f;
+            float dist = 0.1f; // how far both the green and red go from the hand
 
             Ray raycast = new Ray(transform.position, transform.forward);
             RaycastHit hit;
@@ -127,10 +131,15 @@ namespace Valve.VR.Extras
             {
                 previousContact = null;
             }
-            if (bHit && hit.distance < 0.5f)
+            if (bHit && hit.distance < 10f) //////////////// how are it goes once triggered
             {
-                dist = hit.distance;
+                if (hit.collider.gameObject.tag.Contains("WatchUI") || hit.collider.gameObject.name.Contains("Equipment Labels")) {
+                    dist = hit.distance;
+                }
+                //dist = hit.distance;
+                //if ()
             }
+
 
             if (bHit && interactWithUI.GetStateUp(pose.inputSource))
             {
@@ -139,6 +148,9 @@ namespace Valve.VR.Extras
                 argsClick.distance = hit.distance;
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
+                if (hit.collider.gameObject.name.Contains("Equipment Labels")) {
+                    hit.collider.gameObject.GetComponent<AudioSource>().Play();
+                }
                 OnPointerClick(argsClick);
             }
 
