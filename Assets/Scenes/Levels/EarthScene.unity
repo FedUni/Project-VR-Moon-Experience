@@ -448,6 +448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sunshield
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1160501b25e33ea448746c483ef64d87, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &251623146 stripped
@@ -3039,6 +3044,240 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1489205492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 736625715}
+    m_Modifications:
+    - target: {fileID: 2256423544760628182, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: Equipment Labels (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4709.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.019551009
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.037551105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0024414696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99910045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.2280002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 355.688
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.36400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 457.01727
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6528.0044
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 536
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2292414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.119936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022086250449376218, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.401476
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Text
+      value: '<color=#00FFFF><B>James Webb Space Telescope</B></color> '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 202
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 263
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706223865349043031, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: Sunshield
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1160501b25e33ea448746c483ef64d87, type: 3}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: isAnimated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: isRotating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: isFloating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: isScaling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: rotationAngle.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: floatSpeed
+      value: 0.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: floatRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: startScale.x
+      value: 2.229241
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: startScale.y
+      value: 2.119936
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: startScale.z
+      value: 2.401476
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: scaleSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: scaleRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: floatInY
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &1498963297
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,6 +3671,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpticalTelescopeElement
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 224e6d2acc25d354d9e5111b2a2fc130, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &1636397684 stripped
@@ -4266,6 +4510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpacecraftBus
       objectReference: {fileID: 0}
+    - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0be6f3b830e1f014fb508a7abaf08b9b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &2102415380
