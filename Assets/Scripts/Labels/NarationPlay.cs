@@ -13,7 +13,6 @@ public class NarationPlay : MonoBehaviour
         GrabTypes startingGrabType = hand.GetGrabStarting();
         if (startingGrabType != GrabTypes.None)
         {
-            Debug.Log("Played Audio");
             GetComponent<AudioSource>().Play(); // Play the sound
         }
 
