@@ -13,11 +13,14 @@ public class labelTrigger : MonoBehaviour
     
     public void hideLabels()
     {
+
         foreach (GameObject equiptLabel in objects) // For every label turn if off
         {
-            if (equiptLabel.name.Contains("Equipment Labels"))
-            {
-                equiptLabel.SetActive(false);
+            if (equiptLabel) { 
+                if (equiptLabel.name.Contains("Equipment Labels"))
+                {
+                    equiptLabel.SetActive(false);
+                }
             }
         }
     }
@@ -26,9 +29,12 @@ public class labelTrigger : MonoBehaviour
     {
         foreach (GameObject equiptLabel in objects) // For every label turn if on
         {
-            if (equiptLabel.name.Contains("Equipment Labels"))
+            if (equiptLabel)
             {
-                equiptLabel.SetActive(true);
+                if (equiptLabel.name.Contains("Equipment Labels"))
+                {
+                    equiptLabel.SetActive(true);
+                }
             }
         }
     }
