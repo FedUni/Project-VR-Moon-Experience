@@ -443,16 +443,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 263
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: Sunshield
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1160501b25e33ea448746c483ef64d87, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: Sunshield
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &251623146 stripped
@@ -1270,12 +1270,12 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 4.999916
+      value: 4.999917
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -1285,7 +1285,7 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 5.0001574
+      value: 5.000157
       objectReference: {fileID: 0}
     - target: {fileID: 315147290685345321, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -2895,6 +2895,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2dc7f0436998b4945b8da0ed4b5773d4, type: 3}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b8613f1a47d0b245a867caa2821f0ba, type: 3}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c06a00278f2337429df334161350b6b, type: 3}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3466fd6f5997d9742acfc5000e313534, type: 3}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d052a24b8912594cbb922f0858dd094, type: 3}
     - target: {fileID: 89479874042195914, guid: b3c52e5c59eff3242a1c615ca4b30336,
         type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -3196,41 +3221,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_BestFit
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: Sunshield
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1160501b25e33ea448746c483ef64d87, type: 3}
-    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.960783
-      objectReference: {fileID: 0}
-    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.7745416
-      objectReference: {fileID: 0}
-    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000054382
-      objectReference: {fileID: 0}
-    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00021362305
-      objectReference: {fileID: 0}
     - target: {fileID: 8421066846424617527, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: isAnimated
@@ -3300,6 +3295,36 @@ PrefabInstance:
         type: 3}
       propertyPath: floatInY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: Sunshield
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.960783
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.7745416
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.000054382
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151419521892297697, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00021362305
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
@@ -3692,16 +3717,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 115
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: OpticalTelescopeElement
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 224e6d2acc25d354d9e5111b2a2fc130, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: OpticalTelescopeElement
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &1636397684 stripped
@@ -4628,16 +4653,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 174
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: SpacecraftBus
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0be6f3b830e1f014fb508a7abaf08b9b, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: SpacecraftBus
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &2102415380

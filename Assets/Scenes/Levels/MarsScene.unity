@@ -250,16 +250,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 122
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: UltraHighAntenna
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0dcf327bd22d5724497c9409f80d7bc8, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: UltraHighAntenna
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &41408884
@@ -1126,17 +1126,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6609813610313524629, guid: 685e4ab8547b02a458cefa0068b317c8,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2814111273180609337, guid: 685e4ab8547b02a458cefa0068b317c8,
         type: 3}
       propertyPath: m_Text
       value: "1. Press the spawn object button       \n2. Set the rig to the desired
         height    \n3. Press drop button to drop objects\n4. Press reset button to
         close doors"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609813610313524629, guid: 685e4ab8547b02a458cefa0068b317c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6609813610313524613, guid: 685e4ab8547b02a458cefa0068b317c8,
         type: 3}
@@ -1403,6 +1403,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 85cfdc3daa07d774d84faf575458d8b1, type: 3}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 85cfdc3daa07d774d84faf575458d8b1, type: 3}
+    - target: {fileID: 763493811335163525, guid: b3c52e5c59eff3242a1c615ca4b30336,
+        type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8239c1a900176e647914866df1679d9b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3c52e5c59eff3242a1c615ca4b30336, type: 3}
 --- !u!1001 &519302334
@@ -1659,16 +1679,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 161
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: PanoramicCamer
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 2ae6e5f574061a84b9928fd2a5648538, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: PanoramicCamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &631311008
@@ -2323,16 +2343,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 211
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: Robotic Arm
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0baa8a4a4ed4d01428be8c55eb9c1ed0, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: Robotic Arm
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1 &880463078
@@ -2710,16 +2730,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 155
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: LowGainAntenna
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: cae8ead164f25ba49ae14b33f6ec4a51, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: LowGainAntenna
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &1291330775
@@ -2935,11 +2955,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: Opportunity
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
@@ -3014,6 +3029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: floatSpeed
       value: 0.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: Opportunity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
@@ -3710,12 +3730,12 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 4.999916
+      value: 4.999917
       objectReference: {fileID: 0}
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -3730,7 +3750,7 @@ PrefabInstance:
     - target: {fileID: 4338186192024519952, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 5.0001574
+      value: 5.000157
       objectReference: {fileID: 0}
     - target: {fileID: 315147290685345321, guid: 6d81d57f518682c4aa67680c5a17bb8f,
         type: 3}
@@ -4006,16 +4026,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: SolarArrays
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: a28ffe51d856d5040a55487670edabd7, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: SolarArrays
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &1662744944
@@ -4489,16 +4509,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: HighGainAntenna
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8a6856e053292584cab43552e5b09b06, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: HighGainAntenna
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &1851384954
@@ -4648,16 +4668,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 167
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: RemoteSensing
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: df266b71145536d40ba30eeb67105305, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: RemoteSensing
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
 --- !u!1001 &1903643278
@@ -5275,16 +5295,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 197
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: RoboticArm
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 5c229306c3f13224db535f54d400a47d, type: 3}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboticArm
+      objectReference: {fileID: 0}
     - target: {fileID: 474931535358053291, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: highlightOnHover
@@ -5439,11 +5459,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 167
       objectReference: {fileID: 0}
-    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Curiosity '
-      objectReference: {fileID: 0}
     - target: {fileID: 8969405256130239425, guid: 5dd9327cc07293e44b20bd757b2e6594,
         type: 3}
       propertyPath: m_audioClip
@@ -5518,6 +5533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: floatInY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 759100653768093035, guid: 5dd9327cc07293e44b20bd757b2e6594,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Curiosity '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd9327cc07293e44b20bd757b2e6594, type: 3}
