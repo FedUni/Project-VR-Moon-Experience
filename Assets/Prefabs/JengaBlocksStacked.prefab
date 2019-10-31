@@ -1,0 +1,4714 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3194278220328977526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4335422734020155992}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4335422734020155992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194278220328977526}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2234626029276888811}
+  - {fileID: 8734649946737984132}
+  - {fileID: 6963860567916263767}
+  - {fileID: 5162851136268447847}
+  - {fileID: 4591808319913894879}
+  - {fileID: 6393701985689642663}
+  - {fileID: 9106402211617747081}
+  - {fileID: 6922328177026443943}
+  - {fileID: 4482985621589115978}
+  - {fileID: 6583347807313009587}
+  - {fileID: 8431866408504006140}
+  - {fileID: 353870681793129598}
+  - {fileID: 7778082718215231523}
+  - {fileID: 4859448591339668834}
+  - {fileID: 1184608087639846779}
+  - {fileID: 7290827635143767384}
+  - {fileID: 6676556648559897162}
+  - {fileID: 927287997762313948}
+  - {fileID: 2225614607828779084}
+  - {fileID: 8586461734591106274}
+  - {fileID: 8393990062200668047}
+  - {fileID: 2109868209018522738}
+  - {fileID: 2018604528845992710}
+  - {fileID: 4192187451761479932}
+  - {fileID: 8311655473961382196}
+  - {fileID: 5502840423563609770}
+  - {fileID: 2894084287226285474}
+  - {fileID: 8966934974498359482}
+  - {fileID: 8324700419710729714}
+  - {fileID: 3163875474607842293}
+  - {fileID: 6517010660335321322}
+  - {fileID: 8474911306824764018}
+  m_Father: {fileID: 7548327351297837975}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7799122820175477212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7548327351297837975}
+  m_Layer: 0
+  m_Name: JengaBlocksStacked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7548327351297837975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799122820175477212}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4335422734020155992}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &219541326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2075524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &2234626029276888811 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 219541326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &135112632208724457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59801185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &2225614607828779084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 135112632208724457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &163604571040931287
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07559204
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.103700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &2109868209018522738 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 163604571040931287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &216589046286787235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07485962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0993
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &2018604528845992710 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 216589046286787235}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1113073344303202014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07485962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39739302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0993
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &1184608087639846779 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 1113073344303202014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1431193663721770873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59801185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &927287997762313948 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 1431193663721770873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2011929301099904475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &353870681793129598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 2011929301099904475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2358652407150326394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07650757
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &4591808319913894879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 2358652407150326394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2392606723508983279
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &4482985621589115978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 2392606723508983279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2679457945160368473
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07458496
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3021
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &4192187451761479932 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 2679457945160368473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3813048547153293904
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07559204
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.103700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &3163875474607842293 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 3813048547153293904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3975313821746043911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &2894084287226285474 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 3975313821746043911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4874329029569248239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59801185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &6676556648559897162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 4874329029569248239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4926449241880726038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &6583347807313009587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 4926449241880726038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5004605440924750159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07485962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0993
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &6517010660335321322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 5004605440924750159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5167883441937299202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07559204
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0057999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.103700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &6393701985689642663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 5167883441937299202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6006949493836961551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &5502840423563609770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 6006949493836961551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6387473479544250818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2075524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &5162851136268447847 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 6387473479544250818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6661604742233642183
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07559204
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39739302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.103700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &4859448591339668834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 6661604742233642183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7017325208276607276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07485962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0057999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0993
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &9106402211617747081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7017325208276607276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7165806797716347167
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8966934974498359482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7165806797716347167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7364873380111438625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2075524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8734649946737984132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7364873380111438625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7506306495949020487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59801185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8586461734591106274 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7506306495949020487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7640072388076897369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8431866408504006140 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7640072388076897369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7682598247122951127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07458496
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3021
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8474911306824764018 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7682598247122951127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7746065970532658730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07650757
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.799
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8393990062200668047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7746065970532658730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7807572787032236177
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.99949986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8311655473961382196 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7807572787032236177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7819861267858926679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07650757
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &8324700419710729714 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 7819861267858926679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8427274547310676358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07650757
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39739302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &7778082718215231523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 8427274547310676358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8803628609885332733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07458496
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39739302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3021
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &7290827635143767384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 8803628609885332733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9156926649732741890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07458496
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0057999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7060718
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7081403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3021
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.16801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &6922328177026443943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 9156926649732741890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9198152276152789234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4335422734020155992}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: useHandObjectAttachmentPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attachEaseIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: handFollowTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hideControllerOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: snapAttachEaseInTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431491476041941, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_Name
+      value: JengaBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2058
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.024993896
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2075524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.x
+      value: 0.15000924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.y
+      value: 0.10841094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalPosition.z
+      value: 0.13522339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalRotation.w
+      value: 0.7128766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548327351297837975}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799122820175477212}
+      propertyPath: m_Name
+      value: JengaBlock (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef4c951fb2338f943b487b4b95390445, type: 3}
+--- !u!4 &6963860567916263767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2234626029227741605, guid: ef4c951fb2338f943b487b4b95390445,
+    type: 3}
+  m_PrefabInstance: {fileID: 9198152276152789234}
+  m_PrefabAsset: {fileID: 0}

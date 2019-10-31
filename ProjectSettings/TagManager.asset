@@ -7,6 +7,10 @@ TagManager:
   - PlayingKitty
   - Cloth
   - Ground
+  - Droppable
+  - ShouldDissolve
+  - GolfBall
+  - GolfClub
   layers:
   - Default
   - TransparentFX
@@ -17,11 +21,11 @@ TagManager:
   - 
   - 
   - teleport
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Droppable
+  - PostProcessing
+  - Label
+  - Particles
+  - ELabel
   - 
   - 
   - 
@@ -43,4 +47,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 1589439815
+    locked: 0
+  - name: 2
+    uniqueID: 3780383087
+    locked: 0
+  - name: 3
+    uniqueID: 2760188615
     locked: 0

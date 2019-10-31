@@ -1,0 +1,79 @@
+fileFormatVersion: 2
+guid: 1bda17e69f071f2419f8067ed7922910
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: Pebbels_in_sand
+    2800000: Pebbels_in_sand - baseColor
+    2800002: Pebbels_in_sand - normal
+    2800004: Pebbels_in_sand - metallic
+    2800006: Pebbels_in_sand - height
+    11400000: sbsar
+    11400002: graph0
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Pebbels_in_sand
+    prototypeName: Pebbels_in_sand
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Pebbels_in_sand\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Pebbels_in_sand - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pebbels_in_sand - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pebbels_in_sand - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pebbels_in_sand - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Pebbels_in_sand - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 1bda17e69f071f2419f8067ed7922910, type: 3}
+    generatedTextures: []

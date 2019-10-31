@@ -223,19 +223,11 @@ namespace UnityEngine.PostProcessing
             outOffset = GetOffsetValue(offset);
         }
 
-        TextureFormat GetCurveFormat()
-        {
-            if (SystemInfo.SupportsTextureFormat(TextureFormat.RGBAHalf))
-                return TextureFormat.RGBAHalf;
-
-            return TextureFormat.RGBA32;
-        }
-
         Texture2D GetCurveTexture()
         {
             if (m_GradingCurves == null)
             {
-                m_GradingCurves = new Texture2D(k_CurvePrecision, 2, GetCurveFormat(), false, true)
+                m_GradingCurves = new Texture2D(k_CurvePrecision, 2, TextureFormat.RGBAHalf, false, true)
                 {
                     name = "Internal Curves Texture",
                     hideFlags = HideFlags.DontSave,
@@ -279,14 +271,6 @@ namespace UnityEngine.PostProcessing
             return lut != null && lut.IsCreated() && lut.height == k_InternalLogLutSize;
         }
 
-        RenderTextureFormat GetLutFormat()
-        {
-            if (SystemInfo.SupportsRenderTextureFormat(RenderTextureFormat.ARGBHalf))
-                return RenderTextureFormat.ARGBHalf;
-
-            return RenderTextureFormat.ARGB32;
-        }
-
         void GenerateLut()
         {
             var settings = model.settings;
@@ -295,7 +279,7 @@ namespace UnityEngine.PostProcessing
             {
                 GraphicsUtils.Destroy(model.bakedLut);
 
-                model.bakedLut = new RenderTexture(k_InternalLogLutSize * k_InternalLogLutSize, k_InternalLogLutSize, 0, GetLutFormat())
+                model.bakedLut = new RenderTexture(k_InternalLogLutSize * k_InternalLogLutSize, k_InternalLogLutSize, 0, RenderTextureFormat.ARGBHalf)
                 {
                     name = "Color Grading Log LUT",
                     hideFlags = HideFlags.DontSave,
